@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Raleway:900|IBM+Plex+Sans:300');
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('assets/fonts/BebasNeueBold.woff') format('woff');
+}
+
+body {
+  font-family: 'IBM Plex Sans';
+  color: #222;
+}
+
+.main-nav {
+  padding: 10px;
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  background: white;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.16), 0 2px 7px rgba(0, 0, 0, 0.23);
+  opacity: 0;
+}
+
+.main-nav-scrolled {
+  opacity: 1;
+
+}
+
+.nav-name {
+  font-family: 'Architects Daughter';
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+}
+
+.nav-items {
+  float: right;
+}
+
+.nav-items a {
+  font-size: 14px;
+  padding: 5px 20px;
+  color: #999;
+  float: left;
+  min-width: 80px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav-items a:hover {
+  background: #333;
+}
+
+.splash {
+  height: 100vh;
+  min-height: 400px;
+  background: #1c2331;
+  /* background: #6b2626;*/
+  width: 100%;
+  padding-top: 25vh;
+  color: white;
+  position: relative;
+}
+
+.splash-content {
+  margin-left: 20%;
+  animation: fade_in 1s ease-in;
+}
+
+.headline {
+  font-family: 'Bebas Neue';
+  text-transform: uppercase;
+  font-size: 120px;
+  word-wrap: break-word;
+  line-height: 1em;
+}
+
+.headline span {
+  color: #aaa;
+}
+
+.sub-headline, .section-headline {
+  font-family: 'Architects Daughter';
+  font-size: 28px;
+  opacity: 1;
+}
+
+.sub-headline {
+  margin-bottom: 10px;
+}
+
+.dev-skills {
+  color: #eee;
+  padding-top: 30px;
+  display: inline-block;
+}
+
+.headline, .sub-headline, .dev-skills {
+  animation: rise 0.7s ease-out;
+}
+
+.dev-skill {
+  float: left;
+  margin-left: 36px;
+}
+
+.dev-skill:first-child {
+  margin-left: 0;
+}
+
+.dev-skill p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.dev-skill img {
+  height: 75px;
+}
+
+#dev-name {
+  font-size: 57px;
+}
+
+.click-icons {
+  margin-top: 80px;
+  margin-left: 80px;
+  float: left;
+  opacity: 0;
+  animation: fade_in 1s 1.4s ease-in-out forwards;
+}
+
+.click-icons * {
+  float: left;
+}
+
+.click-icons p {
+  font-size: 20px;
+  margin: 23px 10px;
+}
+
+.go-down {
+  position: absolute;
+  bottom: 3vh;
+  text-align: center;
+  width: 100%;
+  font-size: 44px;
+  color: #ccc;
+  opacity: 0;
+  animation: arrow_down 0.7s 0.65s, opacity_pulse 1.3s 1.35s ease-in-out infinite alternate;
+}
+
+.go-down-stopped {
+  animation: fade_out 0.5s ease-in-out;
+}
+
+#swap-out {
+  height: 2000px;
+}
+
+.section-headline {
+  padding: 3vh;
+  text-align: center;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+@keyframes opacity_pulse {
+  from { opacity: 1; transform: translateY(8%); }
+  to { opacity: 0.4; transform: translateY(0%); }
+}
+
+@keyframes rise {
+  from { margin-top: 40px; }
+  to { margin-top: 0; }
+}
+
+@keyframes fade_in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade_out {
+  from { opacity: 0.6; }
+  to { opacity: 0; }
+}
+
+@keyframes arrow_down {
+  from { opacity: 0; transform: translateY(-200%); }
+  to { opacity: 1; transform: translateY(8%); }
+}
+
+@media only screen and (max-width: 1200px) {
+  .click-icons {
+    animation: none;
+  }
+  .dev-skill p {
+    font-size: 12px;
+  }
+  .dev-skill img {
+    height: 50px;
+  }
+  .splash {
+    display: flex;
+    justify-content: center;
+    padding-top: calc((100vh - 520px) / 2);
+  }
+  .splash-content {
+    margin: 0;
+    width: 420px;
+    height: 520px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .splash {
+    padding-top: calc((70vh - 300px) / 2);
+  }
+  .splash-content {
+    margin: 0;
+    width: 320px;
+    height: 300px;
+  }
+  .headline {
+    font-size: 90px;
+  }
+  .dev-skill {
+    margin-left: 10px;
+  }
+  #dev-name {
+    font-size: 40px;
+  }
+  .sub-headline {
+    font-size: 24px;
+  }
+}
