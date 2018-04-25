@@ -2,84 +2,94 @@
 <html>
   <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>title</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" type="text/css">
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  <script type="text/javascript" src="nav.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" type="text/css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <script type="text/javascript" src="nav.js"></script>
   </head>
   <body>
     <nav id="main-nav" class="main-nav">
       <div id="nav-name" class="nav-name">
         David Rowthorn
       </div>
-  </nav>
-  <div class="splash">
-    <div id="splash-content" class="splash-content">
-      <p id="dev-name" class="sub-headline">
+    </nav>
+    <div class="splash">
+      <div id="splash-content" class="splash-content">
+        <p id="dev-name" class="sub-headline">
         David Rowthorn
-      </p>
-      <p class="headline">
+        </p>
+        <p class="headline">
         full <span>stack</span> developer
-      </p>
-      <p class="sub-headline">
+        </p>
+        <p class="sub-headline">
         (with a PhD in philosophy)
-      </p>
-      <div class="dev-skills">
-        <div class="dev-skill">
-          <img src="assets/images/js_100.png">
-          <p>JavaScript</p>
+        </p>
+        <div class="dev-skills">
+          <div class="dev-skill">
+            <img src="assets/images/js_100.png">
+            <p>JavaScript</p>
+          </div>
+          <div class="dev-skill">
+            <img src="assets/images/python_100.png">
+            <p>Python</p>
+          </div>
+          <div class="dev-skill">
+            <img src="assets/images/postgres_100.png">
+            <p>PostgreSQL</p>
+          </div>
+          <div class="dev-skill">
+            <img src="assets/images/node_100.png">
+            <p>Node</p>
+          </div>
+          <div class="dev-skill">
+            <img src="assets/images/vue_100.png">
+            <p>Vue</p>
+          </div>
+          <div class="click-icons">
+            <img src="assets/images/arrow_left_up.svg" width="120px">
+            <p class="sub-headline">
+            click to see where I've used this tech
+            </p>
+          </div>
         </div>
-        <div class="dev-skill">
-          <img src="assets/images/python_100.png">
-          <p>Python</p>
+      </div>
+      <div id="go-down" class="go-down">
+        ⌵
+      </div>
+    </div>
+    <section id="swap-out" class="container">
+      <div class='section-headline'>
+        Is currently working on...
+      </div>
+      <div class="columns">
+        <div class="column">
+          <img src="assets/images/example_app.jpg">
         </div>
-        <div class="dev-skill">
-          <img src="assets/images/postgres_100.png">
-          <p>PostgreSQL</p>
-        </div>
-        <div class="dev-skill">
-          <img src="assets/images/node_100.png">
-          <p>Node</p>
-        </div>
-        <div class="dev-skill">
-          <img src="assets/images/vue_100.png">
-          <p>Vue</p>
-        </div>
-        <div class="click-icons">
-          <img src="assets/images/arrow_left_up.svg" width="120px">
-          <p class="sub-headline">
-          click to see how I've used this tech
+        <div class="column">
+          <h1 class="headline"><span class="swap-letter">S</span>wap<span class="swap-letter">I</span>t<span class="swap-letter">O</span>ut</h1>
+          <p>
+          Interactive infographic showing the impact of
+          health-promoting dietary substitutions.
           </p>
+          <p>
+          Where other nutrition data sites tend to overwhelm the user with numbers, SwapItOut chooses the most relevant data for a given food substitution and makes it meaningful and easy to apprehend.
+          </p>
+          <p>This is some text about the app</p>
         </div>
       </div>
-    </div>
-    <div id="go-down" class="go-down">
-      ⌵
-    </div>
-  </div>
-  <section id="swap-out">
-    <div class='section-headline'>
-      Is currently working on...
-    </div>
-    <div class="columns">
-      <div class="column">
-        <img src="assets/images/example_app.jpg">
+      <hr>
+      <div class="swap__setup columns is-8">
+        <div class="column">
+          Built with Vue and laid out with Bulma...
+        </div>
+        <div class="column">
+          ...fed by a RESTful API built with Node and Express...
+        </div>
+        <div class="column">
+          ...accessing a PostgreSQL database with PgPromise for Node.
+        </div>
       </div>
-      <div class="column">
-      </div>
-    </div>
-        <div class="columns">
-      <div class="column">
-        
-      </div>
-      <div class="column">
-        
-      </div>
-      <div class="column">
-        
-      </div>
-    </div>
     </section>
-</body>
+  </body>
 </html>
