@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Raleway:900|IBM+Plex+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Raleway:900|Open+Sans:400');
 @font-face {
   font-family: 'Bebas Neue';
   src: url('assets/fonts/BebasNeueBold.woff') format('woff');
@@ -6,7 +6,7 @@
 
 body {
   color: #222;
-  font-family: 'IBM Plex Sans';
+  font-family: 'Open Sans';
 }
 
 .main-nav {
@@ -109,11 +109,16 @@ body {
 
 .dev-skill p {
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .dev-skill img {
-  height: 75px;
+  height: 64px;
+  transition: all 0.2s;
+}
+
+.dev-skill:hover > img {
+  transform: translateY(-2px) scale(1.05);
 }
 
 #dev-name {
@@ -121,11 +126,11 @@ body {
 }
 
 .click-icons {
-  margin-top: 80px;
-  margin-left: 80px;
-  float: left;
-  opacity: 0;
   animation: fade_in 1s 1.4s ease-in-out forwards;
+  float: left;
+  margin-left: 70px;
+  margin-top: 60px;
+  opacity: 0;
 }
 
 .click-icons * {
@@ -134,7 +139,7 @@ body {
 
 .click-icons p {
   font-size: 20px;
-  margin: 23px 10px;
+  margin: 18px 10px;
 }
 
 .go-down {
@@ -152,8 +157,26 @@ body {
   animation: fade_out 0.5s ease-in-out;
 }
 
+#swap-out {
+  min-height: 700px;
+}
 #swap-out img {
+  padding-top: 18px;
+}
+
+#swap-out .column {
   padding: 20px;
+}
+
+#swap-out p {
+  padding-top: 1em;
+}
+
+#swap-out h1 {
+  font-family: 'Bebas Neue';
+  font-size: 80px;
+  margin-top: -12px;
+  margin-bottom: -20px;
 }
 
 .swap__setup {
@@ -164,6 +187,11 @@ body {
 
 .swap-letter {
   color: #ff4040 !important;
+}
+
+.tech-badge {
+  height: 60px;
+  padding-right: 8px;
 }
 
 .section-headline {
@@ -222,9 +250,9 @@ body {
     padding-top: calc((100vh - 520px) / 2);
   }
   .splash-content {
+    height: 520px;
     margin: 0;
     width: 420px;
-    height: 520px;
   }
 }
 
@@ -233,9 +261,9 @@ body {
     padding-top: calc((70vh - 300px) / 2);
   }
   .splash-content {
+    height: 300px;
     margin: 0;
     width: 320px;
-    height: 300px;
   }
   .headline {
     font-size: 90px;
