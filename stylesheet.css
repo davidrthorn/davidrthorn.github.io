@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Raleway:900|Open+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Raleway:900|Open+Sans:400,700');
 @font-face {
   font-family: 'Bebas Neue';
   src: url('assets/fonts/BebasNeueBold.woff') format('woff');
@@ -6,24 +6,54 @@
 
 body {
   color: #222;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans;
+}
+
+.is-bold {
+  font-weight: 700;
+}
+
+.main-menu {
+  animation: fade_in 1.1s ease-in forwards;
+  left: 12px;
+  opacity: 0;
+  position: fixed;
+  top: 12px;
+  z-index: 1000;
+}
+
+.menu-item {
+  cursor: pointer;
+  float: left;
+  font-size: 14px;
+  padding: 10px 10px;
+  text-transform: uppercase;
+}
+
+.menu-item a {
+  color: #ccc;
+  transition: all 0.1s;
+}
+
+.menu-item a:hover {
+  color: indianred !important;
 }
 
 .main-nav {
   background: white;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.16), 0 2px 7px rgba(0, 0, 0, 0.23);
+  height: 68px;
   opacity: 0;
   padding: 10px;
   position: fixed;
   top: 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .main-nav-scrolled {
   opacity: 1;
-
 }
 
 .nav-name {
@@ -68,10 +98,12 @@ body {
 }
 
 .headline {
-  font-family: 'Bebas Neue';
+  font-family: Arial;
+  font-family: 'Bebas Neue', Helvetica, sans;
   font-size: 120px;
   word-wrap: break-word;
   line-height: 1em;
+  text-transform: uppercase;
 }
 
 .headline span {
@@ -98,6 +130,11 @@ body {
   animation: rise 0.7s ease-out;
 }
 
+#dev-name {
+  font-size: 57px;
+  opacity: 1;
+}
+
 .dev-skill {
   float: left;
   margin-left: 36px;
@@ -117,12 +154,8 @@ body {
   transition: all 0.2s;
 }
 
-.dev-skill:hover > img {
+.dev-skill a:hover > img {
   transform: translateY(-2px) scale(1.05);
-}
-
-#dev-name {
-  font-size: 57px;
 }
 
 .click-icons {
@@ -200,9 +233,17 @@ body {
 }
 
 .transparent {
-  opacity: 0;
+  opacity: 0 !important;
 }
 
+#cross-reference {
+  background: #7F96AC;
+  min-height: 2000px;
+}
+
+#cross-reference .section-headline {
+  color: white;
+}
 
 /* ANIMATIONS */
 
@@ -252,7 +293,7 @@ body {
   .splash-content {
     height: 520px;
     margin: 0;
-    width: 420px;
+    width: 422px;
   }
 }
 

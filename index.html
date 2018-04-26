@@ -6,9 +6,24 @@
     <title>title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" type="text/css">
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    <script type="text/javascript" src="nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
   </head>
-  <body>
+  <body id="body">
+    <div class="main-menu">
+      <div class="menu-item">
+        <a href="#body">Home</a>
+      </div>
+      <div class="menu-item">
+        <a href="#swap-out">Portfolio</a>
+      </div>
+      <div class="menu-item">
+        <a href="">Blog</a>
+      </div>
+      <div class="menu-item">
+        <a href="">Contact</a>
+      </div>
+    </div>
     <nav id="main-nav" class="main-nav">
       <div id="nav-name" class="nav-name">
         David Rowthorn
@@ -27,23 +42,33 @@
         </p>
         <div class="dev-skills">
           <div class="dev-skill">
-            <img src="assets/images/js_100.png">
+            <a href="#cross-reference">
+              <img src="assets/images/js_100.png">
+            </a>
             <p>JavaScript</p>
           </div>
           <div class="dev-skill">
-            <img src="assets/images/python_100.png">
+            <a href="#data_manipulation">
+              <img src="assets/images/python_100.png">
+            </a>
             <p>Python</p>
           </div>
           <div class="dev-skill">
-            <img src="assets/images/postgres_100.png">
+            <a href="#swap-out">
+              <img src="assets/images/postgres_100.png">
+            </a>
             <p>PostgreSQL</p>
           </div>
           <div class="dev-skill">
-            <img src="assets/images/node_100.png">
+            <a href="#swap-out">
+              <img src="assets/images/node_100.png">
+            </a>
             <p>Node</p>
           </div>
           <div class="dev-skill">
-            <img src="assets/images/vue_100.png">
+            <a href="#swap-out">
+              <img src="assets/images/vue_100.png">
+            </a>
             <p>Vue</p>
           </div>
           <div class="click-icons">
@@ -58,43 +83,92 @@
         ⌵
       </div>
     </div>
-    <section id="swap-out" class="container">
-      <div class='section-headline'>
-        Is currently working on...
-      </div>
-      <div class="columns">
-        <div class="column is-6">
-          <img src="assets/images/example_app.jpg">
+    <section id="swap-out">
+      <div class="container">
+        <div class='section-headline'>
+          is currently working on...
         </div>
-        <div class="column is-4">
-          <h1><span class="swap-letter">S</span>wap<span class="swap-letter">I</span>t<span class="swap-letter">O</span>ut</h1>
-          <p>
-          Interactive infographic showing the impact of
-          health-promoting dietary substitutions.
-          </p>
-          <p>
-          Where other nutrition data sites tend to overwhelm the user with numbers, SwapItOut chooses the most relevant data for a given food substitution and makes it meaningful and easy to apprehend.
-          </p>
-          <div class="project-tech">
-            <img class="tech-badge" src="assets/images/postgres_100.png" alt="postgreSQL">
-            <img class="tech-badge" src="assets/images/node_100.png" alt="node">
-            <img class="tech-badge" src="assets/images/vue_100.png" alt="vue">
-            <img class="tech-badge" src="assets/images/bulma_100.png" alt="bulma">
+        <div class="columns">
+          <div class="column is-6">
+            <img src="assets/images/example_app.jpg">
+          </div>
+          <div class="column is-4">
+            <h1><span class="swap-letter">S</span>wap<span class="swap-letter">I</span>t<span class="swap-letter">O</span>ut</h1>
+            <p class="is-bold">
+            Interactive infographic showing the impact of
+            health-promoting dietary substitutions.
+            </p>
+            <p>
+            Unlike many nutrition sites, SwapItOut chooses the most relevant data for the chosen foods, displaying that data clearly and meaningfully.
+            </p>
+            <p>
+            In future, SwapItOut will recommend swaps automatically based on the data.
+            </p>
+            <div class="project-tech">
+              <img class="tech-badge" src="assets/images/postgres_100.png" alt="postgreSQL">
+              <img class="tech-badge" src="assets/images/node_100.png" alt="node">
+              <img class="tech-badge" src="assets/images/vue_100.png" alt="vue">
+              <img class="tech-badge" src="assets/images/bulma_100.png" alt="bulma">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="swap__setup columns is-8">
+          <div class="column">
+            Frontend built with Vue and laid out with Bulma...
+          </div>
+          <div class="column">
+            ...fed by a RESTful API built with Node and Express...
+          </div>
+          <div class="column">
+            ...accessing a PostgreSQL database with PgPromise for Node.
           </div>
         </div>
       </div>
-      <hr>
-      <div class="swap__setup columns is-8">
-        <div class="column">
-          Built with Vue and laid out with Bulma...
+    </section>
+    <section id="cross-reference">
+      <div class="container">
+        <div class='section-headline'>
+          has written software used by 22,000 people a week...
         </div>
-        <div class="column">
-          ...fed by a RESTful API built with Node and Express...
+        <div class="columns">
+          <div class="column is-6">
+            <img src="assets/images/example_app.jpg">
+          </div>
+          <div class="column is-4">
+            <h1><span class="swap-letter">S</span>wap<span class="swap-letter">I</span>t<span class="swap-letter">O</span>ut</h1>
+            <p class="is-bold">
+            Interactive infographic showing the impact of
+            health-promoting dietary substitutions.
+            </p>
+            <p>
+            Unlike many nutrition sites, SwapItOut chooses the most relevant data for the chosen foods, displaying that data clearly and meaningfully.
+            </p>
+            <p>
+            In future, SwapItOut will recommend swaps automatically based on the data.
+            </p>
+            <div class="project-tech">
+              <img class="tech-badge" src="assets/images/postgres_100.png" alt="postgreSQL">
+              <img class="tech-badge" src="assets/images/node_100.png" alt="node">
+              <img class="tech-badge" src="assets/images/vue_100.png" alt="vue">
+              <img class="tech-badge" src="assets/images/bulma_100.png" alt="bulma">
+            </div>
+          </div>
         </div>
-        <div class="column">
-          ...accessing a PostgreSQL database with PgPromise for Node.
+        <hr>
+        <div class="swap__setup columns is-8">
+          <div class="column">
+            Frontend built with Vue and laid out with Bulma...
+          </div>
+          <div class="column">
+            ...fed by a RESTful API built with Node and Express...
+          </div>
+          <div class="column">
+            ...accessing a PostgreSQL database with PgPromise for Node.
+          </div>
         </div>
       </div>
     </section>
+
   </body>
 </html>
