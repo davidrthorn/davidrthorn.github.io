@@ -228,7 +228,7 @@ body {
 }
 
 .section-headline {
-  padding: 3vh;
+  padding-bottom: 5vh;
   text-align: center;
 }
 
@@ -237,12 +237,18 @@ body {
 }
 
 #cross-reference {
-  background: #7F96AC;
+  background: #28434D;
+  color: white;
   min-height: 2000px;
 }
 
-#cross-reference .section-headline {
-  color: white;
+h1 {
+  font-size: 34px;
+  font-variant: small-caps;
+}
+
+section {
+  padding: 6vh 0 10vh 0;
 }
 
 /* ANIMATIONS */
