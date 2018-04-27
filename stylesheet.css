@@ -125,6 +125,7 @@ body {
   cursor: default;
   height: 100vh;
   min-height: 400px;
+  opacity: 0;
   padding-top: 25vh;
   position: relative;
   width: 100%;
@@ -132,7 +133,7 @@ body {
 
 .splash-content {
   margin-left: 20%;
-  animation: fade_in 1s 0.2s ease-in;
+  animation: fade_in 1s 0.2s ease-in forwards;
 }
 
 .headline {
@@ -165,7 +166,8 @@ body {
 }
 
 .headline, .sub-headline, .dev-skills {
-  animation: rise 0.7s 0.2s ease-out;
+  margin-top: 40px;
+  animation: rise 0.7s 0.2s ease-out forwards;
 }
 
 #dev-name {
