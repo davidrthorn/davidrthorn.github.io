@@ -15,12 +15,14 @@ window.onscroll = () => {
 function showNav () {
   $('#main-nav').addClass('main-nav-scrolled')
   $('.main-menu a').addClass('has-text-dark')
+  $('.contact-menu img').removeClass('invert')
   $('#go-down').addClass('go-down-stopped')
 }
 
 function hideNav () {
   $('#main-nav').removeClass('main-nav-scrolled')
   $('.main-menu a').removeClass('has-text-dark')
+  $('.contact-menu img').addClass('invert')
 }
 
 $('document').ready(() => {
@@ -35,7 +37,7 @@ $('document').ready(() => {
       var hash = target.hash
 
       $root.animate({
-        scrollTop: $(hash).offset().top - 68
+        scrollTop: $(hash).offset().top - 62
       }, 400, () => {
         if (hash === '#body') {
           hideNav()
