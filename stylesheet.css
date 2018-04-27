@@ -56,6 +56,10 @@ body {
   width: 18px;
 }
 
+.contact-menu img:hover {
+  filter: invert(70%) sepia(80%) saturate(40) hue-rotate(320deg);
+}
+
 .invert {
   filter: invert(1);
 }
@@ -73,7 +77,7 @@ body {
 }
 
 .menu-item a:hover {
-  color: indianred !important;
+  color: #FF6A65 !important;
 }
 
 .main-nav {
