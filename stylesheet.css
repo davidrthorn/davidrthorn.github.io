@@ -225,7 +225,7 @@ body {
   padding-top: 1em;
 }
 
-#swap-out h1 {
+h1 {
   font-family: 'Bebas Neue';
   font-size: 80px;
   margin-top: -30px;
@@ -248,7 +248,6 @@ body {
 }
 
 .section-headline {
-  padding-bottom: 5vh;
   text-align: center;
 }
 
@@ -262,13 +261,20 @@ body {
   min-height: 2000px;
 }
 
-h1 {
-  font-size: 34px;
-  font-variant: small-caps;
+.users {
+  font-size: 30px;
+}
+
+.other-addons img {
+  width: 400px;
 }
 
 section {
-  padding: 6vh 0 10vh 0;
+  padding: 4vh 0 10vh 0;
+}
+
+.main-section-content {
+  padding-top: 8vh;
 }
 
 .blog-panel {
