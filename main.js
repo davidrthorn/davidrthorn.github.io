@@ -24,15 +24,18 @@ function hideNav () {
 }
 
 $('document').ready(() => {
+  var $root = $('html, body')
+
   $('a').on('click', event => {
     let target = event.currentTarget
+
     if (target.hash !== '') {
       window.navChange = false
       event.preventDefault()
       var hash = target.hash
 
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top - 60
+      $root.animate({
+        scrollTop: $(hash).offset().top - 68
       }, 400, () => {
         if (hash === '#body') {
           hideNav()
@@ -42,9 +45,5 @@ $('document').ready(() => {
         window.navChange = true
       })
     }
-  })
-
-  $('.burger-icon').on('click', () => {
-    $('.burger-menu').show()
   })
 })
