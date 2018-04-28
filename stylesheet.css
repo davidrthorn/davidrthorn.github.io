@@ -4,7 +4,7 @@
   src: url('assets/fonts/BebasNeueBold.woff') format('woff');
 }
 
-.under-contruction {
+.under-construction {
   background: yellow;
   box-shadow: 2px 2px 4px 4px rgba(100, 100, 100, 0.1);
   cursor: default;
@@ -216,7 +216,8 @@ body {
 
 .click-icons p {
   font-size: 20px;
-  margin: 18px 10px;
+  margin: 0 10px;
+  padding-top: 20px;
 }
 
 .go-down {
