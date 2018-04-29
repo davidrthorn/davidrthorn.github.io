@@ -84,12 +84,14 @@ body {
 
 .main-nav {
   background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.16), 0 2px 7px rgba(0, 0, 0, 0.23);
   height: 62px;
   opacity: 0;
-  padding: 10px;
   position: fixed;
-  top: 0;
+  top: -1px;
   transition: all 0.3s ease-in-out;
   width: 100%;
   z-index: 1;
@@ -125,35 +127,54 @@ body {
 }
 
 .splash {
-  /* background: #6b2626;*/
+  align-items: center;
   background: #1c2331;
   color: white;
   cursor: default;
+  display: flex;
   height: 100vh;
-  min-height: 400px;
-  padding-top: 25vh;
-  position: relative;
+  justify-content: center;
+  min-height: 300px;
   width: 100%;
 }
 
 .splash-content {
-  margin-left: 20%;
+  width: 850px;
+  margin-left: -200px;
   opacity: 0;
+  position: relative;
   animation: fade_in 1s 0.5s ease-in forwards;
 }
+
+#dev-name {
+  font-size: 57px;
+  opacity: 1;
+  animation: dev-name-rise 0.7s 0.5s ease-out forwards;
+}
+
+  @keyframes dev-name-rise {
+    from { transform: translateY(40px) }
+    to { transform: translateY(0) }
+  }
 
 .headline {
   font-family: Arial;
   font-family: 'Bebas Neue', Helvetica, sans;
   font-size: 120px;
-  word-wrap: break-word;
   line-height: 1em;
+  word-wrap: break-word;
   text-transform: uppercase;
+  animation: headline-rise 0.7s 0.5s ease-out forwards;
 }
 
 .headline span {
   color: #aaa;
 }
+
+  @keyframes headline-rise {
+    from { transform: translateY(60px) }
+    to { transform: translateY(0) }
+  }
 
 .sub-headline, .section-headline {
   font-family: 'Architects Daughter';
@@ -165,21 +186,27 @@ body {
   margin-bottom: 10px;
 }
 
+
+#phd {
+  animation: phd-rise 0.7s 0.5s ease-out forwards;
+}
+
+  @keyframes phd-rise {
+    from { transform: translateY(80px) }
+    to { transform: translateY(0) }
+  }
+
 .dev-skills {
   color: #eee;
   padding-top: 30px;
   display: inline-block;
+  animation: dev-rise 0.7s 0.5s ease-out forwards;
 }
 
-.headline, .sub-headline, .dev-skills {
-  margin-top: 40px;
-  animation: rise 0.7s 0.5s ease-out forwards;
-}
-
-#dev-name {
-  font-size: 57px;
-  opacity: 1;
-}
+  @keyframes dev-rise {
+    from { transform: translatey(100px) }
+    to { transform: translatey(0) }
+  }
 
 .dev-skill {
   float: left;
@@ -206,9 +233,9 @@ body {
 
 .click-icons {
   animation: fade_in 1s 1.9s ease-in-out forwards;
-  float: left;
-  margin-left: 80px;
-  margin-top: 60px;
+  position: absolute;
+  bottom: -14px;
+  right: -550px;
   opacity: 0;
 }
 
@@ -218,6 +245,7 @@ body {
 
 .click-icons p {
   font-size: 20px;
+  font-family: 'Architects Daughter';
   margin: 0 10px;
   padding-top: 20px;
 }
@@ -338,11 +366,6 @@ section {
   to { opacity: 0.4; transform: translateY(0%); }
 }
 
-@keyframes rise {
-  from { margin-top: 40px; }
-  to { margin-top: 0; }
-}
-
 @keyframes fade_in {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -362,31 +385,46 @@ section {
 /* MEDIA RULES */
 
 @media only screen and (max-width: 1200px) {
-  .click-icons {
-    animation: none;
+  .nav-name {
+    font-size: 22px;
   }
+
+  .click-icons {
+    left: 0;
+    bottom: -40px;
+  }
+
+  .click-icons img {
+    display: none;
+  }
+
+  .click-icons p {
+    margin: 0;
+    padding: 0;
+  }
+
   .dev-skill p {
     font-size: 12px;
   }
+
   .dev-skill img {
     height: 50px;
   }
-  .splash {
-    display: flex;
-    justify-content: center;
-    padding-top: calc((100vh - 520px) / 2);
-  }
+
   .splash-content {
     height: 520px;
-    margin: 0;
+    margin-left: 0;
     width: 422px;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .splash {
-    padding-top: calc((70vh - 300px) / 2);
+@media only screen and (max-width: 660px) {
+  .nav-name {
+    display: none;
   }
+}
+
+@media only screen and (max-width: 500px) {
   .splash-content {
     height: 300px;
     margin: 0;
