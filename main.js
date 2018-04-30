@@ -14,7 +14,7 @@ window.onscroll = () => {
 
 function showNav () {
   $('#main-nav').addClass('main-nav-scrolled')
-  $('.main-menu a').addClass('has-text-dark')
+  $('.main-menu a').css('color', '#777')
   $('.contact-menu img').removeClass('invert')
   $('#go-down').addClass('go-down-stopped')
 }
@@ -37,7 +37,7 @@ $('document').ready(() => {
       var hash = target.hash
 
       $root.animate({
-        scrollTop: $(hash).offset().top - 62
+        scrollTop: $(hash).offset().top - 60
       }, 400, () => {
         if (hash === '#body') {
           hideNav()

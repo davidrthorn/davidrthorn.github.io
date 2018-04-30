@@ -4,17 +4,23 @@
   src: url('assets/fonts/BebasNeueBold.woff') format('woff');
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .under-construction {
   background: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 2px 2px 4px 4px rgba(100, 100, 100, 0.1);
   cursor: default;
   font-size: 30px;
   height: 100px;
-  padding: 24px;
-  padding-left: 200px;
   position: fixed;
-  right: -150px;
-  top: 50px;
+  right: -130px;
+  top: 120px;
   transform: rotate(45deg);
   width: 600px;
   z-index: 2;
@@ -22,7 +28,10 @@
 
 body {
   color: #222;
+  overflow-x: hidden;
   font-family: 'Open Sans', sans;
+  padding: 0;
+  margin: 0;
 }
 
 .is-bold {
@@ -164,6 +173,7 @@ body {
   line-height: 1em;
   word-wrap: break-word;
   text-transform: uppercase;
+  margin: 20px 0;
   animation: headline-rise 0.7s 0.5s ease-out forwards;
 }
 
@@ -229,7 +239,6 @@ body {
 
 .dev-skill a:hover > img {
   transform: translateY(-2px) scale(1.05);
-  filter: brightness(130%);
 }
 
 .click-icons {
@@ -266,26 +275,14 @@ body {
   animation: fade_out 0.5s ease-in-out;
 }
 
-#swap-out {
-  min-height: 700px;
-}
-#swap-out img {
-  padding-top: 18px;
-}
-
-#swap-out .column {
-  padding: 20px;
-}
-
-#swap-out p {
-  padding-top: 1em;
-}
-
 h1 {
   font-family: 'Bebas Neue';
   font-size: 80px;
-  margin-top: -30px;
-  margin-bottom: -20px;
+  line-height: 1em;
+  margin: 0;
+}
+
+#swap-out {
 }
 
 .swap__setup {
@@ -299,12 +296,14 @@ h1 {
 }
 
 .tech-badge {
-  height: 60px;
+  height: 40px;
   padding-right: 8px;
 }
 
 .section-headline {
   text-align: center;
+  padding: 30px;
+  padding-bottom: 40px;
 }
 
 .transparent {
@@ -327,37 +326,79 @@ h1 {
 }
 
 section {
-  padding: 4vh 0 10vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
-.main-section-content {
-  padding-top: 8vh;
+.container {
+  width: 1400px;
+  padding-bottom: 20px;
+}
+
+.section-band {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#swap-quotes {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.triplets div {
+  width: 24%;
+}
+
+.section-column {
+  padding: 10px;
+}
+
+.tablet-show {
+  display: none;
 }
 
 .blog-panel {
   background: black;
   border-radius: 7px;
   color: white;
-  float: right;
   font-size: 20px;
   padding: 12px;
-  width: 200px;
+  height: 120px;
+  margin-top: 20px;
 }
 
 .blog-panel p {
   line-height: 1.1em;
-  margin-bottom: 0.5em;
-  margin-top: -0.8em;
+  float: left;
+  width: 70%;
 }
 
 .blog-panel img {
-  margin-top: -26px;
-  margin-bottom: -10px;
+  width: 30%;
+  float: left;
 }
 
 .blog-panel button {
   width: 100%;
   margin-top: 20px;
+}
+
+#swap-quotes-tablet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-left: 1px solid #ccc;
+  width: 40%;
+  text-align: center;
+}
+
+#swap-quotes-tablet p {
+  padding: 20px 0;
 }
 
 /* ANIMATIONS */
@@ -386,6 +427,9 @@ section {
 /* MEDIA RULES */
 
 @media only screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
   .nav-name {
     font-size: 22px;
   }
@@ -416,6 +460,26 @@ section {
     height: 520px;
     margin-left: 0;
     width: 422px;
+  }
+
+  .section-band {
+    flex-wrap: wrap;
+  }
+
+  #swap-description {
+    width: 50%;
+  }
+
+  .blog-panel {
+    display: none;
+  }
+
+  #swap-quotes {
+    display: none;
+  }
+
+  .tablet-show {
+    display: block !important;
   }
 }
 

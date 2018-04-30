@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>David Rowthorn</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" type="text/css">
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
@@ -24,14 +23,15 @@
         <a href="">Blog</a>
       </div>
     </div>
+
     <div class="contact-menu">
-      <a>
+      <a href="mailto:davidrowthorn@gmail.com">
         <img class="contact-icon invert" src="assets/images/email.svg" alt="">
       </a>
-      <a>
+      <a href="https://www.github.com/davidrthorn/">
         <img class="contact-icon invert" src="assets/images/github.svg" alt="">
       </a>
-      <a>
+      <a href="https://www.linkedin.com/in/david-rowthorn-a54184120/">
         <img class="contact-icon invert" src="assets/images/linkedin.svg" alt="">
       </a>
     </div>
@@ -41,6 +41,7 @@
         David Rowthorn
       </div>
     </nav>
+
     <div class="splash">
       <div id="splash-content" class="splash-content">
         <p id="dev-name" class="sub-headline">
@@ -95,21 +96,73 @@
         ⌵
       </div>
     </div>
+
+
+
+
     <section id="swap-out">
       <div class="container">
         <div class='section-headline'>
           is currently working on<span class="ellipses">...</span>
         </div>
-        <div class="columns main-section-content">
-          <div class="column is-6">
-            <video autoplay loop>
+        <div id="swap-main" class="section-band">
+          <div id="swap-video" class="section-column">
+            <video width="100%" loop>
               <source src="assets/images/swap_it_out.webm">
               CANNOT PLAY WEBM VIDEO
             </video>
           </div>
-          <div class="column is-3">
+          <div id="swap-description" class="section-column">
             <h1><span class="swap-letter">S</span>wap<span class="swap-letter">I</span>t<span class="swap-letter">O</span>ut</h1>
-            <p class="is-bold">
+            <p>
+            Interactive infographic showing the impact of
+            health-promoting dietary substitutions.
+            </p>
+            <p>
+            Unlike many nutrition sites, SwapItOut chooses the most relevant data for the chosen foods, displaying those data clearly and meaningfully.
+            </p>
+            <p>
+            In future, SwapItOut will recommend swaps automatically based on the data.
+            </p>
+            <div class="project-tech">
+              <img class="tech-badge" src="assets/images/postgres_100.png" alt="postgreSQL">
+              <img class="tech-badge" src="assets/images/node_100.png" alt="node">
+              <img class="tech-badge" src="assets/images/vue_100.png" alt="vue">
+              <img class="tech-badge" src="assets/images/bulma_100.png" alt="bulma">
+            </div>
+            <div class="blog-panel">
+              <img src="assets/images/carrot_640.jpg" alt="">
+              <p>Read about the challenges raised by nutrition data</p>
+            </div>
+          </div>
+          <div id="swap-quotes-tablet" class="section-column tablet-show">
+            <p>Built with Vue and laid out with Bulma<span class="ellipses">...</span></p>
+            <p><span class="ellipses">...</span>fed by a RESTful API built with Express and Node<span class="ellipses">...</span></p>
+            <p><span class="ellipses">...</span>accessing a PostgreSQL database via PgPromise for Node.</p>
+          </div>
+        </div>
+        
+        <div id="swap-quotes" class="section-band triplets">
+          <div class="section-column">
+            <p>Built with Vue and laid out with Bulma<span class="ellipses">...</span></p>
+          </div>
+          <div class="section-column">
+            <p><span class="ellipses">...</span>fed by a RESTful API built with Express and Node<span class="ellipses">...</span></p>
+          </div>
+          <div class="section-column">
+            <p><span class="ellipses">...</span>accessing a PostgreSQL database via PgPromise for Node.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+        <!--
+          <div class="section-column">
+            <h1><span class="swap-letter">S</span>wap<span class="swap-letter">I</span>t<span class="swap-letter">O</span>ut</h1>
+            <p>
             Interactive infographic showing the impact of
             health-promoting dietary substitutions.
             </p>
@@ -140,19 +193,22 @@
           </div>
         </div>
         <hr>
-        <div class="swap__setup columns is-8">
-          <div class="column">
+        <div class="section-band">
+          <div class="section-column">
             Frontend built with Vue and laid out with Bulma...
           </div>
-          <div class="column">
+          <div class="section-column">
             ...fed by a RESTful API built with Node and Express...
           </div>
-          <div class="column">
+          <div class="section-column">
             ...accessing a PostgreSQL database with PgPromise for Node.
           </div>
         </div>
-      </div>
-    </section>
+        -->
+
+
+    <!--
+
     <section id="cross-reference">
       <div class="container">
         <div class='section-headline'>
@@ -180,5 +236,6 @@
         </div>
       </div>
     </section>
+    -->
   </body>
 </html>
