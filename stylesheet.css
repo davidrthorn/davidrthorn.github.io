@@ -303,20 +303,6 @@ h1 {
   opacity: 0 !important;
 }
 
-#cross-reference {
-  background: #28434D;
-  color: white;
-  min-height: 2000px;
-  text-align: right;
-}
-
-.users {
-  font-size: 26px;
-}
-
-.other-addons img {
-  width: 400px;
-}
 
 section {
   display: flex;
@@ -408,6 +394,22 @@ section {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#cross-ref {
+
+  height: 900px;
+
+  color: white;
+  background: #1a936f;
+}
+
+#cross-ref p {
+  width: 30%;
+}
+
+#other-docs h1 {
+  font-size: 42px;
 }
 
 /* ANIMATIONS */
