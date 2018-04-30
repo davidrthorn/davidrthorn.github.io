@@ -12,6 +12,7 @@ a {
 .under-construction {
   background: yellow;
   display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   box-shadow: 2px 2px 4px 4px rgba(100, 100, 100, 0.1);
@@ -27,6 +28,7 @@ a {
 }
 
 body {
+  height: 6000px;
   color: #222;
   overflow-x: hidden;
   font-family: 'Open Sans', sans;
@@ -282,15 +284,6 @@ h1 {
   margin: 0;
 }
 
-#swap-out {
-}
-
-.swap__setup {
-  font-size: 20px;
-  font-style: italic;
-  text-align: center;
-}
-
 .swap-letter {
   color: #ff4040 !important;
 }
@@ -349,6 +342,23 @@ section {
   text-align: center;
 }
 
+#swap-video .mask {
+  display: flex;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #aaa;
+  width: 96%;
+  overflow: hidden;
+  padding: 30px 14px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding-right: 0;
+}
+
+.project-tech {
+  padding: 10px 0;
+}
+
 .triplets div {
   width: 24%;
 }
@@ -358,7 +368,7 @@ section {
 }
 
 .tablet-show {
-  display: none;
+  display: none !important;
 }
 
 .blog-panel {
@@ -388,17 +398,16 @@ section {
 }
 
 #swap-quotes-tablet {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   border-left: 1px solid #ccc;
   width: 40%;
   text-align: center;
 }
 
 #swap-quotes-tablet p {
-  padding: 20px 0;
+  padding: 6px 0;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ANIMATIONS */
@@ -470,16 +479,23 @@ section {
     width: 50%;
   }
 
-  .blog-panel {
+  #swap-quotes {
     display: none;
   }
 
-  #swap-quotes {
+  .tablet-hide {
     display: none;
   }
 
   .tablet-show {
     display: block !important;
+  }
+  
+  .blog-panel {
+    font-size: 16px;
+    margin-top: 8px;
+    height: 70px;
+    text-align: left;
   }
 }
 
@@ -490,10 +506,29 @@ section {
 }
 
 @media only screen and (max-width: 500px) {
+  .main-menu {
+    left: 8px;
+  }
+  .menu-item {
+    padding: 4px;
+  }
+  .contact-menu {
+    top: 8px;
+  }
+  .main-nav {
+    height: 50px;
+  }
+  .splash {
+    min-height: 0;
+    height: 100vh;
+  }
   .splash-content {
-    height: 300px;
+    height: 80vh;
     margin: 0;
     width: 320px;
+  }
+  .click-icons {
+    display: none;
   }
   .headline {
     font-size: 90px;
@@ -506,5 +541,23 @@ section {
   }
   .sub-headline {
     font-size: 24px;
+  }
+  .section-headline {
+    font-size: 16px;
+    padding: 16px;
+  }
+  .container {
+    width: 90vw;
+  }
+  .section-column {
+    padding: 0;
+    width: 100% !important;
+    margin-top: 10px;
+  }
+  .tablet-show {
+    display: none !important;
+  }
+  #swap-description p:nth-child(4) {
+    display: none !important;
   }
 }

@@ -14,14 +14,14 @@ window.onscroll = () => {
 
 function showNav () {
   $('#main-nav').addClass('main-nav-scrolled')
-  $('.main-menu a').css('color', '#777')
+  $('.main-menu a').css('color', '#666')
   $('.contact-menu img').removeClass('invert')
   $('#go-down').addClass('go-down-stopped')
 }
 
 function hideNav () {
   $('#main-nav').removeClass('main-nav-scrolled')
-  $('.main-menu a').removeClass('has-text-dark')
+  $('.main-menu a').css('color', 'white')
   $('.contact-menu img').addClass('invert')
 }
 
@@ -48,4 +48,14 @@ $('document').ready(() => {
       })
     }
   })
+
+  var figure = $("#swap-video video").hover( hoverVideo, hideVideo )
+
+  function hoverVideo(e) {
+    this.play()
+  }
+
+  function hideVideo(e) {
+    this.pause()
+  }
 })

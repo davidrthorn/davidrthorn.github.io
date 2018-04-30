@@ -107,10 +107,12 @@
         </div>
         <div id="swap-main" class="section-band">
           <div id="swap-video" class="section-column">
-            <video width="100%" loop>
-              <source src="assets/images/swap_it_out.webm">
-              CANNOT PLAY WEBM VIDEO
-            </video>
+            <div class="mask">
+              <video width="96%" loop>
+                <source src="assets/images/swap_it_out.webm">
+                CANNOT PLAY WEBM VIDEO
+              </video>
+            </div>
           </div>
           <div id="swap-description" class="section-column">
             <h1><span class="swap-letter">S</span>wap<span class="swap-letter">I</span>t<span class="swap-letter">O</span>ut</h1>
@@ -130,12 +132,16 @@
               <img class="tech-badge" src="assets/images/vue_100.png" alt="vue">
               <img class="tech-badge" src="assets/images/bulma_100.png" alt="bulma">
             </div>
-            <div class="blog-panel">
+            <div class="blog-panel tablet-hide">
               <img src="assets/images/carrot_640.jpg" alt="">
               <p>Read about the challenges raised by nutrition data</p>
             </div>
           </div>
           <div id="swap-quotes-tablet" class="section-column tablet-show">
+            <div class="blog-panel tablet-show">
+              <img src="assets/images/carrot_640.jpg" alt="">
+              <p>Read about the challenges raised by nutrition data</p>
+            </div>
             <p>Built with Vue and laid out with Bulma<span class="ellipses">...</span></p>
             <p><span class="ellipses">...</span>fed by a RESTful API built with Express and Node<span class="ellipses">...</span></p>
             <p><span class="ellipses">...</span>accessing a PostgreSQL database via PgPromise for Node.</p>
