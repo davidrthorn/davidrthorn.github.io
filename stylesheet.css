@@ -417,7 +417,7 @@ section {
   justify-content: space-between;
 }
 
-#cross-description {
+#cross-details {
   display: flex;
   flex-direction: column;
   text-align: right;
@@ -559,6 +559,29 @@ section {
     height: 70px;
     text-align: left;
   }
+
+  #cross-ref .section-band:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  
+  #cross-screen-col {
+    width: 100%;
+  }
+
+  #cross-details {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  #cross-reviews {
+    margin-left: 100px;
+    width: 60%;
+  }
+  #cross-description {
+    width: 70%;
+  }
+
 }
 
 @media only screen and (max-width: 660px) {
