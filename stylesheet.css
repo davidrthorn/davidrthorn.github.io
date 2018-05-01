@@ -30,7 +30,6 @@ a {
 body {
   height: 6000px;
   color: #222;
-  overflow-x: hidden;
   font-family: 'Open Sans', sans;
   padding: 0;
   margin: 0;
@@ -152,6 +151,7 @@ body {
 .splash-content {
   width: 850px;
   margin-left: -200px;
+  margin-top: -8vh;
   opacity: 0;
   position: relative;
   animation: fade_in 1s 0.5s ease-in forwards;
@@ -413,23 +413,27 @@ section {
   background: #1a936f;
 }
 
+#cross-ref .section-band:nth-child(2) {
+  justify-content: space-between;
+}
+
 #cross-description {
   display: flex;
   flex-direction: column;
   text-align: right;
-  margin-right: 20px;
+  width: 32%;
 }
 
 #cross-description p {
-  padding-left: 40%;
+  padding-left: 46%;
 }
 
-.reviews {
-  margin-top: -5px;
+#cross-reviews {
+  margin-top: 16px;
 }
 
 .review p {
-  padding-left: 18% !important;
+  padding-left: 0 !important;
   padding-right: 20%;
   text-align: left;
   font-style: italic !important;
@@ -441,6 +445,10 @@ section {
 
 #cross-description h2 {
   font-size: 34px;
+}
+
+#cross-screen-col {
+  width: 62%;
 }
 
 #other-docs {
@@ -455,6 +463,10 @@ section {
 
 #other-docs p {
   margin-top: 5px;
+}
+
+.app-screenshot {
+  width: 100%;
 }
 
 /* ANIMATIONS */
@@ -486,6 +498,7 @@ section {
   .container {
     width: 90%;
   }
+
   .nav-name {
     font-size: 22px;
   }
@@ -493,6 +506,7 @@ section {
   .click-icons {
     left: 0;
     bottom: -40px;
+    width: 400px;
   }
 
   .click-icons img {
