@@ -16,7 +16,6 @@ function showNav () {
   $('#main-nav').addClass('main-nav-scrolled')
   $('.main-menu a').css('color', '#666')
   $('.contact-menu img').removeClass('invert')
-  $('#go-down').addClass('go-down-stopped')
 }
 
 function hideNav () {
