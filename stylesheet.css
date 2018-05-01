@@ -425,21 +425,22 @@ section {
 }
 
 #cross-description p {
-  padding-left: 46%;
+  padding-left: 34%;
 }
 
 #cross-reviews {
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .review p {
   padding-left: 0 !important;
   padding-right: 20%;
+  margin: 4px !important;
   text-align: left;
   font-style: italic !important;
 }
 
-.review:not(:last-child) p {
+.review:not(:last-child) {
   margin-bottom: 29px;
 }
 
