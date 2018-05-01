@@ -421,7 +421,8 @@ section {
   display: flex;
   flex-direction: column;
   text-align: right;
-  width: 32%;
+  flex-basis: 32%;
+  min-width: 448px;
 }
 
 #cross-description p {
@@ -578,6 +579,11 @@ section {
     margin-left: 100px;
     width: 60%;
   }
+
+  .review:last-child {
+    display: none;
+  }
+
   #cross-description {
     width: 70%;
   }
@@ -586,6 +592,9 @@ section {
 
 @media only screen and (max-width: 660px) {
   .nav-name {
+    display: none;
+  }
+  #cross-reviews {
     display: none;
   }
 }
@@ -644,5 +653,15 @@ section {
   }
   #swap-description p:nth-child(4) {
     display: none !important;
+  }
+  #cross-details {
+    text-align: center;
+    min-width: 0;
+  }
+  #cross-details p {
+    padding: 0 30px;
+  }
+  #cross-description {
+    width: 100%;
   }
 }
