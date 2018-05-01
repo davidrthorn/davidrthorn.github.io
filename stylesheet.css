@@ -328,6 +328,10 @@ section {
   margin-bottom: 40px;
 }
 
+#swap-out {
+  background: gainsboro;
+}
+
 #swap-quotes {
   font-size: 20px;
   font-style: italic;
@@ -409,26 +413,30 @@ section {
   background: #1a936f;
 }
 
-#cross-ref .section-band {
-  justify-content: flex-end;
-}
-
 #cross-description {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   text-align: right;
-  width: 96%;
+  margin-right: 20px;
 }
 
 #cross-description p {
   padding-left: 40%;
 }
 
+.reviews {
+  margin-top: -5px;
+}
+
 .review p {
-  padding-left: 0 !important;
-  text-align: center;
+  padding-left: 18% !important;
+  padding-right: 20%;
+  text-align: left;
   font-style: italic !important;
+}
+
+.review:not(:last-child) p {
+  margin-bottom: 29px;
 }
 
 #cross-description h2 {
@@ -437,14 +445,16 @@ section {
 
 #other-docs {
   display: flex;
-  width: 96%;
-  margin-top: 140px;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
 }
 
 #other-docs h1 {
-  font-size: 34px;
+  font-size: 50px;
+}
+
+#other-docs p {
+  margin-top: 5px;
 }
 
 /* ANIMATIONS */
