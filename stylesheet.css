@@ -195,7 +195,7 @@ body {
 }
 
 .sub-headline {
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 
@@ -284,6 +284,11 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  margin: 0;
+  color: tan;
+}
+
 .swap-letter {
   color: #ff4040 !important;
 }
@@ -320,6 +325,7 @@ section {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 40px;
 }
 
 #swap-quotes {
@@ -333,12 +339,14 @@ section {
   background: white;
   justify-content: center;
   align-items: center;
-  border: 1px solid #aaa;
   width: 96%;
   overflow: hidden;
   padding: 30px 14px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   padding-right: 0;
+}
+
+.app-screenshot {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .project-tech {
@@ -397,19 +405,46 @@ section {
 }
 
 #cross-ref {
-
-  height: 900px;
-
   color: white;
   background: #1a936f;
 }
 
-#cross-ref p {
-  width: 30%;
+#cross-ref .section-band {
+  justify-content: flex-end;
+}
+
+#cross-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+  width: 96%;
+}
+
+#cross-description p {
+  padding-left: 40%;
+}
+
+.review p {
+  padding-left: 0 !important;
+  text-align: center;
+  font-style: italic !important;
+}
+
+#cross-description h2 {
+  font-size: 34px;
+}
+
+#other-docs {
+  display: flex;
+  width: 96%;
+  margin-top: 140px;
+  justify-content: space-between;
+  text-align: center;
 }
 
 #other-docs h1 {
-  font-size: 42px;
+  font-size: 34px;
 }
 
 /* ANIMATIONS */
