@@ -13,9 +13,9 @@ window.onscroll = () => {
 }
 
 function showNav () {
-  $('#main-nav').addClass('main-nav-scrolled')
-  $('.main-menu a').css('color', '#666')
-  $('.contact-menu img').removeClass('invert')
+  document.getElementById('main-nav').classList.add('main-nav-scrolled')
+  document.getElementById('main-menu').style.color('#666')
+  document.getElementById('contact-menu').getElements('img').classList.remove('invert')
 }
 
 function hideNav () {
