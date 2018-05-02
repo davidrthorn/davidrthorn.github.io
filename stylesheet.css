@@ -49,6 +49,7 @@ body {
   position: fixed;
   top: 10px;
   z-index: 3;
+  color: #ccc;
 }
 
 #contact-menu {
@@ -83,7 +84,6 @@ body {
 }
 
 .menu-item a {
-  color: #ccc;
   transition: all 0.1s;
 }
 
@@ -529,6 +529,7 @@ section {
 }
 
 #final {
+  text-align: center;
   height: 700px;
 }
 
@@ -562,7 +563,6 @@ section {
 
 #final h1 {
   color: #943;
-  text-align: center;
 }
 
 /* WIPER */
