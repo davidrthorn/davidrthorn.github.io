@@ -48,13 +48,20 @@ $('document').ready(() => {
     }
   })
 
-  var figure = $("#swap-video video").hover( hoverVideo, hideVideo )
+  $("#swap-video video").hover( hoverVideo, hideVideo )
 
-  function hoverVideo(e) {
+  function hoverVideo () {
     this.play()
   }
 
-  function hideVideo(e) {
+  function hideVideo () {
     this.pause()
   }
+
+  $('.wipe-slider').on('input', function () {
+    $('.wipe-panel').css('width', $(this).val() + '%')
+  })
+
+
+
 })
