@@ -43,6 +43,7 @@ section {
   height: calc(100vh - 61px);
   justify-content: space-around;
   padding: 0;
+  padding-top: 40px;
   position: relative;
 }
 
@@ -184,7 +185,28 @@ section {
 
 .app-screenshot {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: relative;
   width: 100%;
+}
+
+.in-progress {
+  align-items: center;
+  background: red;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  color: white;
+  display: flex;
+  font-family: 'Bebas Neue', Helvetica, sans;
+  font-size: 170%;
+  height: 40px;
+  justify-content: center;
+  line-height: 0;
+  position: absolute;
+  right: -45px;
+  text-align: center;
+  text-transform: uppercase;
+  top: 35px;
+  transform: rotate(45deg);
+  width: 200px;
 }
 
 .project-tech {
@@ -530,7 +552,7 @@ section {
   text-align: center;
 }
 
-#swap-video div {
+#swap-video div:first-child {
   align-items: center;
   background: white;
   display: flex;
