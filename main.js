@@ -9,7 +9,8 @@
   window.onscroll = () => {
     if (!window.navChange) return
 
-    const targetY = document.getElementById('splash__content')
+    const targetY = document.getElementById('splash')
+      .getElementsByTagName('div')[0]
       .getBoundingClientRect().top
 
     if (targetY < 50 && window.pageYOffset !== 0) {
@@ -34,7 +35,7 @@
 
   function hideNav () {
     document.getElementById('navbar')
-      .classList.remove('navbar-scrolled')
+      .classList.remove('navbar--scrolled')
 
     document.getElementById('main-menu')
       .style.color = '#ccc'
