@@ -102,11 +102,11 @@
 
   // Image wipe reveal
 
-  Array.from(document.getElementsByClassName('wipe-slider'))
+  Array.from(document.getElementsByClassName('wipe__slider'))
     .forEach(el => {
       el.addEventListener('input', e => {
         e.currentTarget
-          .parentElement.querySelector('.wipe-panel')
+          .parentElement.querySelector('.wipe__panel')
           .style.width = el.value + '%'
       })
   })

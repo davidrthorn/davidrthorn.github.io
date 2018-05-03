@@ -31,8 +31,13 @@ h1 {
 }
 
 h2 {
+  font-size: 30px;
+  margin: 0;
+}
+h3 {
   margin: 0;
   color: tan;
+  font-size: 24px;
 }
 
 section {
@@ -77,6 +82,7 @@ section {
 
 .section__band--main > .section__column:nth-child(2) {
   display: flex;
+  flex-direction: column;
   flex-basis: 32%;
   min-width: 448px;
 }
@@ -552,7 +558,7 @@ section {
 */
 
 #swap-out {
-  background: #f1baa7;
+  background: aliceblue;
 }
 
 .swap-letter {
@@ -565,6 +571,7 @@ section {
 
 #swap-quotes {
   font-size: 20px;
+  color: #ff4040;
   font-style: italic;
   text-align: center;
 }
@@ -604,13 +611,10 @@ section {
   color: white;
 }
 
-#cross-ref .section__band:first-child {
+#cross-ref .section__band--main  {
   flex-direction: row-reverse;
   text-align: right;
 }
-
-/*
-
 
 #cross-description p {
   padding-left: 34%;
@@ -631,7 +635,6 @@ section {
   margin: 4px !important;
   padding-left: 0 !important;
   padding-right: 20%;
-  text-align: left;
 }
 
 .review:not(:last-child) {
@@ -641,7 +644,6 @@ section {
 #cross-description h2 {
   font-size: 34px;
 }
-*/
 
 .triplets h1 {
   font-size: 50px;
@@ -668,6 +670,10 @@ section {
 
 #work h1 {
   color: ghostwhite;
+}
+
+#work h2 {
+  color: tan;
 }
 
 .testimonials {
@@ -764,6 +770,11 @@ section {
 
 */
 
+@media only screen and (max-width: 1440px) {
+  .section__container {
+    width: 96%;
+  }
+}
 @media only screen and (max-width: 1200px) {
 
   .tablet-hide {
@@ -783,8 +794,13 @@ section {
     flex-wrap: wrap;
   }
 
+  .section__band--main .section__column:last-child {
+    flex-direction: row;
+  }
+
   .triplets {
     flex-direction: row;
+    margin-top: 50px;
   }
 
   .triplets h1 {
@@ -793,6 +809,14 @@ section {
 
   .section__column {
     flex-basis: 100% !important;
+  }
+
+  .section__column__top {
+    flex-basis: 50%;
+  }
+
+  .section__column__bottom {
+    text-align: right;
   }
 
   .triplets .section__column {
@@ -853,21 +877,21 @@ section {
     text-align: left;
   }
 
-  #swap-description {
-    width: 50%;
+  #swap-quotes p {
+    padding: 0 20px;
+    font-size: initial;
   }
 
   #cross-screen-col {
     flex-basis: initial;
   }
 
-  #cross-reviews {
-    margin-left: 100px;
-    width: 60%;
+  #cross-description p {
+    padding-left: 0;
   }
-
-  #cross-description {
-    width: 70%;
+  
+  .review p {
+    padding-right: 0;
   }
 }
 
