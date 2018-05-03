@@ -9,7 +9,7 @@
   window.onscroll = () => {
     if (!window.navChange) return
 
-    const targetY = document.getElementById('splash-content')
+    const targetY = document.getElementById('splash__content')
       .getBoundingClientRect().top
 
     if (targetY < 50 && window.pageYOffset !== 0) {
@@ -20,28 +20,28 @@
   }
 
   function showNav () {
-    document.getElementById('main-nav')
-      .classList.add('main-nav-scrolled')
+    document.getElementById('navbar')
+      .classList.add('navbar--scrolled')
 
     document.getElementById('main-menu')
       .style.color = 'black'
 
     Array.from(document.getElementsByClassName('contact-icon'))
       .forEach(icon => {
-        icon.classList.remove('invert')
+        icon.classList.remove('inverted')
       })
   }
 
   function hideNav () {
-    document.getElementById('main-nav')
-      .classList.remove('main-nav-scrolled')
+    document.getElementById('navbar')
+      .classList.remove('navbar-scrolled')
 
     document.getElementById('main-menu')
       .style.color = '#ccc'
 
     Array.from(document.getElementsByClassName('contact-icon'))
       .forEach(icon => {
-        icon.classList.add('invert')
+        icon.classList.add('inverted')
       })
   }
 
