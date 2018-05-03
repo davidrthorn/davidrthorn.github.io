@@ -344,7 +344,6 @@ section {
   animation: go_down 0.7s 1.15s forwards;
   bottom: 0;
   color: #ccc;
-  cursor: pointer;
   font-size: 44px;
   height: 90px;
   opacity: 0;
@@ -354,22 +353,21 @@ section {
 }
 
 .go-down > a {
+  cursor: pointer;
   opacity: .3;
 }
 
-.go-down:hover > a {
+.go-down > a:hover {
   opacity: .9;
 }
 
 
 @keyframes go_down {
   from {
-    cursor: default;
     opacity: 0;
     transform: translateY(-200%);
   }
   to {
-    cursor: pointer;
     opacity: 1;
     transform: translateY(8%);
   }
@@ -413,6 +411,7 @@ section {
   animation: dev-name-rise 0.7s 0.5s ease-out forwards;
   font-size: 57px;
   margin-bottom: 34px;
+  margin-top: 0;
   opacity: 1;
 }
 
@@ -767,7 +766,7 @@ section {
     width: 90%;
   }
 
-  #splash > div {
+  #splash > div:first-child {
     height: 520px;
     margin-left: 0;
     width: 422px;
@@ -861,12 +860,12 @@ section {
     padding: 10px 4px;
   }
 
-  .splash {
+  #splash {
     height: 100vh;
     min-height: 0;
   }
 
-  .splash-content {
+  #splash > div:first-child {
     margin: 0;
     text-align: center;
     width: 320px;
