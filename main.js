@@ -1,11 +1,18 @@
 (function () {
 
-  window['navChange'] = true
+  const newLocal = 'navChange';
+  window[newLocal] = true
+
+
+  // Show/hide the top navigation bar
 
   window.onscroll = () => {
-    var top = document.getElementById('splash-content').getBoundingClientRect().top
     if (!window.navChange) return
-    if (top < 50 && window.pageYOffset !== 0) {
+
+    const targetY = document.getElementById('splash-content')
+      .getBoundingClientRect().top
+
+    if (targetY < 50 && window.pageYOffset !== 0) {
       showNav()
     } else {
       hideNav()
@@ -13,32 +20,46 @@
   }
 
   function showNav () {
-    document.getElementById('main-nav').classList.add('main-nav-scrolled')
-    document.getElementById('main-menu').style.color = 'black'
-    Array.from(document.getElementsByClassName('contact-icon')).forEach(icon => {icon.classList.remove('invert')})
+    document.getElementById('main-nav')
+      .classList.add('main-nav-scrolled')
+
+    document.getElementById('main-menu')
+      .style.color = 'black'
+
+    Array.from(document.getElementsByClassName('contact-icon'))
+      .forEach(icon => {
+        icon.classList.remove('invert')
+      })
   }
 
   function hideNav () {
-    document.getElementById('main-nav').classList.remove('main-nav-scrolled')
-    document.getElementById('main-menu').style.color = '#ccc'
-    Array.from(document.getElementsByClassName('contact-icon')).forEach(icon => {icon.classList.add('invert')})
+    document.getElementById('main-nav')
+      .classList.remove('main-nav-scrolled')
+
+    document.getElementById('main-menu')
+      .style.color = '#ccc'
+
+    Array.from(document.getElementsByClassName('contact-icon'))
+      .forEach(icon => {
+        icon.classList.add('invert')
+      })
   }
 
 
-  // Smooth scrolling
+  // Smooth scroll from anchor tags
 
-  const TIMINGFUNC_MAP = {
-    "linear": t => t,
-    "ease-in": t => t * t,
-    "ease-out": t => t * (2 - t),
-    "ease-in-out": t => (t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t)
+  const transitionEqu = {
+    'linear': t => t,
+    'ease-in': t => t * t,
+    'ease-out': t => t * (2 - t),
+    'ease-in-out': t => (t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t)
   }
 
-  function scrollTopSmooth (initY, targetY, duration = 300, timingName = "linear") {  
-    const timingFunc = TIMINGFUNC_MAP[ timingName  ]
+  function scrollTopSmooth (initY, targetY, duration = 300, transition = 'linear') {
+    const timingFunc = transitionEqu[transition]
     let start = null
 
-    const step = (timestamp) => {
+    const step = timestamp => {
       start = start || timestamp
       const progress = timestamp - start
       const time = Math.min(1, (progress / duration))
@@ -49,20 +70,26 @@
         window.requestAnimationFrame(step)
       }
     }
-    window.requestAnimationFrame(step)  
+    window.requestAnimationFrame(step)
   }
 
-  Array.from(document.querySelectorAll("[href^='#']"))
-    .forEach(btn => {
-      btn.addEventListener("click", (e) => {
+  Array.from(document.querySelectorAll(`[href^='#']`))
+    .forEach(a => {
+      a.addEventListener('click', e => {
         e.preventDefault()
         const targetId = e.currentTarget.hash.substr(1)
-        const targetY = targetId !== 'body' ? document.getElementById(targetId).offsetTop -60 : 0
-        scrollTopSmooth(window.scrollY, targetY, 200, "ease-in-out") 
+        const targetY = targetId !== 'body'
+          ? document.getElementById(targetId).offsetTop - 60
+          : 0
+
+        scrollTopSmooth(window.scrollY, targetY, 200, 'ease-in-out')
       })
     })
 
-  var swapVideo = document.getElementById('swap-video').getElementsByTagName('video')[0]
+
+  // Play video on hover
+
+  var swapVideo = document.getElementsByTagName('video')[0]
 
   swapVideo.addEventListener('mouseover', e => {
     e.currentTarget.play()
@@ -72,10 +99,15 @@
   })
 
 
-  Array.from(document.getElementsByClassName('wipe-slider')).forEach(el => {
-    el.addEventListener('input', e => {
-      e.currentTarget.parentElement.querySelector('.wipe-panel').style.width = el.value + '%'
-    })
+  // Image wipe reveal
+
+  Array.from(document.getElementsByClassName('wipe-slider'))
+    .forEach(el => {
+      el.addEventListener('input', e => {
+        e.currentTarget
+          .parentElement.querySelector('.wipe-panel')
+          .style.width = el.value + '%'
+      })
   })
 
 })()
