@@ -1,19 +1,12 @@
 (function () {
-
-  const newLocal = 'navChange';
-  window[newLocal] = true
-
-
   // Show/hide the top navigation bar
 
   window.onscroll = () => {
-    if (!window.navChange) return
-
     const targetY = document.getElementById('splash')
       .getElementsByTagName('div')[0]
       .getBoundingClientRect().top
 
-    if (targetY < 50 && window.pageYOffset !== 0) {
+    if (targetY < 50) {
       showNav()
     } else {
       hideNav()
@@ -29,7 +22,7 @@
 
     Array.from(document.getElementsByClassName('contact-icon'))
       .forEach(icon => {
-        icon.classList.remove('inverted')
+        icon.style.filter = 'invert(0)'
       })
   }
 
@@ -42,7 +35,7 @@
 
     Array.from(document.getElementsByClassName('contact-icon'))
       .forEach(icon => {
-        icon.classList.add('inverted')
+        icon.style.filter = 'invert(1)'
       })
   }
 
@@ -56,7 +49,7 @@
     'ease-in-out': t => (t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t)
   }
 
-  function scrollTopSmooth (initY, targetY, duration = 300, transition = 'linear') {
+  function scrollTopSmooth (initY, targetY, duration = 300, transition = 'ease-in-out') {
     const timingFunc = transitionEqu[transition]
     let start = null
 
