@@ -84,13 +84,18 @@
           </div>
         </div>
       </div>
-      <div class="go-down">
+      <div class="go go--down">
         <a href="#swap-out">
           ⌵
         </a>
       </div>
     </div>
     <section id="swap-out">
+      <div class="go go--up">
+        <a href="#body">
+          ⌵
+        </a>
+      </div>
       <div class="section__container">
         <div class="section__band section__band--main">
           <div id="swap-video" class="section__column">
@@ -122,22 +127,12 @@
               <img class="tech-badge-small" src="assets/images/vue_100.png" alt="vue">
               <img class="tech-badge-small" src="assets/images/bulma_100.png" alt="bulma">
             </div>
-            <div class="blog-panel tablet-hide">
+            <div class="blog-panel">
               <img src="assets/images/carrot_640.jpg" alt="">
               <p>Read about the challenges raised by nutrition data</p>
             </div>
-          </div>
-          <div id="swap-quotes-tablet" class="section__column tablet-show">
-            <div class="blog-panel tablet-show">
-              <img src="assets/images/carrot_640.jpg" alt="">
-              <p>Read about the challenges raised by nutrition data</p>
-            </div>
-            <p>Built with Vue and laid out with Bulma<span class="ellipses">...</span></p>
-            <p><span class="ellipses">...</span>fed by a RESTful API built with Express and Node<span class="ellipses">...</span></p>
-            <p><span class="ellipses">...</span>accessing a PostgreSQL database via PgPromise for Node.</p>
           </div>
         </div>
-
         <div id="swap-quotes" class="section__band triplets">
           <div class="section__column">
             <p>Built with Vue and laid out with Bulma<span class="ellipses">...</span></p>
@@ -150,15 +145,23 @@
           </div>
         </div>
       </div>
-      <div id="go-down" class="go-down">
+      <div class="go go--down">
         <a href="#cross-ref">
           ⌵
         </a>
       </div>
     </section>
     <section id="cross-ref">
+      <div class="go go--up">
+        <a href="#swap-out">
+          ⌵
+        </a>
+      </div>
       <div class="section__container">
-        <div class="section__band">
+        <div class="section__band section__band--main">
+          <div id="cross-screen-col" class="section__column">
+            <img class="app-screenshot" src="assets/images/cross_screen1.png" width="60%" alt="">
+          </div>
           <div id="cross-details" class="section__column">
             <div id="cross-description">
               <h1><a href="https://chrome.google.com/webstore/detail/cross-reference/hknkaiempgninehdhkgekoeoilkapgob">Cross Reference</a></h1>
@@ -181,11 +184,8 @@
               </div>
             </div>
           </div>
-          <div id="cross-screen-col" class="section__column">
-            <img class="app-screenshot" src="assets/images/cross_screen1.png" width="60%" alt="">
-          </div>
         </div>
-        <div id="other-docs" class="section__band">
+        <div id="other-docs" class="section__band triplets">
           <div class="section__column">
             <h1><a href="https://chrome.google.com/webstore/detail/text-cleaner/lffiochnfmnkhekkhlfdlblkbbgepmnf">Text Cleaner</a></h1>
             <h2>9000 users</h2>
@@ -203,13 +203,18 @@
           </div>
         </div>
       </div>
-      <div id="go-down" class="go-down">
+      <div class="go go--down">
         <a href="#work">
           ⌵
         </a>
       </div>
     </section>
     <section id="work">
+      <div class="go go--up">
+        <a href="#cross-ref">
+          ⌵
+        </a>
+      </div>
       <div class="section__container">
         <div class="section__band">
           <div class="section__column">
@@ -247,7 +252,7 @@
           </div>
         </div>
       </div>
-      <div id="go-down" class="go-down">
+      <div class="go go--down">
         <a href="#final">
           ⌵
         </a>
@@ -264,17 +269,32 @@
         <p>This page is written in pure HTML5, CSS3 and Javascript.</p>
         <div class="section__band">
           <div class="section__column">
-            <button>github</button>
+            <button onclick="location.href='https://github.com/davidrthorn'" type="button">github</button>
           </div>
           <div class="section__column">
-            <button>hire</button>
+            <button onclick="location.href='mailto:davidrowthorn@gmail.com'" type="button">contact</button>
           </div>
           <div class="section__column">
-            <button>contact</button>
+            <button onclick="location.href='mailto:davidrowthorn@gmail.com?subject=Work'" type="button">hire</button>
           </div>
         </div>
       </div>
     </section>
+
+
+
+
+    <section id="test">
+      <div class="test-container">
+        <div class="test-column"></div>
+        <div class="test-column"></div>
+        <div class="test-column"></div>
+      </div>
+    </section>
+
+
+
+    
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
