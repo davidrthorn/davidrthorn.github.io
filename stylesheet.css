@@ -14,8 +14,8 @@
 body {
   color: #222;
   font-family: 'Open Sans', sans;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -36,19 +36,19 @@ h2 {
 }
 
 section {
+  align-items: center;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  height: calc(100vh - 61px);
   justify-content: space-around;
-  align-items: center;
   padding: 0;
   position: relative;
-  height: calc(100vh - 61px);
 }
 
 .section-container {
-  width: 1400px;
   padding-bottom: 20px;
+  width: 1400px;
 }
 
 .section-headline {
@@ -60,10 +60,10 @@ section {
 }
 
 .section-band {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .section-column {
@@ -71,9 +71,9 @@ section {
 }
 
 .vertical-divider {
+  background: #aaa;
   flex-basis: 1px !important;
   padding: 0 !important;
-  background: #aaa;
 }
 
 .tech-badge-small {
@@ -113,12 +113,12 @@ section {
 
 #main-menu {
   animation: fade_in 1.4s 0.3s ease-in forwards;
+  color: #ccc;
   left: 14px;
   opacity: 0;
   position: fixed;
   top: 10px;
   z-index: 3;
-  color: #ccc;
 }
 
 #main-menu div {
@@ -141,8 +141,8 @@ section {
   opacity: 0;
   position: fixed;
   right: 20px;
-  z-index: 6;
   top: 16px;
+  z-index: 6;
 }
 
 #contact-menu img {
@@ -157,12 +157,12 @@ section {
 }
 
 #navbar {
-  background: white;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background: white;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.16), 0 2px 7px rgba(0, 0, 0, 0.23);
+  display: flex;
   height: 62px;
+  justify-content: center;
   opacity: 0;
   position: fixed;
   top: -1px;
@@ -183,8 +183,8 @@ section {
 }
 
 .app-screenshot {
-  width: 100%;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  width: 100%;
 }
 
 .project-tech {
@@ -200,6 +200,36 @@ section {
   border-radius: 7px;
   color: white;
   font-size: 20px;
+  height: 120px;
+  margin-top: 20px;
+  padding: 12px;
+}
+
+.blog-panel p {
+  float: left;
+  line-height: 1.1em;
+  width: 70%;
+}
+
+.blog-panel img {
+  float: left;
+  width: 30%;
+}
+
+.blog-panel button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.triplets div {
+  width: 24%;
+}
+
+.blog-panel {
+  background: black;
+  border-radius: 7px;
+  color: white;
+  font-size: 20px;
   padding: 12px;
   height: 120px;
   margin-top: 20px;
@@ -212,13 +242,13 @@ section {
 }
 
 .blog-panel img {
-  width: 30%;
   float: left;
+  width: 30%;
 }
 
 .blog-panel button {
-  width: 100%;
   margin-top: 20px;
+  width: 100%;
 }
 
 .triplets div {
@@ -247,38 +277,8 @@ section {
 }
 
 .blog-panel button {
+  margin-top: 20px;
   width: 100%;
-  margin-top: 20px;
-}
-
-.triplets div {
-  width: 24%;
-}
-
-.blog-panel {
-  background: black;
-  border-radius: 7px;
-  color: white;
-  font-size: 20px;
-  padding: 12px;
-  height: 120px;
-  margin-top: 20px;
-}
-
-.blog-panel p {
-  line-height: 1.1em;
-  float: left;
-  width: 70%;
-}
-
-.blog-panel img {
-  width: 30%;
-  float: left;
-}
-
-.blog-panel button {
-  width: 100%;
-  margin-top: 20px;
 }
 
 
@@ -289,8 +289,8 @@ section {
 */
 
 .wipe-changer {
-  position: relative;
   height: 490px;
+  position: relative;
 }
 
 .wipe-changer, .wipe-image, .wiper {
@@ -298,17 +298,17 @@ section {
 }
 
 .wiper {
-  position: absolute;
   height: 470px;
+  position: absolute;
 }
 
 .wipe-panel {
-  width: 50%;
-  box-sizing: border-box;
   border-right: 1px solid black;
-  position: absolute;
-  overflow: hidden;
+  box-sizing: border-box;
   height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 50%;
 }
 
 .wipe-panel img {
@@ -320,36 +320,35 @@ section {
 }
 
 .wipe-slider {
-  position: absolute;
   -webkit-appearance: none;
   background: transparent;
-  outline: none;
   bottom: 0;
   left: -2.3%;
+  outline: none;
+  position: absolute;
   width: 104%;
 }
 
 .wipe-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  margin-bottom: -1px;
-  width: 0;
-  height: 0;
+  border-bottom: 14px solid rgba(255, 255, 255, 0.4);
   border-left: 14px solid transparent;
   border-right: 14px solid transparent;
-  border-bottom: 14px solid rgba(255, 255, 255, 0.4);
   cursor: pointer;
-
+  height: 0;
+  margin-bottom: -1px;
+  width: 0;
 }
 
 .go-down {
   animation: go_down 0.7s 1.15s forwards;
+  bottom: 0;
   color: #ccc;
   cursor: pointer;
   font-size: 44px;
+  height: 90px;
   opacity: 0;
   position: absolute;
-  bottom: 0;
-  height: 90px;
   text-align: center;
   width: 100%;
 }
@@ -402,18 +401,19 @@ section {
 }
 
 #splash > div:first-child {
-  width: 850px;
+  animation: fade_in 1s 0.5s ease-in forwards;
   margin-left: -200px;
   margin-top: -8vh;
   opacity: 0;
   position: relative;
-  animation: fade_in 1s 0.5s ease-in forwards;
+  width: 850px;
 }
 
 #dev-name {
-  font-size: 57px;
-  opacity: 1;
   animation: dev-name-rise 0.7s 0.5s ease-out forwards;
+  font-size: 57px;
+  margin-bottom: 34px;
+  opacity: 1;
 }
 
 @keyframes dev-name-rise {
@@ -443,7 +443,7 @@ section {
 #phd {
   animation: phd-rise 0.7s 0.5s ease-out forwards;
   margin: 10px 0;
-
+  font-size: 24px;
 }
 
 @keyframes phd-rise {
@@ -489,10 +489,10 @@ section {
 
 .click-icons {
   animation: fade_in 1s 1.9s ease-in-out forwards;
-  position: absolute;
   bottom: -14px;
-  right: -550px;
   opacity: 0;
+  position: absolute;
+  right: -550px;
 }
 
 .click-icons * {
@@ -532,27 +532,27 @@ section {
 }
 
 #swap-video div {
-  display: flex;
-  background: white;
-  justify-content: center;
   align-items: center;
-  width: 96%;
+  background: white;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
-  padding: 30px 14px;
   padding-right: 0;
+  padding: 30px 14px;
+  width: 96%;
 }
 
 #swap-quotes-tablet {
   border-left: 1px solid #ccc;
-  width: 40%;
   text-align: center;
+  width: 40%;
 }
 
 #swap-quotes-tablet p {
-  padding: 6px 0;
-  width: 70%;
   margin-left: auto;
   margin-right: auto;
+  padding: 6px 0;
+  width: 70%;
 }
 
 
@@ -563,8 +563,8 @@ section {
 */
 
 #cross-ref {
-  color: white;
   background: #1a936f;
+  color: white;
 }
 
 #cross-ref .section-band:nth-child(2) {
@@ -573,10 +573,10 @@ section {
 
 #cross-details {
   display: flex;
-  flex-direction: column;
-  text-align: right;
   flex-basis: 32%;
+  flex-direction: column;
   min-width: 448px;
+  text-align: right;
 }
 
 #cross-description p {
@@ -588,11 +588,11 @@ section {
 }
 
 .review p {
+  font-style: italic !important;
+  margin: 4px !important;
   padding-left: 0 !important;
   padding-right: 20%;
-  margin: 4px !important;
   text-align: left;
-  font-style: italic !important;
 }
 
 .review:not(:last-child) {
@@ -651,15 +651,15 @@ section {
 }
 
 .testimonial {
+  align-items: center;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
 }
 
 .testimonial img {
-  width: 100px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  width: 100px;
 }
 
 .testimonial p {
@@ -667,8 +667,8 @@ section {
 }
 
 .testimonial:last-child {
-  text-align: right;
   justify-content: flex-end;
+  text-align: right;
 }
 
 
@@ -679,8 +679,8 @@ section {
 */
 
 #final {
-  text-align: center;
   height: 700px;
+  text-align: center;
 }
 
 #final .section-headline {
@@ -692,11 +692,11 @@ section {
 }
 
 #final .section-container {
-  width: 800px;
   display: flex;
   flex-direction: column;
   height: 80%;
   justify-content: space-between;
+  width: 800px;
 }
 
 #final .section-column {
@@ -704,15 +704,15 @@ section {
 }
 
 #final button {
-  width: 100%;
-  height: 60px;
   background: none;
-  color: #222;
   border: 1px solid #222;
-  font-size: 22px;
-  text-transform: uppercase;
-  cursor: pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.10), 0 2px 4px rgba(0,0,0,0.13);
+  color: #222;
+  cursor: pointer;
+  font-size: 22px;
+  height: 60px;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 
@@ -778,8 +778,8 @@ section {
   }
 
   .click-icons {
-    left: 0;
     bottom: -40px;
+    left: 0;
     width: 400px;
   }
 
@@ -802,8 +802,8 @@ section {
 
   .blog-panel {
     font-size: 16px;
-    margin-top: 8px;
     height: 70px;
+    margin-top: 8px;
     text-align: left;
   }
 
@@ -862,14 +862,14 @@ section {
   }
 
   .splash {
-    min-height: 0;
     height: 100vh;
+    min-height: 0;
   }
 
   .splash-content {
     margin: 0;
-    width: 320px;
     text-align: center;
+    width: 320px;
   }
 
   .click-icons {
@@ -893,9 +893,9 @@ section {
   }
 
   .section-headline {
-    visibility: hidden;
     font-size: 0px;
     padding: 4px;
+    visibility: hidden;
   }
 
   .section-container {
@@ -903,9 +903,9 @@ section {
   }
 
   .section-column {
+    margin-top: 10px;
     padding: 0;
     width: 100% !important;
-    margin-top: 10px;
   }
 
   #swap-description p:nth-child(4) {
@@ -913,8 +913,8 @@ section {
   }
 
   #cross-details {
-    text-align: center;
     min-width: 0;
+    text-align: center;
   }
 
   #cross-details p {
