@@ -604,6 +604,12 @@ section {
   padding-left: 34%;
 }
 
+#cross-description h3 {
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 #cross-reviews {
   margin-top: 20px;
 }
