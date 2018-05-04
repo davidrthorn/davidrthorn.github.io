@@ -280,6 +280,91 @@
         </div>
       </div>
     </section>
+
+
+
+    <section id="test">
+      <div class="t-container">
+        <div class="t-col"></div>
+        <div class="t-col">
+          <h1>Heading</h1>
+          <p>This is a test</p>
+          <p>This is a test</p>
+        </div>
+        <div class="t-col">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </section>
+
+    
     <script type="text/javascript" src="main.js"></script>
   </body>
+  <style type="text/css">
+#test {
+  background: gainsboro;
+}
+
+.t-container {
+  display: flex;
+  width: 1400px;
+    height: 100vh;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.t-col {
+  height: 50%;
+}
+
+.t-col:nth-child(1) {
+  flex-basis: 870px;
+  background: red;
+}
+
+.t-col:nth-child(2) {
+  flex-basis: 500px;
+  background: green;
+  display: flex;
+  flex-direction: column;
+}
+
+.t-col:nth-child(3) {
+  flex-basis: 90%;
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-around;
+  background: darksalmon;
+  align-items: center;
+}
+
+.t-col:nth-child(3) div {
+  flex-basis: 25%;
+  height: 200px;
+  background: darkslategray;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .t-container {
+    width: 96%;
+  }
+  .t-col:nth-child(1) {
+    flex-basis: 100%;
+  }
+
+  .t-col:nth-child(2) {
+    flex-basis: 40%;
+  }
+  .t-col:nth-child(3) {
+    flex-basis: 40%;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+  </style>
+
 </html>
