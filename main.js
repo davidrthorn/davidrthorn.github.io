@@ -6,39 +6,18 @@
       .getElementsByTagName('div')[0]
       .getBoundingClientRect().top
 
-    if (targetY < 50) {
-      showNav()
-    } else {
-      hideNav()
+    let arrived = targetY < 50
+    let [opacity, color, invert] = arrived ? [1, 'black', 0] : [0, '#ccc', 1]
+
+    document.getElementById('navbar')
+      .style.opacity = opacity
+    document.getElementById('main-menu')
+      .style.color = color
+    Array.from(document.getElementsByClassName('contact-icon'))
+      .forEach(i => {
+        i.style.filter = `invert(${invert})`
+      })
     }
-  }
-
-  function showNav () {
-    document.getElementById('navbar')
-      .classList.add('navbar--scrolled')
-
-    document.getElementById('main-menu')
-      .style.color = 'black'
-
-    Array.from(document.getElementsByClassName('contact-icon'))
-      .forEach(icon => {
-        icon.style.filter = 'invert(0)'
-      })
-  }
-
-  function hideNav () {
-    document.getElementById('navbar')
-      .classList.remove('navbar--scrolled')
-
-    document.getElementById('main-menu')
-      .style.color = '#ccc'
-
-    Array.from(document.getElementsByClassName('contact-icon'))
-      .forEach(icon => {
-        icon.style.filter = 'invert(1)'
-      })
-  }
-
 
   // Smooth scroll from anchor tags
 
