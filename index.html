@@ -90,27 +90,28 @@
         </a>
       </div>
     </div>
-    <section id="swap-out">
+
+
+
+    <section id="t-swap-out">
       <div class="go go--up">
         <a href="#body">
           ⌵
         </a>
       </div>
-      <div class="section__container">
-        <div class="section__band section__band--main">
-          <div id="swap-video" class="section__column">
-            <div class="app-screenshot">
-              <video width="96%" loop>
-                <source src="assets/images/swap_it_out.webm">
-                CANNOT PLAY WEBM VIDEO
-              </video>
-              <div class="in-progress">
-                <p>In progress</p>
-              </div>
+      <div class="t-container">
+        <div id="swap-video" class="t-col">
+          <div class="app-screenshot">
+            <video width="96%" loop>
+              <source src="assets/images/swap_it_out.webm">
+              CANNOT PLAY WEBM VIDEO
+            </video>
+            <div class="in-progress">
+              <p>In progress</p>
             </div>
           </div>
-          <div  class="section__column">
-            <div class="section__column__top">
+        </div>
+<div class="t-col">
               <h1><span class="swap-letter">S</span>wap<span class="swap-letter">I</span>t<span class="swap-letter">O</span>ut</h1>
               <p>
               Interactive infographic showing the impact of
@@ -129,18 +130,14 @@
                 <img class="tech-badge-small" src="assets/images/bulma_100.png" alt="bulma">
               </div>
             </div>
-            <div class="section__column__bottom">
-            </div>
-          </div>
-        </div>
-        <div id="swap-quotes" class="section__band triplets">
-          <div class="section__column">
+<div class="t-col">
+          <div>
             <p>Built with Vue and laid out with Bulma<span class="ellipses">...</span></p>
           </div>
-          <div class="section__column">
+          <div>
             <p><span class="ellipses">...</span>fed by a RESTful API built with Express and Node<span class="ellipses">...</span></p>
           </div>
-          <div class="section__column">
+          <div>
             <p><span class="ellipses">...</span>accessing a PostgreSQL database via PgPromise for Node.</p>
           </div>
         </div>
@@ -151,6 +148,70 @@
         </a>
       </div>
     </section>
+
+
+
+    <!--<section id="swap-out">-->
+      <!--<div class="go go--up">-->
+        <!--<a href="#body">-->
+          <!--⌵-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<div class="section__container">-->
+        <!--<div class="section__band section__band--main">-->
+          <!--<div id="swap-video" class="section__column">-->
+            <!--<div class="app-screenshot">-->
+              <!--<video width="96%" loop>-->
+                <!--<source src="assets/images/swap_it_out.webm">-->
+                <!--CANNOT PLAY WEBM VIDEO-->
+              <!--</video>-->
+              <!--<div class="in-progress">-->
+                <!--<p>In progress</p>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div  class="section__column">-->
+            <!--<div class="section__column__top">-->
+              <!--<h1><span class="swap-letter">S</span>wap<span class="swap-letter">I</span>t<span class="swap-letter">O</span>ut</h1>-->
+              <!--<p>-->
+              <!--Interactive infographic showing the impact of-->
+              <!--health-promoting dietary substitutions.-->
+              <!--</p>-->
+              <!--<p>-->
+              <!--Unlike many nutrition sites, SwapItOut chooses the most relevant data for the chosen foods, displaying those data clearly and meaningfully.-->
+              <!--</p>-->
+              <!--<p>-->
+              <!--In future, SwapItOut will recommend swaps automatically based on the data.-->
+              <!--</p>-->
+              <!--<div class="project-tech tablet-hide">-->
+                <!--<img class="tech-badge-small" src="assets/images/postgres_100.png" alt="postgreSQL">-->
+                <!--<img class="tech-badge-small" src="assets/images/node_100.png" alt="node">-->
+                <!--<img class="tech-badge-small" src="assets/images/vue_100.png" alt="vue">-->
+                <!--<img class="tech-badge-small" src="assets/images/bulma_100.png" alt="bulma">-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="section__column__bottom">-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div id="swap-quotes" class="section__band triplets">-->
+          <!--<div class="section__column">-->
+            <!--<p>Built with Vue and laid out with Bulma<span class="ellipses">...</span></p>-->
+          <!--</div>-->
+          <!--<div class="section__column">-->
+            <!--<p><span class="ellipses">...</span>fed by a RESTful API built with Express and Node<span class="ellipses">...</span></p>-->
+          <!--</div>-->
+          <!--<div class="section__column">-->
+            <!--<p><span class="ellipses">...</span>accessing a PostgreSQL database via PgPromise for Node.</p>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="go go--down">-->
+        <!--<a href="#cross-ref">-->
+          <!--⌵-->
+        <!--</a>-->
+      <!--</div>-->
+    <!--</section>-->
     <section id="cross-ref">
       <div class="go go--up">
         <a href="#swap-out">
@@ -310,13 +371,8 @@
 .t-container {
   display: flex;
   width: 1400px;
-    height: 100vh;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.t-col {
-  height: 50%;
 }
 
 .t-col:nth-child(1) {
@@ -344,6 +400,11 @@
   flex-basis: 25%;
   height: 200px;
   background: darkslategray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    align-items: center;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -353,10 +414,11 @@
   }
   .t-col:nth-child(1) {
     flex-basis: 100%;
+      margin-bottom: 10px;
   }
 
   .t-col:nth-child(2) {
-    flex-basis: 40%;
+    flex-basis: 45%;
   }
   .t-col:nth-child(3) {
     flex-basis: 40%;
@@ -365,6 +427,17 @@
   }
 }
 
+@media only screen and (max-width: 601px) {
+  .t-container {
+    flex-direction: column;
+      justify-content: space-around;
+  }
+  .t-col {
+    flex-basis: 100%;
+      text-align: center;
+        justify-content: center;
+  }
+}
   </style>
 
 </html>
