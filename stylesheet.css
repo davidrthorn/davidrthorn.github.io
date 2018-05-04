@@ -25,7 +25,7 @@ a {
 
 h1 {
   font-family: 'Bebas Neue';
-  font-size: 89px;
+  font-size: 85px;
   line-height: 1em;
   margin: 0;
 }
@@ -68,7 +68,7 @@ section {
 }
 
 .col:nth-child(2) {
-  flex-basis: 500px;
+  flex-basis: 480px;
   display: flex;
   flex-direction: column;
 }
@@ -105,12 +105,21 @@ section {
 }
 
 
+.container--double {
+  justify-content: space-between;
+  height: 80%;
+}
+
+.col--double {
+  flex-basis: 47%;
+  height: 100%;
+}
 
 
 .vertical-divider {
   background: #aaa;
-  flex-basis: 1px !important;
-  padding: 0 !important;
+  flex-basis: 1px;
+  padding: 0;
 }
 
 .tech-badge-small {
@@ -129,8 +138,8 @@ section {
   filter: invert(1);
 }
 
-.tablet-show {
-  display: none !important;
+.phone-show {
+  display: none;
 }
 
 .transparent {
@@ -215,7 +224,7 @@ section {
 }
 
 .app-screenshot {
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.20), 0 4px 8px rgba(0,0,0,0.30);
   border-radius: 4px;
   position: relative;
   width: 100%;
@@ -306,6 +315,9 @@ section {
 
 .go {
   color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 44px;
   height: 70px;
   position: absolute;
@@ -493,7 +505,7 @@ section {
 }
 
 .swap-letter {
-  color: #ff4040 !important;
+  color: cadetblue !important;
 }
 
 #swap-video div:first-child {
@@ -533,7 +545,7 @@ section {
 }
 
 .reviews {
-  margin-top: 20px;
+  margin-top: -28px;
   text-align: left;
 }
 
@@ -559,8 +571,8 @@ section {
  */
 
 #work {
-  background: darkslategray;
-  color: ghostwhite;
+  background: #222;
+  color: white;
 }
 
 #work .section__column {
@@ -568,7 +580,7 @@ section {
 }
 
 #work h1 {
-  color: ghostwhite;
+  color: #943;
 }
 
 #work h2 {
@@ -608,7 +620,7 @@ section {
  */
 
 #final {
-  background: darkseagreen;
+  background: darkkhaki;
   text-align: center;
 }
 
@@ -624,6 +636,10 @@ section {
   color: #943;
 }
 
+#final p {
+  font-size: 19px;
+}
+
 .final__buttons {
   display: flex;
   justify-content: space-around;
@@ -634,12 +650,13 @@ section {
 }
 
 #final button {
-  background: darksalmon;
-  border: 1px solid #222;
+  border: 2px solid #943;
+  background: transparent;
   box-shadow: 0 2px 4px rgba(0,0,0,0.10), 0 2px 4px rgba(0,0,0,0.13);
   color: #222;
   cursor: pointer;
   font-size: 22px;
+  font-weight: 600;
   height: 60px;
   margin-top: 12px;
   text-transform: uppercase;
@@ -801,7 +818,11 @@ section {
 
 @media only screen and (max-width: 601px) {
   .phone-hide {
-    display: none !important;
+    display: none;
+  }
+
+  .phone-show {
+    display: block;
   }
 
   section {
