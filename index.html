@@ -8,10 +8,15 @@
   </head>
   <body id="body">
     <div id="main-menu">
-      <div>
+      <div class="phone-hide">
         <a href="#body">Home</a>
       </div>
-      <div>
+      <div class="phone-show">
+        <a href="#body">
+          <img class="contact-icon inverted" src="assets/images/home.svg" alt="">
+        </a>
+      </div>
+      <div class="phone-hide">
         <a href="#swap-out">Portfolio</a>
       </div>
       <div>
@@ -23,10 +28,10 @@
         <img class="contact-icon inverted" src="assets/images/email.svg" alt="">
       </a>
       <a href="https://www.github.com/davidrthorn/">
-        <img class="contact-icon inverted" src="assets/images/github.svg" alt="">
+        <img class="contact-icon inverted phone-hide" src="assets/images/github.svg" alt="">
       </a>
       <a href="https://www.linkedin.com/in/david-rowthorn-a54184120/">
-        <img class="contact-icon inverted" src="assets/images/linkedin.svg" alt="">
+        <img class="contact-icon inverted phone-hide" src="assets/images/linkedin.svg" alt="">
       </a>
     </div>
     <div id="navbar">
@@ -78,9 +83,7 @@
           </div>
           <div class="click-icons">
             <img src="assets/images/arrow_left_up.svg" width="120px">
-            <p>
-            click to see where I've used this tech
-            </p>
+            <p>click to see where I've used this tech</p>
           </div>
         </div>
       </div>
@@ -90,9 +93,6 @@
         </a>
       </div>
     </div>
-
-
-
     <section id="swap-out">
       <div class="go go--up">
         <a href="#body">
@@ -120,7 +120,7 @@
           <p>
           Unlike many nutrition sites, SwapItOut chooses the most relevant data for the chosen foods, displaying those data clearly and meaningfully.
           </p>
-          <p>
+          <p class="tablet-hide">
           In future, SwapItOut will recommend swaps automatically based on the data.
           </p>
           <div class="project-tech">
@@ -170,7 +170,7 @@
               <img class="tech-badge-small" src="assets/images/jquery_100.png" alt="jquery">
             </div>
           </div>
-          <div id="cross-reviews" class="tablet-hide">
+          <div class="reviews tablet-hide">
             <div class="review">
               <p>“Thanks to you I really don’t miss anything from Word or Libre Office anymore!”</p>
               <p>★★★★★</p>
@@ -256,22 +256,21 @@
       <!--</div>-->
     <!--</section>-->
     <section id="final">
-      <div class="section__container">
-        <div class="section__headline">
-          you made it to the end<span class="ellipses">...</span>
-        </div>
+      <div class="container__final">
+        <div>
         <h1>
           Thanks for visiting!
         </h1>
+        </div>
         <p>This page is written in pure HTML5, CSS3 and Javascript.</p>
-        <div class="section__band">
-          <div class="section__column">
+        <div class="final__buttons">
+          <div>
             <button onclick="location.href='https://github.com/davidrthorn'" type="button">github</button>
           </div>
-          <div class="section__column">
+          <div>
             <button onclick="location.href='mailto:davidrowthorn@gmail.com'" type="button">contact</button>
           </div>
-          <div class="section__column">
+          <div>
             <button onclick="location.href='mailto:davidrowthorn@gmail.com?subject=Work'" type="button">hire</button>
           </div>
         </div>

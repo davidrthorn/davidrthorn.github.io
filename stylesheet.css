@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Raleway:900|Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Raleway:900|Open+Sans:400,600,700');
 @font-face {
   font-family: 'Bebas Neue';
   src: url('assets/fonts/BebasNeueBold.woff') format('woff');
@@ -25,7 +25,7 @@ a {
 
 h1 {
   font-family: 'Bebas Neue';
-  font-size: 80px;
+  font-size: 89px;
   line-height: 1em;
   margin: 0;
 }
@@ -73,6 +73,10 @@ section {
   flex-direction: column;
 }
 
+.col:nth-child(2) p {
+  width: 60%;
+}
+
 .col:nth-child(3) {
   flex-basis: 100%;
   display: flex;
@@ -81,12 +85,13 @@ section {
 }
 
 .col:nth-child(3) div {
-  flex-basis: 30%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  flex-basis: 30%;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  max-width: 350px;
   text-align: center;
 }
 
@@ -211,13 +216,14 @@ section {
 
 .app-screenshot {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 4px;
   position: relative;
   width: 100%;
 }
 
 .in-progress {
   align-items: center;
-  background: red;
+  background: cadetblue;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   color: white;
   display: flex;
@@ -482,15 +488,12 @@ section {
  */
 
 #swap-out {
-  background: aliceblue;
+  background: #6b2626;
+  color: white;
 }
 
 .swap-letter {
   color: #ff4040 !important;
-}
-
-#swap-out .go {
-  color: black;
 }
 
 #swap-video div:first-child {
@@ -506,6 +509,11 @@ section {
 
 #swap-out .col:nth-child(3) h3 {
   color: #e20;
+}
+
+.swap-quotes {
+  font-weight: 600;
+  font-size: 20px;
 }
 
 /*
@@ -524,8 +532,9 @@ section {
   margin-bottom: 10px;
 }
 
-#cross-reviews {
+.reviews {
   margin-top: 20px;
+  text-align: left;
 }
 
 .review p {
@@ -603,30 +612,36 @@ section {
   text-align: center;
 }
 
-#final .section__headline {
-  padding: 0;
+.container__final {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 71%;
+  height: 75vh;
 }
 
 #final h1 {
   color: #943;
 }
 
-#final .container {
+.final__buttons {
   display: flex;
-  flex-direction: column;
-  height: 80%;
-  justify-content: space-between;
-  width: 70%;
+  justify-content: space-around;
+}
+
+.final__buttons div {
+  flex-basis: 22%;
 }
 
 #final button {
-  background: #80ffce;
+  background: darksalmon;
   border: 1px solid #222;
   box-shadow: 0 2px 4px rgba(0,0,0,0.10), 0 2px 4px rgba(0,0,0,0.13);
   color: #222;
   cursor: pointer;
   font-size: 22px;
   height: 60px;
+  margin-top: 12px;
   text-transform: uppercase;
   width: 100%;
 }
@@ -656,9 +671,9 @@ section {
 
  */
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1460px) {
   .container {
-    width: 92%;
+    width: 90%;
   }
 
   .col:nth-child(1) {
@@ -703,7 +718,7 @@ section {
   .col:nth-child(3) {
     flex-basis: 50%;
     flex-direction: column;
-    justify-content: initial;
+    justify-content: space-evenly;
     padding: 0;
   }
 
@@ -718,14 +733,6 @@ section {
 
   .tablet-hide {
     display: none;
-  }
-
-  .tablet-show {
-    display: block !important;
-  }
-
-  section {
-    height: initial;
   }
 
   .vertical-divider {
@@ -760,9 +767,8 @@ section {
     height: 50px;
   }
 
-  .swap-quotes p {
+  .swap-quotes {
     font-size: 19px;
-    color: #f30;
   }
 
   #cross-description p {
@@ -784,12 +790,34 @@ section {
     text-align: right;
   }
 
+  .reverse .col:nth-child(2) p {
+    padding-left: 40%;
+  }
+
   .reverse .col:nth-child(3) {
     order: 3;
   }
 }
 
 @media only screen and (max-width: 601px) {
+  .phone-hide {
+    display: none !important;
+  }
+
+  section {
+    height: initial;
+  }
+
+  .go {
+    z-index: 4;
+  }
+
+  #navbar {
+    bottom: 0;
+    top: unset;
+    height: 50px;
+  }
+
   #navbar div {
     display: none;
   }
@@ -812,11 +840,24 @@ section {
   .col:nth-child(3) div {
     height: 150px;
     margin: 0;
+    max-width: initial;
     width: 100%;
   }
 
   #main-menu {
     left: 8px;
+    top: unset;
+    bottom: 0px;
+  }
+
+  #contact-menu {
+    top: unset;
+    bottom: 12px;
+  }
+
+  #contact-menu img {
+    width: unset;
+    margin: unset;
   }
 
   .menu-item {
@@ -853,9 +894,17 @@ section {
   .dev-skill {
     margin-left: 10px;
   }
+
+  .final__buttons {
+    flex-direction: column;
+  }
+
+  .final__buttons div {
+    width: 100%;
+  }
 }
 
-@media only screen and (max-height: 1024px) {
+@media only screen and (max-height: 900px) {
   section {
     height: initial;
     min-height: calc(100vh - 60px);
