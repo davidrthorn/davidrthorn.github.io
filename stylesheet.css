@@ -230,6 +230,53 @@ section {
   width: 100%;
 }
 
+.ribbon {
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+.ribbon__body {
+  position: absolute;
+  width: 180px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  height: 40px;
+  top: 28px;
+  right: -42px;
+  background: cadetblue;
+  transform: rotate(45deg);
+  text-align: center;
+  font-family: 'Bebas Neue', Helvetica, sans;
+  font-size: 26px;
+  line-height: 1em;
+}
+
+.ribbon__body p {
+  margin-top: 7px;
+}
+
+.ribbon__fold {
+  position: absolute;
+}
+.ribbon__fold:nth-child(1) {
+  top: -2px;
+  right: 114px;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #304f50;
+  border-right: 10px solid transparent;
+}
+
+.ribbon__fold:nth-child(2) {
+  top: 114px;
+  right: -2px;
+  border-left: 10px solid #304f50;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
 .in-progress {
   align-items: center;
   background: cadetblue;
@@ -508,12 +555,11 @@ section {
   color: cadetblue !important;
 }
 
-#swap-video div:first-child {
+#swap-video .app-screenshot {
   align-items: center;
   background: white;
   display: flex;
   justify-content: center;
-  overflow: hidden;
   padding-right: 0;
   padding: 30px 14px;
   width: 96%;
