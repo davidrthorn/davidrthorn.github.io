@@ -52,7 +52,7 @@
         e.preventDefault()
         const targetId = e.currentTarget.hash.substr(1)
         const targetY = targetId !== 'body'
-          ? document.getElementById(targetId).offsetTop - 60
+          ? document.getElementById(targetId).offsetTop - 53
           : 0
 
         scrollTopSmooth(window.scrollY, targetY, 200, 'ease-in-out')
