@@ -310,16 +310,19 @@ section {
  */
 
 .wipe__changer {
-  height: 490px;
+  --width: 600px;
+  width: var(--width);
+  height: calc(var(--width) * 2 / 3 + 20px);
   position: relative;
+  display: inline-block;
 }
 
-.wipe__changer, .wipe__image, .wiper {
-  width: 600px;
+.wipe__image, .wiper {
+  width: var(--width);
+  height: calc(var(--width) * 2 / 3);
 }
 
 .wiper {
-  height: 470px;
   position: absolute;
 }
 
@@ -338,6 +341,7 @@ section {
 
 .wipe__image {
   position: absolute;
+  left: 0;
 }
 
 .wipe__slider {
@@ -360,6 +364,11 @@ section {
   margin-bottom: -1px;
   width: 0;
 }
+
+
+/* 
+ ## Scroll arrows
+ */
 
 .go {
   color: #ccc;
@@ -667,7 +676,7 @@ section {
  */
 
 #final {
-  background: darkkhaki;
+  background: wheat;
   text-align: center;
 }
 
@@ -680,7 +689,7 @@ section {
 }
 
 #final h1 {
-  color: #943;
+  color: indianred;
 }
 
 #final p {
@@ -766,6 +775,10 @@ section {
 }
 
 @media only screen and (max-width: 1025px) {
+  section {
+    height: initial;
+  }
+
   .container {
     max-width: 870px;
     padding: 60px 0;
@@ -868,12 +881,19 @@ section {
     display: none;
   }
 
+  .col:nth-child(2) p {
+    width: 100%;
+  }
   .phone-show {
     display: block;
   }
 
   section {
     height: initial;
+  }
+
+  .wipe__changer {
+    --width: 300px;
   }
 
   .go {
@@ -895,7 +915,7 @@ section {
     justify-content: space-around;
   }
 
-  .col {
+  .col, .col--double {
     flex-basis: 100%;
     justify-content: center;
     text-align: center;
@@ -969,6 +989,24 @@ section {
 
   .final__buttons div {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .container {
+    width: 78%;
+  }
+
+  .wipe__changer {
+    --width: 260px;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 24px !important;
   }
 }
 
