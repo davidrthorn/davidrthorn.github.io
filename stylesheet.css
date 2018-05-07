@@ -862,7 +862,6 @@ section {
   }
 
   .col__second {
-    width: 90%;
     flex-basis: 50%;
   }
 
