@@ -101,10 +101,6 @@ section {
   font-size: 50px;
 }
 
-.col__third p {
-  margin: 8px;
-}
-
 .vertical-divider {
   background: #aaa;
   flex-basis: 1px;
@@ -634,6 +630,10 @@ section {
   font-size: 34px;
 }
 
+#other-docs p {
+  margin: 0px;
+}
+
 /*
 
 ## Workload
@@ -677,11 +677,16 @@ section {
   width: 100%;
 }
 
-.testimonial img {
+.testimonial__person img {
   border-radius: 50%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   width: 100px;
   height: 100px;
+  margin-right: 26px;
+}
+
+.testimonial__person p {
+  margin: 0;
 }
 
 
@@ -804,6 +809,12 @@ section {
   }
 }
 
+@media only screen and (max-width: 1320px) {
+  h1 {
+    font-size: 70px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   h1 {
     font-size: 70px;
@@ -851,11 +862,12 @@ section {
   }
 
   .col__second {
+    width: 90%;
     flex-basis: 50%;
   }
 
-  .col__second {
-    width: 90%;
+  .reverse .col__second p, .col__second p {
+    padding: 0;
   }
 
   .col__third {
@@ -868,6 +880,10 @@ section {
   .col__third__panel {
     height: initial;
     width: 96%;
+  }
+
+  .col__third__panel:not(:first-child) {
+    margin-top: 26px;
   }
 
   .col__third h1 {
