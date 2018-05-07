@@ -25,7 +25,7 @@
     'linear': t => t,
     'ease-in': t => t * t,
     'ease-out': t => t * (2 - t),
-    'ease-in-out': t => (t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t)
+    'ease-in-out': t => (t < .5 ? 2 * t ** 2 : (4 - 2 * t) * t - 1)
   }
 
   function scrollTopSmooth (initY, targetY, duration = 300, transition = 'ease-in-out') {
@@ -46,11 +46,11 @@
     window.requestAnimationFrame(step)
   }
 
-  Array.from(document.querySelectorAll(`[href^='#']`))
-    .forEach(a => {
-      a.addEventListener('click', e => {
+  Array.from(document.querySelectorAll(`[data-target^='#']`))
+    .forEach(link => {
+      link.addEventListener('click', e => {
         e.preventDefault()
-        const targetId = e.currentTarget.hash.substr(1)
+        const targetId = e.currentTarget.dataset.target.substr(1)
         const offset = window.matchMedia("(max-width: 601px)").matches
           ? 0
           : 53

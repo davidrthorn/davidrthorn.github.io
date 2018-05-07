@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
   </head>
   <body id="body">
-    <div id="main-menu" class="phone-hide">
+    <div id="main-menu" class="main-menu phone-hide">
       <div>
-        <a href="#body">Home</a>
+        <span data-target="#body">Home</span>
       </div>
       <div>
-        <a href="#swap-out">Portfolio</a>
+        <span data-target="#swap-out">Portfolio</span>
       </div>
     </div>
-    <div id="contact-menu" class="phone-hide">
+    <div id="contact-menu" class="contact-menu phone-hide">
       <a href="mailto:davidrowthorn@gmail.com">
         <img class="contact-icon inverted" src="assets/images/email.svg" alt="">
       </a>
@@ -26,51 +26,41 @@
         <img class="contact-icon inverted phone-hide" src="assets/images/linkedin.svg" alt="">
       </a>
     </div>
-    <div id="navbar" class="phone-hide">
+    <div id="navbar" class="navbar phone-hide">
       <div>
         David Rowthorn
       </div>
     </div>
     <div id="splash">
       <div>
-        <p id="dev-name">
+        <p class="dev-name">
         David Rowthorn
         </p>
         <p class="headline">
         full <span>stack</span> developer
         </p>
-        <p id="phd">
+        <p class="phd">
         (with a PhD in philosophy)
         </p>
         <div class="dev-skills">
           <div class="dev-skill">
-            <a href="#cross-ref">
-              <img src="assets/images/js_100.png">
-            </a>
+            <img src="assets/images/js_100.png" data-target="#cross-ref">
             <p>JavaScript</p>
           </div>
           <div class="dev-skill">
-            <a href="#data-manipulation">
-              <img src="assets/images/python_100.png">
-            </a>
+            <img src="assets/images/python_100.png" data-target="#data-manipulation">
             <p>Python</p>
           </div>
           <div class="dev-skill">
-            <a href="#swap-out">
-              <img src="assets/images/postgres_100.png">
-            </a>
+            <img src="assets/images/postgres_100.png" data-target="#swap-out">
             <p>PostgreSQL</p>
           </div>
           <div class="dev-skill">
-            <a href="#swap-out">
-              <img src="assets/images/node_100.png">
-            </a>
+            <img src="assets/images/node_100.png" data-target="#swap-out">
             <p>Node</p>
           </div>
           <div class="dev-skill">
-            <a href="#swap-out">
-              <img src="assets/images/vue_100.png">
-            </a>
+            <img src="assets/images/vue_100.png" data-target="#swap-out">
             <p>Vue</p>
           </div>
         </div>
@@ -79,17 +69,13 @@
           <p>click to see where<br/>I've used this tech</p>
         </div>
       </div>
-      <div class="go go--down">
-        <a href="#swap-out">
-          ⌵
-        </a>
+      <div class="go go--down" data-target="#swap-out">
+        <img src="assets/images/down.svg" alt="">
       </div>
     </div>
     <section id="swap-out">
-      <div class="go go--up">
-        <a href="#body">
-          ⌵
-        </a>
+      <div class="go go--up" data-target="#body">
+        <img src="assets/images/down.svg" alt="">
       </div>
       <div class="container">
         <div id="swap-video" class="col col__first">
@@ -120,10 +106,10 @@
           In future, SwapItOut will recommend swaps automatically based on the data.
           </p>
           <div class="project-tech">
-            <img class="tech-badge-small" src="assets/images/postgres_100.png" alt="postgreSQL">
-            <img class="tech-badge-small" src="assets/images/node_100.png" alt="node">
-            <img class="tech-badge-small" src="assets/images/vue_100.png" alt="vue">
-            <img class="tech-badge-small" src="assets/images/bulma_100.png" alt="bulma">
+            <img class="tech-badge-small" src="assets/images/postgres_100.png" title="PostgreSQL" alt="postgreSQL">
+            <img class="tech-badge-small" src="assets/images/node_100.png" title="NodeJS" alt="node">
+            <img class="tech-badge-small" src="assets/images/vue_100.png" title="VueJS" alt="vue">
+            <img class="tech-badge-small" src="assets/images/bulma_100.png" title="Bulma" alt="bulma">
           </div>
         </div>
         <div class="col col__third swap-quotes">
@@ -143,31 +129,27 @@
         <span>/</span>
         <span>6</span>
       </div>
-      <div class="go go--down">
-        <a href="#cross-ref">
-          ⌵
-        </a>
+      <div class="go go--down" data-target="#cross-ref">
+        <img src="assets/images/down.svg" alt="">
       </div>
     </section>
     <section id="cross-ref">
-      <div class="go go--up">
-        <a href="#swap-out">
-          ⌵
-        </a>
+      <div class="go go--up" data-target="#swap-out">
+        <img src="assets/images/down.svg" alt="">
       </div>
       <div class="container reverse">
         <div class="col col__first">
           <img class="app-screenshot" src="assets/images/cross_screen1.png" alt="">
         </div>
-        <div id="cross-details" class="col col__second">
-          <div id="cross-description">
+        <div class="col col__second cross-details">
+          <div class="cross-description">
             <h1><a href="https://chrome.google.com/webstore/detail/cross-reference/hknkaiempgninehdhkgekoeoilkapgob">Cross Reference</a></h1>
             <h2>for Google Docs</h2>
             <h3>5000 users</h3>
             <p><strong>Featuring custom labelling, styling, and list-of-figure generation.</strong></p>
             <div class="project-tech">
-              <img class="tech-badge-small" src="assets/images/js_100.png" alt="javascript">
-              <img class="tech-badge-small" src="assets/images/jquery_100.png" alt="jquery">
+              <img class="tech-badge-small" src="assets/images/js_100.png" title="JavaScript" alt="javascript">
+              <img class="tech-badge-small" src="assets/images/jquery_100.png" title="JQuery" alt="jquery">
             </div>
           </div>
           <div class="reviews tablet-hide">
@@ -181,7 +163,7 @@
             </div>
           </div>
         </div>
-        <div id="other-docs" class="col col__third">
+        <div class="col col__third other-docs">
           <div class="col__third__panel">
             <h1><a href="https://chrome.google.com/webstore/detail/text-cleaner/lffiochnfmnkhekkhlfdlblkbbgepmnf">Text Cleaner</a></h1>
             <h3>9000 users</h3>
@@ -204,17 +186,13 @@
         <span>/</span>
         <span>6</span>
       </div>
-      <div class="go go--down">
-        <a href="#workload">
-          ⌵
-        </a>
+      <div class="go go--down" data-target="#workload">
+        <img src="assets/images/down.svg" alt="">
       </div>
     </section>
     <section id="workload">
-      <div class="go go--up">
-        <a href="#cross-ref">
-          ⌵
-        </a>
+      <div class="go go--up" data-target="#cross-ref">
+        <img src="assets/images/down.svg" alt="">
       </div>
       <div class="container">
         <div class="col col__first">
@@ -223,7 +201,8 @@
         <div class="col col__second">
           <h1>Workload Modelling</h1>
           <h2>with VBA in Excel</h2>
-          <p>This project was undertaken for the <span class="warwick">University of Warwick</span>. It involved the creation of an Excel workbook to allocate teaching and admin to staff and to quanity staff workload for comparison.</p>
+          <p>This project was undertaken for the <span class="warwick">University of Warwick</span>.
+          It involved the creation of an Excel workbook to allocate teaching and admin to staff and to quanity staff workload for comparison.</p>
           <p>The final product included an automatically populated timetable making use of advanced VBA.</p>
         </div>
         <div class="col col__third">
@@ -256,17 +235,13 @@
         <span>/</span>
         <span>6</span>
       </div>
-      <div class="go go--down">
-        <a href="#data-manipulation">
-          ⌵
-        </a>
+      <div class="go go--down" data-target="#data-manipulation">
+        <img src="assets/images/down.svg" alt="">
       </div>
     </section>
     <section id="data-manipulation">
-      <div class="go go--up inverted">
-        <a href="#workload">
-          ⌵
-        </a>
+      <div class="go go--up inverted" data-target="#workload">
+        <img src="assets/images/down.svg" alt="">
       </div>
       <div class="container reverse">
         <div class="col col__first">
@@ -286,7 +261,7 @@
           <p>The Python library Pandas was used to clean and reshape data collected from Qualtrics in preparation for analysis as part of an experiment conducted in the University of Warwick Psychology department</p>
           <p>It was not enough to simply pivot this data; instead, a Python script was required to translate Qualtric's idiosyncratic organisation of data into usable values and populate new columns with that data.</p>
         </div>
-        <div id="datacamp" class="col col__third">
+        <div class="datacamp col col__third">
           <div class="col__third__panel">
             <a href="https://www.datacamp.com/courses/intermediate-python-for-data-science">
               <img src="assets/images/dc_inter_165.png" alt="">
@@ -309,17 +284,13 @@
         <span>/</span>
         <span>6</span>
       </div>
-      <div class="go go--down inverted">
-        <a href="#final">
-          ⌵
-        </a>
+      <div class="go go--down inverted" data-target="#final">
+        <img src="assets/images/down.svg" alt="">
       </div>
     </section>
     <section id="final">
-      <div class="go go--up inverted">
-        <a href="#data-manipulation">
-          ⌵
-        </a>
+      <div class="go go--up inverted" data-target="#data-manipulation">
+        <img src="assets/images/down.svg" alt="">
       </div>
       <div class="container__final">
         <div>

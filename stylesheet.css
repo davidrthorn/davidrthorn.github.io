@@ -26,7 +26,7 @@ a {
 h1 {
   font-family: 'Bebas Neue';
   font-size: 85px;
-  line-height: 0.8em;
+  line-height: .8em;
   margin: 0;
 }
 
@@ -137,8 +137,8 @@ section {
 
  */
 
-#main-menu {
-  animation: fade_in 1.4s 0.3s ease-in forwards;
+.main-menu {
+  animation: fade_in 1.4s .3s ease-in forwards;
   color: #ccc;
   left: 14px;
   opacity: 0;
@@ -147,23 +147,24 @@ section {
   z-index: 3;
 }
 
-#main-menu div {
+.main-menu div {
   float: left;
   font-size: 14px;
   padding: 10px 10px;
   text-transform: uppercase;
 }
 
-#main-menu a {
-  transition: all 0.1s;
+.main-menu span {
+  cursor: pointer;
+  transition: all .1s;
 }
 
-#main-menu a:hover {
+.main-menu span:hover {
   color: #FF6A65 !important;
 }
 
-#contact-menu {
-  animation: fade_in 1.5s 0.3s ease-in forwards;
+.contact-menu {
+  animation: fade_in 1.5s .3s ease-in forwards;
   opacity: 0;
   position: fixed;
   right: 20px;
@@ -171,28 +172,28 @@ section {
   z-index: 6;
 }
 
-#contact-menu img {
+.contact-menu img {
   float: left;
   margin: 6px;
-  transition: all 0.1s;
+  transition: all .1s;
   width: 18px;
 }
 
-#contact-menu img:hover {
+.contact-menu img:hover {
   filter: invert(70%) sepia(80%) saturate(40) hue-rotate(320deg) !important;
 }
 
 #navbar {
   align-items: center;
   background: white;
-  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.16), 0 2px 7px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, .16), 0 2px 7px rgba(0, 0, 0, .23);
   display: flex;
   height: 54px;
   justify-content: center;
   opacity: 0;
   position: fixed;
   top: -1px;
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
   width: 100%;
   z-index: 1;
 }
@@ -209,7 +210,7 @@ section {
 }
 
 .app-screenshot {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.20), 0 4px 8px rgba(0,0,0,0.30);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .20), 0 4px 8px rgba(0, 0, 0, .30);
   border-radius: 4px;
   position: relative;
   width: 100%;
@@ -227,7 +228,7 @@ section {
 .ribbon__body {
   position: absolute;
   width: 180px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
   height: 40px;
   top: 28px;
   right: -42px;
@@ -265,7 +266,7 @@ section {
 .in-progress {
   align-items: center;
   background: cadetblue;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
   color: white;
   display: flex;
   font-family: 'Bebas Neue', Helvetica, sans;
@@ -321,7 +322,7 @@ section {
 }
 
 .wipe__panel img {
-  filter: sepia(0.7);
+  filter: sepia(.7);
 }
 
 .wipe__image {
@@ -341,7 +342,7 @@ section {
 
 .wipe__slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  border-bottom: 14px solid rgba(20, 20, 20, 0.8);
+  border-bottom: 14px solid rgba(20, 20, 20, .8);
   border-left: 14px solid transparent;
   border-right: 14px solid transparent;
   cursor: pointer;
@@ -356,15 +357,22 @@ section {
  */
 
 .go {
-  color: #ccc;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  color: #ccc;
+  cursor: pointer;
+  display: flex;
   font-size: 44px;
   height: 70px;
+  justify-content: center;
   position: absolute;
   text-align: center;
   width: 100%;
+}
+
+.go img {
+  width: 30px;
+  filter: invert(1);
+  opacity: .4;
 }
 
 .go--down {
@@ -376,17 +384,12 @@ section {
   transform: rotate(180deg);
 }
 
-.go > a {
-  cursor: pointer;
-  opacity: .3;
-}
-
-.go > a:hover {
+.go:hover > img {
   opacity: .9;
 }
 
 #splash .go {
-  animation: go_down 0.7s 1.15s forwards;
+  animation: go_down .7s 1.15s forwards;
   opacity: 0;
 }
 
@@ -412,9 +415,9 @@ section {
   height: 30px;
   letter-spacing: 10px;
   text-align: center;
-  opacity: 0.3;
+  opacity: .3;
   position: absolute;
-  width: 60px;
+  width: 50px;
 }
 
 .page-number span {
@@ -452,7 +455,7 @@ section {
 }
 
 #splash > div:first-child {
-  animation: fade_in 1s 0.5s ease-in forwards;
+  animation: fade_in 1s .5s ease-in forwards;
   margin-left: -200px;
   margin-top: -8vh;
   opacity: 0;
@@ -460,8 +463,8 @@ section {
   width: 850px;
 }
 
-#dev-name {
-  animation: dev-name-rise 0.7s 0.5s ease-out forwards;
+.dev-name {
+  animation: dev-name-rise .7s .5s ease-out forwards;
   font-size: 57px;
   margin-bottom: 34px;
   margin-top: 0;
@@ -474,7 +477,7 @@ section {
 }
 
 .headline {
-  animation: headline-rise 0.7s 0.5s ease-out forwards;
+  animation: headline-rise .7s .5s ease-out forwards;
   font-family: 'Bebas Neue', Helvetica, sans;
   font-size: 120px;
   line-height: 1em;
@@ -492,8 +495,8 @@ section {
   color: #aaa;
 }
 
-#phd {
-  animation: phd-rise 0.7s 0.5s ease-out forwards;
+.phd {
+  animation: phd-rise .7s .5s ease-out forwards;
   margin: 10px 0;
   font-size: 24px;
 }
@@ -504,7 +507,7 @@ section {
 }
 
 .dev-skills {
-  animation: dev-rise 0.7s 0.5s ease-out forwards;
+  animation: dev-rise .7s .5s ease-out forwards;
   color: #eee;
   display: inline-block;
   font-family: 'Open Sans', sans;
@@ -532,10 +535,11 @@ section {
 
 .dev-skill img {
   height: 64px;
-  transition: all 0.2s;
+  transition: all .2s;
 }
 
-.dev-skill a:hover > img {
+.dev-skill img:hover {
+  cursor: pointer;
   transform: translateY(-2px) scale(1.05);
 }
 
@@ -604,7 +608,7 @@ section {
   color: white;
 }
 
-#cross-description h3 {
+.cross-description h3 {
   font-size: 30px;
   margin: 0;
   margin-bottom: 10px;
@@ -626,11 +630,11 @@ section {
   margin-bottom: 29px;
 }
 
-#cross-description h2 {
+.cross-description h2 {
   font-size: 34px;
 }
 
-#other-docs p {
+.other-docs p {
   margin: 0px;
 }
 
@@ -643,10 +647,6 @@ section {
 #workload {
   background: #222;
   color: ghostwhite;
-}
-
-#work .section__column {
-  flex-basis: 630px;
 }
 
 #workload h1 {
@@ -679,7 +679,7 @@ section {
 
 .testimonial__person img {
   border-radius: 50%;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
   width: 100px;
   height: 100px;
   margin-right: 26px;
@@ -708,7 +708,7 @@ section {
   color: antiquewhite;
 }
 
-#datacamp {
+.datacamp {
   color: ghostwhite;
   font-weight: 600;
 }
@@ -749,9 +749,9 @@ section {
 }
 
 #final button {
-  border: 2px solid #444;
+  border: 2px solid #9c3030;
   background: transparent;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.10), 0 2px 4px rgba(0,0,0,0.13);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .10), 0 2px 4px rgba(0, 0, 0, .13);
   color: #222;
   cursor: pointer;
   font-size: 22px;
@@ -775,7 +775,7 @@ section {
 }
 
 @keyframes fade_out {
-  from { opacity: 0.6; }
+  from { opacity: .6; }
   to { opacity: 0; }
 }
 
@@ -1047,7 +1047,7 @@ section {
 @media only screen and (max-height: 1024px) {
   section {
     height: initial;
-    min-height: calc(100vh - 54px);
+    min-height: calc(100vh - 53px);
   }
 }
 
