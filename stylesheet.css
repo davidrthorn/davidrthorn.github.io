@@ -829,6 +829,10 @@ section {
     flex-basis: 50%;
   }
 
+  .col__second {
+    width: 90%;
+  }
+
   .col__third {
     flex-basis: 50%;
     flex-direction: column;
@@ -838,7 +842,7 @@ section {
 
   .col__third__panel {
     height: initial;
-    width: 75%;
+    width: 90%;
   }
 
   .col__third h1 {
