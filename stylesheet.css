@@ -26,7 +26,7 @@ a {
 h1 {
   font-family: 'Bebas Neue';
   font-size: 85px;
-  line-height: 1em;
+  line-height: 0.8em;
   margin: 0;
 }
 
@@ -59,7 +59,6 @@ section {
   width: 1400px;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 16px;
 }
 
 .col:nth-child(1) {
@@ -83,6 +82,7 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-top: 20px;
 }
 
 .col:nth-child(3) div {
@@ -108,12 +108,17 @@ section {
 
 .container--double {
   justify-content: space-between;
-  height: 80%;
+  height: 88%;
+  padding-top: 0;
 }
 
 .col--double {
-  flex-basis: 47%;
+  flex-basis: 600px;
   height: 100%;
+}
+
+.col--double p {
+  padding-right: 110px;
 }
 
 
@@ -310,16 +315,16 @@ section {
  */
 
 .wipe__changer {
-  --width: 600px;
+  --width: 870px;
   width: var(--width);
-  height: calc(var(--width) * 2 / 3 + 20px);
+  height: 533px;
   position: relative;
   display: inline-block;
 }
 
 .wipe__image, .wiper {
   width: var(--width);
-  height: calc(var(--width) * 2 / 3);
+  height: 533px;
 }
 
 .wiper {
@@ -356,18 +361,18 @@ section {
 
 .wipe__slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  border-bottom: 14px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 14px solid rgba(20, 20, 20, 0.8);
   border-left: 14px solid transparent;
   border-right: 14px solid transparent;
   cursor: pointer;
   height: 0;
-  margin-bottom: -1px;
+  margin-bottom: -8px;
   width: 0;
 }
 
 
-/* 
- ## Scroll arrows
+/*
+## Scroll arrows
  */
 
 .go {
@@ -416,6 +421,30 @@ section {
     transform: translateY(0);
   }
 }
+
+.page-number {
+  display: flex;
+  justify-content: space-around;
+  bottom: 20px;
+  right: 30px;
+  color: #ddd;
+  font-size: 24px;
+  height: 30px;
+  letter-spacing: 10px;
+  text-align: center;
+  opacity: 0.1;
+  position: absolute;
+  width: 60px;
+}
+
+.page-number span {
+  width: 14px;
+}
+
+.page-number span:nth-child(2) {
+  padding-left: 6px;
+}
+
 
 /*
 
@@ -622,34 +651,32 @@ section {
 
 /*
 
-## Work
+## Workload
 
  */
 
-#work {
+#workload {
   background: #222;
-  color: white;
+  color: ghostwhite;
 }
 
 #work .section__column {
   flex-basis: 630px;
 }
 
-#work h1 {
+#workload h1 {
   color: #943;
 }
 
-#work h2 {
+#workload h2 {
   color: tan;
-}
-
-.testimonials {
-  display: flex;
 }
 
 .testimonial {
   align-items: center;
   display: flex;
+  flex-direction: row !important;
+  text-align: left !important;
   justify-content: flex-start;
 }
 
@@ -659,15 +686,24 @@ section {
   width: 100px;
 }
 
-.testimonial p {
-  padding: 4px 20px;
+
+/*
+
+## Data manipulation
+
+ */
+
+#data-manipulation {
+  background: coral;
 }
 
-.testimonial:last-child {
-  justify-content: flex-end;
-  text-align: right;
+#data-manipulation h1 {
+  color: brown;
 }
 
+#data-manipulation h2 {
+  color: antiquewhite;
+}
 
 /*
 
@@ -1000,7 +1036,7 @@ section {
   .wipe__changer {
     --width: 260px;
   }
-  
+
   h1 {
     font-size: 50px;
   }
@@ -1016,3 +1052,4 @@ section {
     min-height: calc(100vh - 60px);
   }
 }
+
