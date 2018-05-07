@@ -61,23 +61,23 @@ section {
   justify-content: space-between;
 }
 
-.col:nth-child(1) {
+.col__first {
   flex-basis: 870px;
   max-width: 870px;
   margin-bottom: 10px;
 }
 
-.col:nth-child(2) {
+.col__second {
   flex-basis: 480px;
   display: flex;
   flex-direction: column;
 }
 
-.col:nth-child(2) p {
+.col__second p {
   width: 60%;
 }
 
-.col:nth-child(3) {
+.col__third {
   flex-basis: 100%;
   display: flex;
   justify-content: space-around;
@@ -85,7 +85,7 @@ section {
   padding-top: 20px;
 }
 
-.col:nth-child(3) div {
+.col__third__panel {
   align-items: center;
   display: flex;
   flex-basis: 30%;
@@ -97,30 +97,13 @@ section {
 }
 
 
-.col:nth-child(3) h1 {
+.col__third h1 {
   font-size: 50px;
 }
 
-.col:nth-child(3) p {
+.col__third p {
   margin: 8px;
 }
-
-
-.container--double {
-  justify-content: space-between;
-  height: 88%;
-  padding-top: 0;
-}
-
-.col--double {
-  flex-basis: 600px;
-  height: 100%;
-}
-
-.col--double p {
-  padding-right: 110px;
-}
-
 
 .vertical-divider {
   background: #aaa;
@@ -605,7 +588,7 @@ section {
   width: 96%;
 }
 
-#swap-out .col:nth-child(3) h3 {
+#swap-out .col__third h3 {
   color: #e20;
 }
 
@@ -673,18 +656,31 @@ section {
   color: tan;
 }
 
+.warwick {
+  font-weight: 700;
+  color: coral;
+}
+
 .testimonial {
+  display: flex;
+  flex-basis: 40%;
+  height: 200px;
+  max-width: initial;
+  text-align: left;
+}
+
+.testimonial__person {
   align-items: center;
   display: flex;
-  flex-direction: row !important;
-  text-align: left !important;
-  justify-content: flex-start;
+  justify-content: center;
+  width: 100%;
 }
 
 .testimonial img {
   border-radius: 50%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   width: 100px;
+  height: 100px;
 }
 
 
@@ -790,11 +786,11 @@ section {
     width: 90%;
   }
 
-  .col:nth-child(1) {
+  .col__first {
     flex-basis: 55%;
   }
 
-  .col:nth-child(2) {
+  .col__second {
     flex-basis: 40%;
   }
 
@@ -825,37 +821,32 @@ section {
     padding: 60px 0;
   }
 
-  .col:nth-child(1) {
+  .col__first {
     flex-basis: 100%;
   }
 
-  .col:nth-child(2) {
+  .col__second {
     flex-basis: 50%;
   }
 
-  .col:nth-child(3) {
+  .col__third {
     flex-basis: 50%;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 0;
   }
 
-  .col:nth-child(3) div {
+  .col__third__panel {
     height: initial;
     width: 75%;
   }
 
-  .col:nth-child(3) h1 {
+  .col__third h1 {
     font-size: 40px;
   }
 
   .tablet-hide {
     display: none;
-  }
-
-  .vertical-divider {
-    flex-basis: 94% !important;
-    height: 1px;
   }
 
   .nav-name {
@@ -903,20 +894,20 @@ section {
 }
 
 @media only screen and (min-width: 1025px) {
-  .reverse .col:nth-child(1) {
+  .reverse .col__first {
     order: 2;
   }
 
-  .reverse .col:nth-child(2) {
+  .reverse .col__second {
     order: 1;
     text-align: right;
   }
 
-  .reverse .col:nth-child(2) p {
+  .reverse .col__second p {
     padding-left: 40%;
   }
 
-  .reverse .col:nth-child(3) {
+  .reverse .col__third {
     order: 3;
   }
 }
@@ -926,7 +917,7 @@ section {
     display: none !important;
   }
 
-  .col:nth-child(2) p {
+  .col__second p {
     width: 100%;
   }
   .phone-show {
@@ -946,17 +937,17 @@ section {
     justify-content: space-around;
   }
 
-  .col, .col--double {
+  .col {
     flex-basis: 100%;
     justify-content: center;
     text-align: center;
   }
 
-  .col:nth-child(3) {
+  .col__third {
     align-items: initial;
   }
 
-  .col:nth-child(3) div {
+  .col__third__panel {
     height: 150px;
     margin: 0;
     max-width: initial;
