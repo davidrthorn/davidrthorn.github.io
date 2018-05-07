@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
   </head>
   <body id="body">
-    <div id="main-menu">
-      <div class="phone-hide">
+    <div id="main-menu" class="phone-hide">
+      <div>
         <a href="#body">Home</a>
       </div>
-      <div class="phone-show">
+      <div>
         <a href="#body">
           <img class="contact-icon inverted" src="assets/images/home.svg" alt="">
         </a>
       </div>
-      <div class="phone-hide">
+      <div>
         <a href="#swap-out">Portfolio</a>
       </div>
     </div>
-    <div id="contact-menu">
+    <div id="contact-menu" class="phone-hide">
       <a href="mailto:davidrowthorn@gmail.com">
         <img class="contact-icon inverted" src="assets/images/email.svg" alt="">
       </a>
@@ -31,7 +31,7 @@
         <img class="contact-icon inverted phone-hide" src="assets/images/linkedin.svg" alt="">
       </a>
     </div>
-    <div id="navbar">
+    <div id="navbar" class="phone-hide">
       <div>
         David Rowthorn
       </div>
@@ -217,13 +217,13 @@
     </section>
     <section id="workload">
       <div class="go go--up">
-        <a href="#data-manipulation">
+        <a href="#cross-ref">
           ⌵
         </a>
       </div>
       <div class="container">
         <div class="col">
-          <img class="app-screenshot" src="assets/images/wipe_test2.jpg" width="870px" height="533px" alt="">
+          <img class="app-screenshot" src="assets/images/excel_example.jpg" alt="">
         </div>
         <div class="col">
           <h1>Workload Modelling</h1>
@@ -254,7 +254,7 @@
       </div>
     </section>
     <section id="data-manipulation">
-      <div class="go go--up">
+      <div class="go go--up inverted">
         <a href="#workload">
           ⌵
         </a>
@@ -277,26 +277,38 @@
           <p>The Python library Pandas was used to clean and reshape data collected from Qualtrics in preparation for analysis as part of an experiment conducted in the University of Warwick Psychology department</p>
           <p>It was not enough to simply pivot this data; instead, a Python script was required to translate Qualtric's idiosyncratic organisation of data into usable values and populate new columns with that data.</p>
         </div>
-        <div class="col">
-          <img src="assets/images/dc_inter_165.png" alt="">
-          <img src="assets/images/dc_clean_165.png" alt="">
-          <img src="assets/images/dc_manipulate_165.png" alt="">
+        <div id="datacamp" class="col">
+          <div>
+            <a href="https://www.datacamp.com/courses/intermediate-python-for-data-science">
+              <img src="assets/images/dc_inter_165.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="https://www.datacamp.com/courses/cleaning-data-in-python">
+              <img src="assets/images/dc_clean_165.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="https://www.datacamp.com/courses/manipulating-dataframes-with-pandas">
+              <img src="assets/images/dc_manipulate_165.png" alt="">
+            </a>
+          </div>
         </div>
       </div>
-      <div class="page-number">
+      <div class="page-number inverted">
         <span>5</span>
         <span>/</span>
         <span>6</span>
       </div>
-      <div class="go go--down">
+      <div class="go go--down inverted">
         <a href="#final">
           ⌵
         </a>
       </div>
     </section>
     <section id="final">
-      <div class="go go--up">
-        <a href="#workload">
+      <div class="go go--up inverted">
+        <a href="#data-manipulation">
           ⌵
         </a>
       </div>
@@ -319,7 +331,7 @@
           </div>
         </div>
       </div>
-      <div class="page-number">
+      <div class="page-number inverted">
         <span>6</span>
         <span>/</span>
         <span>6</span>

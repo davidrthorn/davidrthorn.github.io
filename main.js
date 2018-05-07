@@ -51,8 +51,11 @@
       a.addEventListener('click', e => {
         e.preventDefault()
         const targetId = e.currentTarget.hash.substr(1)
+        const offset = window.matchMedia("(max-width: 601px)").matches
+          ? 0
+          : 53
         const targetY = targetId !== 'body'
-          ? document.getElementById(targetId).offsetTop - 53
+          ? document.getElementById(targetId).offsetTop - offset
           : 0
 
         scrollTopSmooth(window.scrollY, targetY, 200, 'ease-in-out')

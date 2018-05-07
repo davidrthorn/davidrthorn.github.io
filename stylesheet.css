@@ -316,15 +316,16 @@ section {
 
 .wipe__changer {
   --width: 870px;
+  --height: calc(var(--width) / 870 * 533);
   width: var(--width);
-  height: 533px;
+  height: var(--height);
   position: relative;
   display: inline-block;
 }
 
 .wipe__image, .wiper {
   width: var(--width);
-  height: 533px;
+  height: var(--height);
 }
 
 .wiper {
@@ -432,7 +433,7 @@ section {
   height: 30px;
   letter-spacing: 10px;
   text-align: center;
-  opacity: 0.1;
+  opacity: 0.3;
   position: absolute;
   width: 60px;
 }
@@ -705,6 +706,10 @@ section {
   color: antiquewhite;
 }
 
+#datacamp {
+  color: ghostwhite;
+  font-weight: 600;
+}
 /*
 
 ## Final section
@@ -742,7 +747,7 @@ section {
 }
 
 #final button {
-  border: 2px solid #943;
+  border: 2px solid #444;
   background: transparent;
   box-shadow: 0 2px 4px rgba(0,0,0,0.10), 0 2px 4px rgba(0,0,0,0.13);
   color: #222;
@@ -891,6 +896,10 @@ section {
   .review p {
     padding-right: 0;
   }
+
+  .wipe__changer {
+    --width: 90vw;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -914,7 +923,7 @@ section {
 
 @media only screen and (max-width: 601px) {
   .phone-hide {
-    display: none;
+    display: none !important;
   }
 
   .col:nth-child(2) p {
@@ -928,22 +937,8 @@ section {
     height: initial;
   }
 
-  .wipe__changer {
-    --width: 300px;
-  }
-
   .go {
     z-index: 4;
-  }
-
-  #navbar {
-    bottom: 0;
-    top: unset;
-    height: 50px;
-  }
-
-  #navbar div {
-    display: none;
   }
 
   .container {
@@ -966,26 +961,6 @@ section {
     margin: 0;
     max-width: initial;
     width: 100%;
-  }
-
-  #main-menu {
-    left: 8px;
-    top: unset;
-    bottom: 0px;
-  }
-
-  #contact-menu {
-    top: unset;
-    bottom: 12px;
-  }
-
-  #contact-menu img {
-    width: unset;
-    margin: unset;
-  }
-
-  .menu-item {
-    padding: 10px 4px;
   }
 
   #splash {
@@ -1033,16 +1008,20 @@ section {
     width: 78%;
   }
 
-  .wipe__changer {
-    --width: 260px;
-  }
-
   h1 {
-    font-size: 50px;
+    font-size: 56px;
   }
 
   h2 {
     font-size: 24px !important;
+  }
+
+  #swap-video .app-screenshot {
+    width: 90%;
+  }
+
+  .wipe__changer {
+    --width: 78vw;
   }
 }
 
