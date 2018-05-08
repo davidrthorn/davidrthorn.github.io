@@ -322,7 +322,7 @@ section {
 }
 
 .wipe__panel img {
-  filter: sepia(.7);
+  filter: sepia(1);
 }
 
 .wipe__image {
@@ -334,10 +334,10 @@ section {
   -webkit-appearance: none;
   background: transparent;
   bottom: 0;
-  left: -2.3%;
+  left: -1.8%;
   outline: none;
   position: absolute;
-  width: 104%;
+  width: 103%;
 }
 
 .wipe__slider::-webkit-slider-thumb {
