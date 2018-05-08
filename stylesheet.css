@@ -64,7 +64,7 @@ section {
 .col__first {
   flex-basis: 870px;
   max-width: 870px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .col__second {
@@ -74,7 +74,7 @@ section {
 }
 
 .col__second p {
-  width: 60%;
+  width: 68%;
 }
 
 .col__third {
@@ -210,8 +210,9 @@ section {
 }
 
 .app-screenshot {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .20), 0 4px 8px rgba(0, 0, 0, .30);
   border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .20), 0 4px 8px rgba(0, 0, 0, .30);
+  overflow: hidden;
   position: relative;
   width: 100%;
 }
@@ -929,7 +930,7 @@ section {
 
 @media only screen and (min-width: 1200px) {
   .reverse .col__second p {
-    padding-left: 40%;
+    padding-left: 32%;
   }
 }
 
