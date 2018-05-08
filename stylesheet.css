@@ -584,7 +584,7 @@ section {
   align-items: center;
   background: white;
   display: flex;
-  overlap: initial;
+  overflow: initial;
   justify-content: center;
   padding-right: 0;
   padding: 30px 14px;
