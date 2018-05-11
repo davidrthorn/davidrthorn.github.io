@@ -61,19 +61,7 @@
         scrollTopSmooth(window.scrollY, targetY, 200, 'ease-in-out')
       })
     })
-
-
-  // Play video on hover
-
-  var swapVideo = document.getElementsByTagName('video')[0]
-
-  swapVideo.addEventListener('mouseover', e => {
-    e.currentTarget.play()
-  })
-  swapVideo.addEventListener('mouseleave', e => {
-    e.currentTarget.pause()
-  })
-
+    
 
   // Image wipe reveal
 
