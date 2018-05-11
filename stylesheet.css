@@ -49,7 +49,7 @@ section {
   height: calc(100vh - 53px);
   justify-content: space-around;
   padding: 0;
-  padding-top: 10px;
+  padding-top: 60px;
   position: relative;
 }
 
@@ -211,6 +211,7 @@ section {
 
 .app-screenshot {
   border-radius: 4px;
+  background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, .20), 0 4px 8px rgba(0, 0, 0, .30);
   overflow: hidden;
   position: relative;
@@ -362,8 +363,7 @@ section {
   color: #ccc;
   cursor: pointer;
   display: flex;
-  font-size: 44px;
-  height: 70px;
+  height: 50px;
   justify-content: center;
   position: absolute;
   text-align: center;
@@ -371,7 +371,7 @@ section {
 }
 
 .go img {
-  width: 30px;
+  width: 24px;
   filter: invert(1);
   opacity: .4;
 }
@@ -661,7 +661,6 @@ section {
 
 .warwick {
   font-weight: 700;
-  color: coral;
 }
 
 .testimonial {
