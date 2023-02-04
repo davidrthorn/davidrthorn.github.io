@@ -22,3 +22,10 @@ p {
 a {
   color: unset;
 }
+
+@media (max-width: 600px) {
+  .logo,
+  .when-where {
+    width: 80vw;
+  }
+}
