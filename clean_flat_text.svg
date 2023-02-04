@@ -8,7 +8,7 @@
    version="1.1"
    id="svg4349"
    inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
-   sodipodi:docname="clean.svg"
+   sodipodi:docname="clean_flat_text.svg"
    inkscape:export-filename="clean.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -27,15 +27,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="3.515014"
-     inkscape:cx="409.6712"
-     inkscape:cy="299.71431"
+     inkscape:zoom="1.054512"
+     inkscape:cx="275.48287"
+     inkscape:cy="289.70746"
      inkscape:window-width="1399"
      inkscape:window-height="817"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
-     inkscape:current-layer="Layer_1" />
+     inkscape:current-layer="layer1" />
   <defs
      id="defs4346" />
   <g
@@ -75,7 +75,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:'Poiret One';-inkscape-font-specification:'Poiret One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:'Poiret One';-inkscape-font-specification:'Poiret One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583;opacity:1"
        x="59.333347"
        y="139.35657"
        id="text2397"><tspan
