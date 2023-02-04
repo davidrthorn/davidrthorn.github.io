@@ -6,6 +6,7 @@ body {
 }
 .wrapper {
   width: 100vw;
+  padding-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
