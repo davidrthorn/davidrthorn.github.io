@@ -1,24 +1,59 @@
+@font-face {
+  font-family: ModecoBold;
+  src: url('ModecoTrial-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: ModecoLight;
+  src: url('ModecoTrial-ExtraLight.otf') format('opentype');
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: antiquewhite;
+  background: #2b2f38;
+  color: burlywood;
+  font-family: 'Poiret One', 'sans-serif';
 }
 .wrapper {
   width: 100vw;
-  padding-top: 3rem;
+  min-height: 100vh;
+  display: flex;
+}
+
+.side-decal {
+  transform: rotate(-90deg);
+  width: 60vh;
+}
+
+.right-decal {
+  transform: rotate(90deg);
+}
+
+.side-column {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  width: 100%;
+}
+
+.center-column {
+  width: 40vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Poiret One', 'sans-serif';
   text-align: center;
 }
 
 .when-where {
   opacity: 0;
-  animation: 500s fadeIn 500ms;
+  animation: 500ms fadeIn 500ms;
   animation-fill-mode: forwards;
+  color: rosybrown;
 }
 @keyframes fadeIn {
   0% {
@@ -37,9 +72,20 @@ a {
   color: unset;
 }
 
+.cam {
+  font-family: 'ModecoLight';
+  font-size: 4em;
+}
+
+.sub {
+  font-family: 'ModecoBold';
+  font-size: 2em;
+  margin-top: -1.3em;
+}
+
 @media (max-width: 600px) {
   .logo,
   .when-where {
-    width: 80vw;
+    width: 100vw;
   }
 }
