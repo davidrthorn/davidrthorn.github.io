@@ -45,7 +45,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  padding-top: 2em;
   text-align: center;
 }
 
@@ -53,7 +54,7 @@ body {
   opacity: 0;
   animation: 500ms fadeIn 500ms;
   animation-fill-mode: forwards;
-  color: rosybrown;
+  color: darkgray;
 }
 @keyframes fadeIn {
   0% {
@@ -83,9 +84,22 @@ a {
   margin-top: -1.3em;
 }
 
+.side-column {
+  visibility: visible;
+}
+.top-decal {
+  width: 400px;
+}
+
 @media (max-width: 600px) {
   .logo,
   .when-where {
     width: 100vw;
+  }
+  .center-column {
+    width: 100vw;
+  }
+  .side-column {
+    visibility: hidden;
   }
 }
