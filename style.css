@@ -37,6 +37,7 @@ body {
 
 .when-where {
   color: darkgray;
+  letter-spacing: 1pt;
 }
 
 @keyframes fadeIn {
@@ -59,12 +60,14 @@ a {
 .cam {
   font-family: 'ModecoLight';
   font-size: 4em;
+  letter-spacing: 6pt;
 }
 
 .sub {
   font-family: 'ModecoBold';
   font-size: 2em;
   margin-top: -1.3em;
+  letter-spacing: 4pt;
 }
 
 .top-decal {
