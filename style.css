@@ -7,8 +7,11 @@
   src: url('ModecoTrial-ExtraLight.otf') format('opentype');
 }
 
-body {
+* {
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
   background: #2b2f38;
@@ -78,9 +81,23 @@ a {
 @media (max-width: 700px) {
   .logo,
   .when-where {
-    width: 100vw;
+    width: 100%;
   }
   .center-column {
-    width: 100vw;
+    width: 100%;
+  }
+
+  .cam {
+    font-size: 3em;
+  }
+
+  .sub {
+    font-size: 1.6em;
+  }
+  h1 {
+    font-size: 1.6em;
+  }
+  p {
+    font-size: 1.4em;
   }
 }
