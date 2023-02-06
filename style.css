@@ -19,22 +19,10 @@ body {
   width: 100vw;
   min-height: 100vh;
   display: flex;
-}
-
-.side-decal {
-  transform: rotate(-90deg);
-  width: 60vh;
-}
-
-.right-decal {
-  transform: rotate(90deg);
-}
-
-.side-column {
-  width: 30vw;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  animation: 1s fadeIn 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .center-column {
@@ -48,11 +36,9 @@ body {
 }
 
 .when-where {
-  opacity: 0;
-  animation: 500ms fadeIn 500ms;
-  animation-fill-mode: forwards;
   color: darkgray;
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -83,7 +69,7 @@ a {
 
 .top-decal {
   width: 90%;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 @media (max-width: 700px) {
@@ -93,8 +79,5 @@ a {
   }
   .center-column {
     width: 100vw;
-  }
-  .side-column {
-    display: none;
   }
 }
