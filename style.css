@@ -36,9 +36,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-.logo {
-  width: 100%;
-}
 
 .center-column {
   width: 40vw;
@@ -84,14 +81,12 @@ a {
   margin-top: -1.3em;
 }
 
-.side-column {
-  visibility: visible;
-}
 .top-decal {
-  width: 400px;
+  width: 90%;
+  max-width: 500px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .logo,
   .when-where {
     width: 100vw;
@@ -100,6 +95,6 @@ a {
     width: 100vw;
   }
   .side-column {
-    visibility: hidden;
+    display: none;
   }
 }
