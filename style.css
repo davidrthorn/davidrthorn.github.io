@@ -22,9 +22,10 @@ body {
   display: flex;
   font-family: 'IBM Plex Mono';
   justify-content: center;
-  background: var(--black);
+  background: gainsboro;
   font-weight: 300;
   font-size: 18px;
+  margin: 0;
 }
 
 .wrapper {
