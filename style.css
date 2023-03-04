@@ -3,6 +3,8 @@
   --yellow: #e7f019;
   --blue: #2e72db;
   --white: #eee;
+  --black: #181a1b;
+  --light-yellow: cornsilk;
 }
 
 * {
@@ -11,8 +13,9 @@
 
 body {
   display: flex;
+  font-family: 'IBM Plex Mono';
   justify-content: center;
-  background: #181a1b;
+  background: var(--black);
 }
 
 .wrapper {
@@ -21,8 +24,40 @@ body {
   height: 100vh;
 }
 
+.nav {
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 15px;
+  background: white;
+}
+
+.footer {
+  background: white;
+  padding: 5px 15px;
+  height: 120px;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  height: 4px;
+  background-color: var(--black);
+}
+
 .free-entry {
   width: 100px;
+  margin-bottom: 20px;
 }
 
 .live {
@@ -37,9 +72,11 @@ body {
 .record {
   font-family: 'Bebas Neue';
   color: var(--white);
-  height: 382px;
+  height: 462px;
   display: flex;
   justify-content: space-between;
+  background: var(--black);
+  padding: 30px;
 }
 
 .lhs {
