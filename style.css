@@ -19,15 +19,38 @@ body {
   width: 100%;
   max-width: 600px;
   height: 100vh;
+}
+
+.free-entry {
+  width: 100px;
+}
+
+.live {
+  font-size: 70px;
+  letter-spacing: 3px;
+  height: calc(50px + var(--text-gap));
+}
+.jazz {
+  font-size: 70px;
+}
+
+.record {
+  font-family: 'Bebas Neue';
+  color: var(--white);
+  height: 382px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.lhs {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .text-column {
-  font-family: 'Bebas Neue';
   width: 160px;
-  height: calc(600px + var(--text-gap));
-  /* background: gold; */
   overflow: hidden;
 }
 
@@ -52,13 +75,11 @@ body {
 .every-first {
   font-size: 43px;
   height: calc(34px + var(--text-gap));
-  color: var(--white);
 }
 .wednesday {
   font-size: 30.5px;
   letter-spacing: 6px;
   height: calc(28px + var(--text-gap));
-  color: var(--white);
 }
 .rule {
   margin: 2px;
@@ -85,5 +106,4 @@ body {
 .every-third {
   font-size: 42px;
   height: calc(33px + var(--text-gap));
-  color: var(--white);
 }
