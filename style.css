@@ -1,5 +1,7 @@
 :root {
   --text-gap: 4px;
+  --yellow: #e7f019;
+  --blue: #2e72db;
 }
 
 * {
@@ -14,7 +16,6 @@ body {
 .wrapper {
   width: 100%;
   height: 100vh;
-  background: indianred;
   display: flex;
   justify-content: flex-end;
 }
@@ -23,7 +24,7 @@ body {
   font-family: 'Bebas Neue';
   width: 160px;
   height: calc(600px + var(--text-gap));
-  background: gold;
+  /* background: gold; */
   overflow: hidden;
 }
 
@@ -36,12 +37,14 @@ body {
   font-size: 78px;
   letter-spacing: 10px;
   height: calc(54px + var(--text-gap));
+  color: var(--yellow);
 }
 
 .depot {
   font-size: 85px;
   margin-left: -2px;
   height: calc(69px + var(--text-gap));
+  color: var(--yellow);
 }
 .every-first {
   font-size: 43px;
@@ -60,16 +63,19 @@ body {
   margin-left: -1px;
   margin-top: -6px;
   height: calc(38px + var(--text-gap));
+  color: var(--blue);
 }
 .croft {
   font-size: 53px;
   letter-spacing: 15px;
   height: calc(42px + var(--text-gap));
+  color: var(--blue);
 }
 .social-club {
   font-size: 32px;
   letter-spacing: 4px;
   height: calc(22px + var(--text-gap));
+  color: var(--blue);
 }
 .every-third {
   font-size: 42px;
