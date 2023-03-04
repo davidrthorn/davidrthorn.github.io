@@ -11,6 +11,7 @@
 body {
   display: flex;
   justify-content: center;
+  background: #181a1b;
 }
 
 .wrapper {
