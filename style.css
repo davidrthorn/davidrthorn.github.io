@@ -5,10 +5,17 @@
   --white: #eee;
   --black: #181a1b;
   --light-yellow: cornsilk;
+  --nav-height: 74px;
+  --record-height: 462px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: inherit;
+  font-weight: 500;
 }
 
 body {
@@ -16,12 +23,15 @@ body {
   font-family: 'IBM Plex Mono';
   justify-content: center;
   background: var(--black);
+  font-weight: 300;
+  font-size: 18px;
 }
 
 .wrapper {
   width: 100%;
   max-width: 600px;
   height: 100vh;
+  position: relative;
 }
 
 .nav {
@@ -30,7 +40,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 74px;
+  height: var(--nav-height);
   padding: 0 15px;
   background: white;
 }
@@ -38,7 +48,30 @@ body {
 .footer {
   background: white;
   padding: 5px 15px;
-  height: 120px;
+  min-height: calc(100vh - var(--nav-height) - var(--record-height));
+}
+
+.menu {
+  position: absolute;
+  top: var(--nav-height);
+  right: 0;
+  background: white;
+  display: flex;
+  direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  transition: height 0.2s;
+  overflow: hidden;
+}
+
+.menu ul {
+  padding: 0;
+}
+
+.menu li {
+  list-style-type: none;
+  margin: 10px 0;
 }
 
 .menu-icon {
@@ -72,7 +105,7 @@ body {
 .record {
   font-family: 'Bebas Neue';
   color: var(--white);
-  height: 462px;
+  height: var(--record-height);
   display: flex;
   justify-content: space-between;
   background: var(--black);
