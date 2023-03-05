@@ -14,10 +14,11 @@
     <div class="wrapper">
       <div class="menu" style="height: 0px" id="menu">
         <ul>
-          <li>Videos</li>
-          <li>Photos</li>
-          <li>Play</li>
-          <li>Contact</li>
+          <li id="home-button">Home</li>
+          <li id="video-button">Videos</li>
+          <li id="photo-button">Photos</li>
+          <li id="play-button">Play</li>
+          <li id="contact-button">Contact</li>
         </ul>
       </div>
       <div class="nav">
@@ -28,26 +29,32 @@
           <div></div>
         </div>
       </div>
-      <div class="record">
-        <div class="lhs">
-          <div class="live-jazz">
-            <div class="live">LIVE</div>
-            <div class="jazz">JAZZ</div>
+      <div class="panel-container">
+        <div class="panel" id="home-panel">
+          <div class="lhs">
+            <div class="live-jazz">
+              <div class="live">LIVE</div>
+              <div class="jazz">JAZZ</div>
+            </div>
+            <img class="free-entry" src="free_entry.png" />
           </div>
-          <img class="free-entry" src="free_entry.png" />
+          <div class="text-column">
+            <div class="tram">TRAM</div>
+            <div class="depot">DEPOT</div>
+            <div class="every-first">EVERY FIRST</div>
+            <div class="wednesday">WEDNESDAY</div>
+            <hr class="rule" />
+            <div class="newnham">NEWNHAM</div>
+            <div class="croft">CROFT</div>
+            <div class="social-club">SOCIAL CLUB</div>
+            <div class="every-third">EVERY THIRD</div>
+            <div class="wednesday">WEDNESDAY</div>
+          </div>
         </div>
-        <div class="text-column">
-          <div class="tram">TRAM</div>
-          <div class="depot">DEPOT</div>
-          <div class="every-first">EVERY FIRST</div>
-          <div class="wednesday">WEDNESDAY</div>
-          <hr class="rule" />
-          <div class="newnham">NEWNHAM</div>
-          <div class="croft">CROFT</div>
-          <div class="social-club">SOCIAL CLUB</div>
-          <div class="every-third">EVERY THIRD</div>
-          <div class="wednesday">WEDNESDAY</div>
-        </div>
+        <div class="panel" id="photo-panel">Photos</div>
+        <div class="panel" id="video-panel">Videos</div>
+        <div class="panel" id="play-panel">Play</div>
+        <div class="panel" id="contact-panel">Contact</div>
       </div>
       <div class="footer">
         <h1>Coming up</h1>
