@@ -19,3 +19,9 @@ panels.forEach(clickedPanel => {
       menu.style.height = menu.style.height === '0px' ? '180px' : '0px'
     })
 })
+
+// Don't use built in HTML mailto because the address will be crawled and spammed.
+document.querySelector('.email-address').addEventListener('click', () => {
+  const email = { name: 'david', domain: 'gmail.com' }
+  window.location.href = `mailto:${email.name}@${email.domain}`
+})

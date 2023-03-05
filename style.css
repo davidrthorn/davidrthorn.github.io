@@ -87,6 +87,7 @@ div[id$='-panel'] {
 }
 
 .social-icons img {
+  cursor: pointer;
   width: 60px;
 }
 
@@ -148,6 +149,7 @@ div[id$='-panel'] {
 
 .menu li {
   list-style-type: none;
+  cursor: 'pointer';
   margin: 10px 0;
 }
 
