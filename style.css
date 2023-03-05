@@ -83,7 +83,7 @@ div[id$='-panel'] {
   display: flex;
   margin-top: 80px;
   justify-content: space-around;
-  font-size: 80px;
+  max-width: 100vw;
 }
 
 .social-icons img {
