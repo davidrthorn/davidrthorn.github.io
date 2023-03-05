@@ -5,7 +5,7 @@ document.querySelector('#menu-icon').addEventListener('click', () => {
   menu.style.height = menu.style.height === '0px' ? '180px' : '0px'
 })
 
-const panels = ['home', 'photo', 'video', 'play', 'contact']
+const panels = ['home', 'photo', 'play', 'contact']
 
 panels.forEach(clickedPanel => {
   document
@@ -15,5 +15,7 @@ panels.forEach(clickedPanel => {
         document.querySelector(`#${p}-panel`).style.opacity =
           p === clickedPanel ? 1 : 0
       })
+      const menu = document.querySelector('#menu')
+      menu.style.height = menu.style.height === '0px' ? '180px' : '0px'
     })
 })
