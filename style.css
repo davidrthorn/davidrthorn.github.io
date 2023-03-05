@@ -6,7 +6,7 @@
   --black: #181a1b;
   --light-yellow: cornsilk;
   --nav-height: 74px;
-  --panel-height: 462px;
+  --panel-height: 420px;
   --panel-max-width: 600px;
 }
 
@@ -48,7 +48,7 @@ body {
 .panel {
   color: var(--white);
   position: absolute;
-  padding: 30px;
+  padding: 15px 30px;
   width: 100%;
   height: 100%;
   top: 0;
@@ -169,7 +169,7 @@ div[id$='-panel'] {
 
 .free-entry {
   width: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .live {
