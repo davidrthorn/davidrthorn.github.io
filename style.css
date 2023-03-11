@@ -1,3 +1,7 @@
+:root {
+  --center-col-max-width: 600px;
+}
+
 @font-face {
   font-family: ModecoBold;
   src: url('ModecoTrial-Bold.otf') format('opentype');
@@ -11,23 +15,31 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: #2b2f38;
-  color: burlywood;
+  background: #5b2424;
+  color: #ddae59;
   font-family: 'Poiret One', 'sans-serif';
 }
-.wrapper {
+
+.main {
   width: 100vw;
   min-height: 100vh;
   display: flex;
+  justify-content: center;
 }
 
-.side-decal {
-  transform: rotate(-90deg);
-  width: 60vh;
+.center-column {
+  width: 100%;
+  max-width: var(--center-col-max-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
 }
 
-.right-decal {
-  transform: rotate(90deg);
+.decal {
+  padding-top: 10px;
+  width: 94%;
 }
 
 .side-column {
@@ -40,21 +52,40 @@ body {
   width: 100%;
 }
 
-.center-column {
-  width: 40vw;
+.details {
+  font-family: 'ModecoLight';
+  font-size: 0.8em;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.when-where {
+  justify-content: space-around;
   opacity: 0;
   animation: 500ms fadeIn 500ms;
   animation-fill-mode: forwards;
-  color: gainsboro;
 }
+.event {
+  width: 40%;
+}
+.every {
+  font-size: 24px;
+}
+.date {
+  font-size: 46px;
+  margin-top: -9px;
+}
+.wednesday {
+  letter-spacing: 3px;
+  font-size: 16px;
+  margin-top: -12px;
+}
+.pm {
+  font-size: 16px;
+  font-family: 'ModecoBold';
+  margin-top: 3px;
+}
+.venue {
+  font-size: 14px;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -72,25 +103,45 @@ a {
   color: unset;
 }
 
-.cam {
+.popup-speakeasy {
   font-family: 'ModecoLight';
-  font-size: 4em;
+  font-size: 3em;
+  letter-spacing: 0.1em;
 }
 
-.sub {
+.cambridge {
   font-family: 'ModecoBold';
-  font-size: 3em;
+  font-size: 4em;
   margin-top: -0.9em;
 }
 
-.sub2 {
+.free-live {
   font-family: 'ModecoLight';
   font-size: 2em;
 }
+.jazz {
+  font-family: 'DM Serif Display';
+}
 
 @media (max-width: 600px) {
-  .logo,
-  .when-where {
-    width: 100vw;
+  .popup-speakeasy {
+    font-size: 2em;
+  }
+
+  .cambridge {
+    font-size: 1.6em;
+    margin-top: -0.8em;
+    letter-spacing: 0.07em;
+  }
+
+  .free-live {
+    font-size: 30px;
+    letter-spacing: -2px;
+  }
+  .jazz {
+    font-size: 5em;
+    letter-spacing: -3px;
+    margin-top: -44px;
+    margin-left: -10px;
   }
 }
