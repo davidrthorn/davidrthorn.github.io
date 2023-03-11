@@ -15,9 +15,9 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* color also set in facebook icon */
   background: #5b2424;
   color: #ddae59;
-  font-family: 'Poiret One', 'sans-serif';
 }
 
 .main {
@@ -30,6 +30,7 @@ body {
 .center-column {
   width: 100%;
   max-width: var(--center-col-max-width);
+  padding-bottom: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,25 +68,26 @@ body {
 }
 .every {
   font-size: 24px;
+  letter-spacing: 5px;
 }
 .date {
-  font-size: 46px;
-  margin-top: -9px;
+  font-size: 52px;
+  margin-top: -5px;
+  letter-spacing: 3px;
 }
 .wednesday {
+  font-family: 'ModecoBold';
   letter-spacing: 3px;
-  font-size: 16px;
-  margin-top: -12px;
+  font-size: 20px;
+  margin-top: -10px;
 }
 .pm {
-  font-size: 16px;
+  font-size: 24px;
   font-family: 'ModecoBold';
-  margin-top: 3px;
 }
 .venue {
-  font-size: 14px;
+  font-size: 20px;
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -93,6 +95,16 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.social {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+
+.social img {
+  height: 40px;
 }
 
 p {
