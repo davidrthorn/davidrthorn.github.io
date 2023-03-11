@@ -4,126 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicons/site.webmanifest" />
-    <title>Popup Speakeasy</title>
+    <title>Cambridge Jazz Club</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poirot"
+    />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@300;500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&&family=DM+Serif+Display&display=swap');
     </style>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="menu" style="height: 0px" id="menu">
-        <ul>
-          <li id="home-button">Home</li>
-          <li id="photo-button">Photos</li>
-          <li id="play-button">Play</li>
-          <li id="contact-button">Contact</li>
-        </ul>
-      </div>
-      <div class="nav">
-        <div>Popup Speakeasy</div>
-        <div class="menu-icon" id="menu-icon">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-      <div class="panel-container">
-        <div class="panel" id="home-panel">
-          <div class="lhs">
-            <div class="live-jazz">
-              <div class="live">LIVE</div>
-              <div class="jazz">JAZZ</div>
-            </div>
-            <img class="free-entry" src="free_entry.png" />
-          </div>
-          <div class="text-column">
-            <div class="tram">TRAM</div>
-            <div class="depot">DEPOT</div>
-            <div class="every-first">EVERY FIRST</div>
+    <div class="main">
+      <div class="center-column">
+        <header>
+          <img class="decal" src="decal.svg" />
+          <h1 class="popup-speakeasy">POPUP SPEAKEASY</h1>
+          <h2 class="cambridge">CAMBRIDGE</h2>
+        </header>
+        <sub>
+          <h2 class="free-live">FREE LIVE</h2>
+          <h2 class="jazz">JAZZ</h2>
+        </sub>
+        <div class="details">
+          <div class="event">
+            <div class="every">EVERY</div>
+            <div class="date">FIRST</div>
             <div class="wednesday">WEDNESDAY</div>
-            <hr class="rule" />
-            <div class="newnham">NEWNHAM</div>
-            <div class="croft">CROFT</div>
-            <div class="social-club">SOCIAL CLUB</div>
-            <div class="every-third">EVERY THIRD</div>
+            <div class="pm">8pm</div>
+            <p class="venue">
+              <a
+                href="https://www.google.com/maps/place/The+Tram+Depot/@52.2046122,0.1305907,17z/data=!4m8!1m2!3m1!2sThe+Tram+Depot!3m4!1s0x47d8708e2b8fbda3:0x6d916ece4009528e!8m2!3d52.2045294!4d0.132693"
+                >The Tram Depot, CB1</a
+              >
+            </p>
+          </div>
+          <div class="event">
+            <div class="every">EVERY</div>
+            <div class="date">THIRD</div>
             <div class="wednesday">WEDNESDAY</div>
+            <div class="pm">8pm</div>
+            <p class="venue">
+              <a
+                href="https://www.google.com/maps/place/Newnham+Croft+Social+and+Sports+Club/@52.1952366,0.1087505,15z/data=!4m6!3m5!1s0x47d870a618c193e7:0xce397b860d0c059b!8m2!3d52.1952366!4d0.1087505!16s%2Fg%2F11gy83sgy3"
+                >Newnham Croft Social Club, CB3</a
+              >
+            </p>
           </div>
         </div>
-        <div class="panel" id="photo-panel">
-          <div class="image-wrapper">
-            <img src="images/1.png" />
-          </div>
-          <div class="left-chevron chevron" id="prev-photo">‹</div>
-          <div class="right-chevron chevron" id="next-photo">›</div>
+        <div class="social">
+          <a href="https://www.facebook.com/groups/188620800054588">
+            <img src="icons/facebook.svg" />
+          </a>
+          <a href="https://www.facebook.com/groups/188620800054588">
+            <img src="icons/email.svg" />
+          </a>
         </div>
-        <div class="panel" id="play-panel">
-          <p>
-            Popup Speakeasy is a pre-arranged session open to all amateur jazz
-            musicians. If you'd like to play we encourage you to come along in
-            person to get a feel for the format and standard.
-          </p>
-          <p>
-            The Speakeasy is an amazing place to meet other Cambridge jazz
-            musicians. There's always tons of talent in the room and everyone is
-            approachable and friendly!
-          </p>
-        </div>
-        <div class="panel" id="contact-panel">
-          <p>
-            We love to meet people in person, but if you need to get in touch...
-          </p>
-          <div class="social-icons">
-            <img class="email-address" src="icons/email-square-icon.svg" />
-            <a
-              href="https://www.facebook.com/groups/188620800054588"
-              target="_blank"
-            >
-              <img src="icons/facebook-app-icon.svg" />
-            </a>
-            <img src="icons/ig-instagram-icon.svg" />
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <p>
-          Wednesday 22nd March, 8pm
-          <br />
-          <a
-            href="https://www.google.com/maps/place/Newnham+Croft+Social+and+Sports+Club/@52.1952366,0.1087505,15z/data=!4m2!3m1!1s0x0:0xce397b860d0c059b?sa=X&ved=2ahUKEwi67vCWqcL9AhVlkFwKHb6kAxMQ_BJ6BAhaEAg"
-            target="_blank"
-            >Newnham Croft Social Club, CB3</a
-          >
-        </p>
-        <p>
-          Wednesday 5th April, 8pm
-          <br />
-          <a
-            href="https://www.google.com/maps/place/The+Tram+Depot/@52.2046122,0.1305907,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8708e2b8fbda3:0x6d916ece4009528e!8m2!3d52.2045294!4d0.132693"
-            target="_blank"
-            >The Tram Depot, CB1</a
-          >
-        </p>
       </div>
     </div>
   </body>
-  <script src="script.js"></script>
 </html>
