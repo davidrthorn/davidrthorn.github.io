@@ -125,6 +125,10 @@ body {
   height: 50px;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 p {
   font-size: 1.5em;
 }
