@@ -1,5 +1,6 @@
 :root {
   --center-col-max-width: 600px;
+  --yellow: #ddae59;
 }
 
 @font-face {
@@ -11,18 +12,22 @@
   src: url('ModecoTrial-ExtraLight.otf') format('opentype');
 }
 
-body {
+* {
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
   /* color also set in facebook icon */
   background: #5b2424;
-  color: #ddae59;
+  color: var(--yellow);
 }
 
 .main {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
+  padding-bottom: 40px;
   display: flex;
   justify-content: center;
 }
@@ -34,7 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
 }
 
@@ -56,7 +61,7 @@ body {
 .details {
   font-family: 'ModecoLight';
   font-size: 0.8em;
-  width: 100%;
+  width: 96%;
   display: flex;
   justify-content: space-around;
   opacity: 0;
@@ -64,8 +69,16 @@ body {
   animation-fill-mode: forwards;
 }
 .event {
-  width: 40%;
+  width: 156px;
 }
+.divider {
+  height: 70%;
+  margin-top: 20px;
+  width: 1px;
+  background: var(--yellow);
+  opacity: 0.5;
+}
+
 .every {
   font-size: 24px;
   letter-spacing: 5px;
@@ -73,13 +86,20 @@ body {
 .date {
   font-size: 52px;
   margin-top: -5px;
+}
+.first {
+  letter-spacing: 8px;
+  margin-left: -3px;
+}
+.third {
   letter-spacing: 3px;
 }
 .wednesday {
   font-family: 'ModecoBold';
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   font-size: 20px;
   margin-top: -10px;
+  margin-left: 2px;
 }
 .pm {
   font-size: 24px;
