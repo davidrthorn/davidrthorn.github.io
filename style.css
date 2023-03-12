@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: ModecoBold;
-  src: url('ModecoTrial-Bold.otf') format('opentype');
+  font-family: ModecoRegular;
+  src: url('ModecoTrial-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: ModecoLight;
@@ -48,14 +48,37 @@ body {
   width: 94%;
 }
 
-.side-column {
-  width: 30vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+p {
+  font-size: 1.5em;
 }
-.logo {
-  width: 100%;
+
+a {
+  color: unset;
+}
+
+.popup-speakeasy {
+  font-family: 'ModecoLight';
+  font-size: 3em;
+  letter-spacing: 0.1em;
+}
+
+.cambridge {
+  font-family: 'ModecoRegular';
+  font-size: 2.4em;
+  margin-top: -0.9em;
+}
+
+.free-live {
+  font-family: 'ModecoLight';
+  font-size: 30px;
+  letter-spacing: -2px;
+}
+.jazz {
+  font-family: 'DM Serif Display';
+  font-size: 5em;
+  letter-spacing: -3px;
+  margin-top: -44px;
+  margin-left: -10px;
 }
 
 .details {
@@ -94,7 +117,7 @@ body {
   letter-spacing: 3px;
 }
 .wednesday {
-  font-family: 'ModecoBold';
+  font-family: 'ModecoRegular';
   letter-spacing: 4px;
   font-size: 20px;
   margin-top: -10px;
@@ -102,7 +125,7 @@ body {
 }
 .pm {
   font-size: 24px;
-  font-family: 'ModecoBold';
+  font-family: 'ModecoRegular';
 }
 .venue {
   font-size: 20px;
@@ -129,40 +152,6 @@ body {
 .pointer {
   cursor: pointer;
 }
-
-p {
-  font-size: 1.5em;
-}
-
-a {
-  color: unset;
-}
-
-.popup-speakeasy {
-  font-family: 'ModecoLight';
-  font-size: 3em;
-  letter-spacing: 0.1em;
-}
-
-.cambridge {
-  font-family: 'ModecoBold';
-  font-size: 2.4em;
-  margin-top: -0.9em;
-}
-
-.free-live {
-  font-family: 'ModecoLight';
-  font-size: 30px;
-  letter-spacing: -2px;
-}
-.jazz {
-  font-family: 'DM Serif Display';
-  font-size: 5em;
-  letter-spacing: -3px;
-  margin-top: -44px;
-  margin-left: -10px;
-}
-
 @media (max-width: 600px) {
   .popup-speakeasy {
     font-size: 2em;
