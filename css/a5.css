@@ -1,0 +1,93 @@
+@import url(main.css);
+
+:root {
+  --center-col-max-width: 1600px;
+  --yellow: #ddae59;
+}
+
+a {
+  text-decoration: none;
+}
+
+.decal {
+  width: 100%;
+}
+
+.popup-speakeasy {
+  font-size: 4em;
+  margin-top: 10px;
+}
+
+.cambridge {
+  font-size: 3em;
+  margin-top: -50px;
+}
+
+.free-live {
+  font-size: 60px;
+  letter-spacing: -4px;
+}
+
+.jazz {
+  font-size: 10em;
+  letter-spacing: -6px;
+  margin-top: -88px;
+  margin-left: -20px;
+  margin-bottom: 80px;
+}
+
+.details {
+  font-size: 60px;
+  width: 700px;
+  margin-bottom: 20px;
+}
+.event {
+  width: 232px;
+}
+.divider {
+  height: 250px;
+  width: 2px;
+  background: var(--yellow);
+  opacity: 0.5;
+  margin-top: 40px;
+}
+
+.every {
+  font-size: 32px;
+  letter-spacing: 8px;
+}
+.date {
+  font-size: 80px;
+  margin-top: -10px;
+}
+.first {
+  letter-spacing: 12px;
+  margin-left: -8px;
+}
+.third {
+  letter-spacing: 5px;
+  margin-left: -3px;
+}
+.wednesday {
+  font-family: 'ModecoRegular';
+  letter-spacing: 6px;
+  font-size: 32px;
+  margin-top: -20px;
+  margin-left: 0;
+}
+.pm {
+  font-size: 32px;
+  font-family: 'ModecoRegular';
+}
+.venue {
+  font-size: 32px;
+}
+
+.online {
+  display: none;
+}
+
+.offline {
+  display: block;
+  font-size: 22px;
+}
