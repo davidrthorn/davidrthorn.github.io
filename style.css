@@ -153,10 +153,12 @@ a {
 .free-live {
   font-family: 'ModecoLight';
   font-size: 30px;
+  letter-spacing: -2px;
 }
 .jazz {
   font-family: 'DM Serif Display';
   font-size: 5em;
+  letter-spacing: -3px;
   margin-top: -44px;
   margin-left: -10px;
 }
@@ -170,17 +172,6 @@ a {
     font-size: 1.6em;
     margin-top: -0.8em;
     letter-spacing: 0.07em;
-  }
-
-  .free-live {
-    font-size: 30px;
-    letter-spacing: -2px;
-  }
-  .jazz {
-    font-size: 5em;
-    letter-spacing: -3px;
-    margin-top: -44px;
-    margin-left: -10px;
   }
 
   .details {
