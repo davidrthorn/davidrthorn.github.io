@@ -116,7 +116,8 @@ a {
   width: 156px;
 }
 .divider {
-  height: 70%;
+  height: 200px;
+  margin-top: 12px;
   width: 1px;
   background: var(--yellow);
   opacity: 0.5;
@@ -144,6 +145,13 @@ a {
   margin-top: -10px;
   margin-left: 2px;
 }
+
+.of-the-month {
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin-bottom: 3px;
+}
+
 .pm {
   font-size: 24px;
   font-family: 'ModecoRegular';
