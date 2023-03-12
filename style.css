@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   /* color also set in facebook icon */
-  background: #5b2424;
+  background: maroon;
   color: var(--yellow);
 }
 
