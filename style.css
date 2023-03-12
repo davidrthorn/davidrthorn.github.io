@@ -60,7 +60,7 @@ body {
 .details {
   font-family: 'ModecoLight';
   font-size: 0.8em;
-  width: 96%;
+  width: 460px;
   display: flex;
   justify-content: space-around;
   opacity: 0;
@@ -117,12 +117,12 @@ body {
 
 .social {
   display: flex;
-  width: 30%;
+  width: 130px;
   justify-content: space-around;
 }
 
 .social img {
-  height: 40px;
+  height: 50px;
 }
 
 p {
@@ -141,16 +141,19 @@ a {
 
 .cambridge {
   font-family: 'ModecoBold';
-  font-size: 4em;
+  font-size: 2.4em;
   margin-top: -0.9em;
 }
 
 .free-live {
   font-family: 'ModecoLight';
-  font-size: 2em;
+  font-size: 30px;
 }
 .jazz {
   font-family: 'DM Serif Display';
+  font-size: 5em;
+  margin-top: -44px;
+  margin-left: -10px;
 }
 
 @media (max-width: 600px) {
@@ -173,5 +176,9 @@ a {
     letter-spacing: -3px;
     margin-top: -44px;
     margin-left: -10px;
+  }
+
+  .details {
+    width: 96%;
   }
 }
