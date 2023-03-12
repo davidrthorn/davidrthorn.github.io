@@ -47,6 +47,29 @@ body {
   text-align: center;
 }
 
+.top-slide {
+  animation: 500ms slideInFromTop 500ms, 500ms fadeIn 500ms;
+  animation-fill-mode: forwards;
+}
+
+.bottom-slide {
+  animation: 1s fadeIn 700ms;
+  animation: 500ms slideInFromBottom 500ms, 500ms fadeIn 500ms;
+  animation-fill-mode: forwards;
+}
+
+.fade-in-slow {
+  animation: 1s fadeIn 700ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.fade-in-fast {
+  animation: 500ms fadeIn 500ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
 .decal {
   padding-top: 10px;
   width: 94%;
@@ -88,9 +111,6 @@ a {
   width: 460px;
   display: flex;
   justify-content: space-around;
-  opacity: 0;
-  animation: 500ms fadeIn 500ms;
-  animation-fill-mode: forwards;
 }
 .event {
   width: 156px;
@@ -131,14 +151,6 @@ a {
 .venue {
   font-size: 20px;
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 .social {
   display: flex;
@@ -166,5 +178,31 @@ a {
 
   .details {
     width: 96%;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(50vh);
+  }
+  100% {
+    opacity: translateY(0);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-50vh);
+  }
+  100% {
+    opacity: translateY(0);
   }
 }
