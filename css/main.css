@@ -178,12 +178,17 @@ a {
 
 .social {
   display: flex;
-  width: 130px;
+  width: 200px;
   justify-content: space-around;
 }
 
-.social img {
+.svg-social {
   height: 50px;
+}
+.eventbrite {
+  height: 59px;
+  margin-top: -5px;
+  margin-left: -5px;
 }
 
 .pointer {
