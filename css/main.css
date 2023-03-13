@@ -86,6 +86,7 @@ a {
 .popup-speakeasy {
   font-size: 3em;
   letter-spacing: 0.1em;
+  margin-top: 0;
 }
 
 .cambridge {
@@ -95,8 +96,8 @@ a {
 }
 
 .free-live {
-  font-size: 30px;
-  letter-spacing: -2px;
+  font-size: 32px;
+  margin-top: 0;
 }
 .jazz {
   font-family: 'DM Serif Display';
@@ -104,6 +105,21 @@ a {
   letter-spacing: -3px;
   margin-top: -44px;
   margin-left: -10px;
+  margin-bottom: 0;
+}
+
+.next {
+  font-size: 20px;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+.side-decal {
+  transform: rotate(90deg);
+  width: 100%;
+}
+
+.next-date {
+  font-family: 'ModecoRegular';
 }
 
 .details {
