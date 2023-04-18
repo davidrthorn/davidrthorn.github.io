@@ -17,7 +17,7 @@ class Venue {
     }
 }
 
-var events = [
+const events = [
     {d: new Date(2023, 3, 5), v: Venue.Tram},
     {d: new Date(2023, 3, 19), v: Venue.Newnham},
     {d: new Date(2023, 4, 3), v: Venue.Tram},
@@ -52,7 +52,7 @@ function format(date) {
 }
 
 function ordinal(d) {
-    return d + (d % 10 === 1 ? "st" : d % 10 === 2 ? "nd" : d % 10 === 3 ? "rd" : "th");
+    return d + ((d % 100 < 14 && d % 100 > 10) ? "th" : d % 10 === 1 ? "st" : d % 10 === 2 ? "nd" : d % 10 === 3 ? "rd" : "th");
 }
 function ex(a, t) {
     return a.find(i => i.type === t).value;
