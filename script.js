@@ -39,7 +39,7 @@ const events = [
 ];
 
 function nextEv() {
-    let now = Date.now();
+    let now = new Date().setHours(0,0,0,0);
     for (var i = 0; i < events.length; i++) {
         if (events[i].d >= now) break;
     }
