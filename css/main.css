@@ -122,6 +122,13 @@ a {
   font-family: 'ModecoRegular';
 }
 
+.next-msg {
+  font-family: 'ModecoRegular';
+  margin-bottom: 25px;
+  font-size: 120%;
+  display: none;
+}
+
 .details {
   font-size: 0.8em;
   width: 460px;

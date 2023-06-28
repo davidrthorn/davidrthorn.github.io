@@ -18,6 +18,7 @@ class Venue {
 }
 
 const events = [
+    // NB JS months 0-indexed
     {d: new Date(2023, 3, 5), v: Venue.Tram},
     {d: new Date(2023, 3, 19), v: Venue.Newnham},
     {d: new Date(2023, 4, 3), v: Venue.Tram},
@@ -28,7 +29,7 @@ const events = [
     {d: new Date(2023, 6, 19), v: Venue.Newnham},
     {d: new Date(2023, 7, 2), v: Venue.Tram},
     {d: new Date(2023, 7, 16), v: Venue.Newnham},
-    {d: new Date(2023, 8, 6), v: Venue.Tram},
+    {d: new Date(2023, 8, 6), v: Venue.Tram, msg:"The Speakeasies are taking a break in August. See you in September!"},
     {d: new Date(2023, 8, 20), v: Venue.Newnham},
     {d: new Date(2023, 9, 4), v: Venue.Tram},
     {d: new Date(2023, 9, 18), v: Venue.Newnham},
@@ -62,3 +63,7 @@ let next = nextEv();
 
 document.getElementById("next-date").textContent = format(next.d);
 document.getElementById("next-venue").textContent = next.v.name;
+if (next.msg !== undefined) {
+    document.getElementById("next-msg").textContent = next.msg;
+    document.getElementById("next-msg").style.display = "block";
+}
