@@ -27,8 +27,6 @@ const events = [
     {d: new Date(2023, 5, 21), v: Venue.Newnham},
     {d: new Date(2023, 6, 5), v: Venue.Tram},
     {d: new Date(2023, 6, 19), v: Venue.Newnham},
-    {d: new Date(2023, 7, 2), v: Venue.Tram},
-    {d: new Date(2023, 7, 16), v: Venue.Newnham},
     {d: new Date(2023, 8, 6), v: Venue.Tram, msg:"The Speakeasies are taking a break in August. See you in September!"},
     {d: new Date(2023, 8, 20), v: Venue.Newnham},
     {d: new Date(2023, 9, 4), v: Venue.Tram},
