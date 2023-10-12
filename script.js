@@ -34,7 +34,13 @@ const events = [
     {d: new Date(2023, 10, 1), v: Venue.Tram},
     {d: new Date(2023, 10, 15), v: Venue.Newnham},
     {d: new Date(2023, 11, 6), v: Venue.Tram},
-    {d: new Date(2023, 11, 20), v: Venue.Newnham}
+    {d: new Date(2023, 11, 20), v: Venue.Newnham},
+    {d: new Date(2024, 0, 3), v: Venue.Tram},
+    {d: new Date(2024, 0, 17), v: Venue.Newnham},
+    {d: new Date(2024, 1, 7), v: Venue.Tram},
+    {d: new Date(2024, 1, 24), v: Venue.Newnham},
+    {d: new Date(2024, 2, 6), v: Venue.Tram},
+    {d: new Date(2024, 2, 20), v: Venue.Newnham}
 ];
 
 function nextEv() {
