@@ -19,28 +19,21 @@ class Venue {
 
 const events = [
     // NB JS months 0-indexed
-    {d: new Date(2023, 3, 5), v: Venue.Tram},
-    {d: new Date(2023, 3, 19), v: Venue.Newnham},
-    {d: new Date(2023, 4, 3), v: Venue.Tram},
-    {d: new Date(2023, 4, 17), v: Venue.Newnham},
-    {d: new Date(2023, 5, 7), v: Venue.Tram},
-    {d: new Date(2023, 5, 21), v: Venue.Newnham},
-    {d: new Date(2023, 6, 5), v: Venue.Tram},
-    {d: new Date(2023, 6, 19), v: Venue.Newnham},
-    {d: new Date(2023, 8, 6), v: Venue.Tram, msg:"The Speakeasies are taking a break in August. See you in September!"},
-    {d: new Date(2023, 8, 20), v: Venue.Newnham},
-    {d: new Date(2023, 9, 4), v: Venue.Tram},
-    {d: new Date(2023, 9, 18), v: Venue.Newnham},
-    {d: new Date(2023, 10, 1), v: Venue.Tram},
-    {d: new Date(2023, 10, 15), v: Venue.Newnham},
     {d: new Date(2023, 11, 6), v: Venue.Tram},
-    {d: new Date(2023, 11, 20), v: Venue.Newnham},
-    {d: new Date(2024, 0, 3), v: Venue.Tram},
+    {d: new Date(2023, 11, 20), v: Venue.Newnham, msg:"Please note the next Tram Depot Speakeasy will be on <i>10th January</i>"},
+    {d: new Date(2024, 0, 10), v: Venue.Tram, msg:"Please note the next Tram Depot Speakeasy will be on <i>10th January</i>"},
     {d: new Date(2024, 0, 17), v: Venue.Newnham},
     {d: new Date(2024, 1, 7), v: Venue.Tram},
-    {d: new Date(2024, 1, 24), v: Venue.Newnham},
+    {d: new Date(2024, 1, 21), v: Venue.Newnham},
     {d: new Date(2024, 2, 6), v: Venue.Tram},
-    {d: new Date(2024, 2, 20), v: Venue.Newnham}
+    {d: new Date(2024, 2, 20), v: Venue.Newnham},
+    {d: new Date(2024, 3, 3), v: Venue.Tram},
+    {d: new Date(2024, 3, 17), v: Venue.Newnham},
+    {d: new Date(2024, 4, 1), v: Venue.Tram},
+    {d: new Date(2024, 4, 15), v: Venue.Newnham},
+    {d: new Date(2024, 5, 5), v: Venue.Tram},
+    {d: new Date(2024, 5, 19), v: Venue.Newnham}
+
 ];
 
 function nextEv() {
@@ -68,6 +61,6 @@ let next = nextEv();
 document.getElementById("next-date").textContent = format(next.d);
 document.getElementById("next-venue").textContent = next.v.name;
 if (next.msg !== undefined) {
-    document.getElementById("next-msg").textContent = next.msg;
+    document.getElementById("next-msg").innerHTML = next.msg;
     document.getElementById("next-msg").style.display = "block";
 }
