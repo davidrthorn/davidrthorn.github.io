@@ -19,10 +19,7 @@ class Venue {
 
 const events = [
     // NB JS months 0-indexed
-    {d: new Date(2023, 11, 6), v: Venue.Tram},
-    {d: new Date(2023, 11, 20), v: Venue.Newnham, msg:"Please note the next Tram Depot Speakeasy will be on <i>10th January</i>"},
-    {d: new Date(2024, 0, 10), v: Venue.Tram, msg:"Please note the next Tram Depot Speakeasy will be on <i>10th January</i>"},
-    {d: new Date(2024, 0, 17), v: Venue.Newnham},
+    {d: new Date(2024, 0, 17), v: Venue.Newnham, msg:"//&nbsp;Owing to circumstances beyond our control, the Tram Depot Speakeasy on <i>10th January</i> is cancelled. <br/>It will resume in February.&nbsp;\\\\"},
     {d: new Date(2024, 1, 7), v: Venue.Tram},
     {d: new Date(2024, 1, 21), v: Venue.Newnham},
     {d: new Date(2024, 2, 6), v: Venue.Tram},
