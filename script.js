@@ -29,7 +29,18 @@ const events = [
     {d: new Date(2024, 4, 1), v: Venue.Tram},
     {d: new Date(2024, 4, 15), v: Venue.Newnham},
     {d: new Date(2024, 5, 5), v: Venue.Tram},
-    {d: new Date(2024, 5, 19), v: Venue.Newnham}
+    {d: new Date(2024, 5, 19), v: Venue.Newnham},
+
+    {d: new Date(2024, 6, 3), v: Venue.Tram},
+    {d: new Date(2024, 6, 17), v: Venue.Newnham},
+    {d: new Date(2024, 8, 4), v: Venue.Tram, msg:"There will be no sessions during August.<br/>See you in September!"},
+    {d: new Date(2024, 8, 18), v: Venue.Newnham},
+    {d: new Date(2024, 9, 2), v: Venue.Tram},
+    {d: new Date(2024, 9, 16), v: Venue.Newnham},
+    {d: new Date(2024, 10, 6), v: Venue.Tram},
+    {d: new Date(2024, 10, 20), v: Venue.Newnham},
+    {d: new Date(2024, 11, 4), v: Venue.Tram},
+    {d: new Date(2024, 11, 18), v: Venue.Newnham},
 
 ];
 
