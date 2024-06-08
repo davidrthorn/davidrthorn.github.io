@@ -30,16 +30,16 @@ body {
 
 .main {
   width: 100vw;
-  margin-top: 8px;
-  height: 90vh;
+  padding: 24px 0 16px 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
 
 .center-column {
   width: 100%;
+  height: 100%;
   max-width: var(--center-col-max-width);
-  padding-bottom: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,31 +47,7 @@ body {
   text-align: center;
 }
 
-.top-slide {
-  animation: 500ms slideInFromTop 500ms, 500ms fadeIn 500ms;
-  animation-fill-mode: forwards;
-}
-
-.bottom-slide {
-  animation: 1s fadeIn 700ms;
-  animation: 500ms slideInFromBottom 500ms, 500ms fadeIn 500ms;
-  animation-fill-mode: forwards;
-}
-
-.fade-in-slow {
-  animation: 1s fadeIn 700ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.fade-in-fast {
-  animation: 500ms fadeIn 500ms;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
 .decal {
-  padding-top: 10px;
   width: 98%;
 }
 
@@ -144,16 +120,11 @@ a {
 }
 .divider {
   height: 200px;
-  margin-top: 12px;
   width: 1px;
   background: var(--yellow);
   opacity: 0.5;
 }
 
-.every {
-  font-size: 24px;
-  letter-spacing: 5px;
-}
 .date {
   font-size: 52px;
   margin-top: -5px;
@@ -173,9 +144,9 @@ a {
   margin-left: 2px;
 }
 
-.of-the-month {
+.every-month {
   font-size: 16px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   margin-bottom: 3px;
 }
 
@@ -185,11 +156,20 @@ a {
 }
 .venue {
   font-size: 20px;
+  margin: 5px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 86px;
+  margin-top: 24px;
+  justify-content: space-between;
 }
 
 .social {
   display: flex;
-  width: 200px;
+  width: 240px;
   justify-content: space-around;
 }
 
@@ -197,9 +177,8 @@ a {
   height: 50px;
 }
 .eventbrite {
-  height: 59px;
-  margin-top: -5px;
-  margin-left: -5px;
+  height: 52px;
+  margin-top: -1px;
 }
 
 .pointer {
@@ -222,27 +201,53 @@ a {
 }
 
 /* Animations */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes slideInFromBottom {
-  0% {
-    transform: translateY(50vh);
-  }
-  100% {
-    opacity: translateY(0);
-  }
+
+.top-slide {
+  animation: 500ms slideInFromTop 500ms, 500ms fadeIn 500ms;
+  animation-fill-mode: forwards;
+  transform: translateY(-50vh);
+  opacity: 0;
 }
 @keyframes slideInFromTop {
   0% {
     transform: translateY(-50vh);
   }
   100% {
-    opacity: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.bottom-slide {
+  animation: 500ms slideInFromBottom 500ms, 500ms fadeIn 500ms;
+  animation-fill-mode: forwards;
+  transform: translateY(50vh);
+  opacity: 0;
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(50vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.fade-in-slow {
+  animation: 1s fadeIn 700ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.fade-in-fast {
+  animation: 500ms fadeIn 500ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
