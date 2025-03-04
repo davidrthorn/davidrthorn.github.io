@@ -120,6 +120,11 @@ a {
   display: flex;
   justify-content: space-around;
 }
+.body {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 .event {
   width: 156px;
 }
