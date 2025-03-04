@@ -1,3 +1,6 @@
+
+document.getElementById("header").onclick = function() { window.location.href = "index.html"; };
+
 class Venue {
   static Newnham = new Venue('Newnham Croft Social Club')
   static Tram = new Venue('The Tram Depot')
@@ -9,27 +12,20 @@ class Venue {
 
 const events = [
   // NB JS months 0-indexed
-  { d: new Date(2024, 11, 4), v: Venue.Tram },
-  { d: new Date(2024, 11, 18), v: Venue.Newnham },
-  { d: new Date(2025, 0, 15), v: Venue.Newnham,
-      msg: '<<&nbsp;There is no Tram Depot Speakeasy on <i>1st January</i>, the first of 2025 will be 5th February.&nbsp;>>'
-  },
-  { d: new Date(2025, 1, 5), v: Venue.Tram },
-  { d: new Date(2025, 1, 19), v: Venue.Newnham },
-  { d: new Date(2025, 2, 5), v: Venue.Tram },
+  { d: new Date(2025, 2, 5), v: Venue.Tram},
   { d: new Date(2025, 2, 19), v: Venue.Newnham },
-  { d: new Date(2025, 3, 2), v: Venue.Tram },
-  { d: new Date(2025, 3, 16), v: Venue.Newnham },
-  { d: new Date(2025, 4, 7), v: Venue.Tram },
+  { d: new Date(2025, 3, 2), v: Venue.Tram,
+    msg: '<<&nbsp;There is no Newnham Speakeasy in April.&nbsp;>>' },
+  { d: new Date(2025, 4, 7), v: Venue.Tram,
+    msg: '<<&nbsp;There is no Newnham Speakeasy in April.&nbsp;>>' },
   { d: new Date(2025, 4, 21), v: Venue.Newnham },
   { d: new Date(2025, 5, 4), v: Venue.Tram },
   { d: new Date(2025, 5, 18), v: Venue.Newnham },
 
-  { d: new Date(2025, 6, 2), v: Venue.Tram },
-  { d: new Date(2025, 6, 16), v: Venue.Newnham,
-      msg: '<<&nbsp;There is no Tram Depot Speakeasy in August, the next Tram Depot will be 3rd September.&nbsp;>>' },
-  { d: new Date(2025, 7, 20), v: Venue.Newnham },
-  { d: new Date(2025, 8, 3), v: Venue.Tram },
+  { d: new Date(2025, 6, 2), v: Venue.Tram,
+    msg: '<<&nbsp;There is no Newnham Speakeasy in July.&nbsp;>>' },
+  { d: new Date(2025, 8, 3), v: Venue.Tram,
+    msg: '<<&nbsp;There are no Speakeasies during August.&nbsp;>>'  },
   { d: new Date(2025, 8, 17), v: Venue.Newnham },
   { d: new Date(2025, 9, 1), v: Venue.Tram },
   { d: new Date(2025, 9, 15), v: Venue.Newnham },
