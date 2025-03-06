@@ -1,6 +1,3 @@
-
-document.getElementById("header").onclick = function() { window.location.href = "index.html"; };
-
 class Venue {
   static Newnham = new Venue('Newnham Croft Social Club')
   static Tram = new Venue('The Tram Depot')
@@ -78,13 +75,3 @@ if (next.msg !== undefined) {
   document.getElementById('next-msg').innerHTML = next.msg
   document.getElementById('next-msg').style.display = 'block'
 }
-
-document.getElementById('email').addEventListener('click', () => {
-  // Prevent crawlers from getting the email address.
-  const instruction = 'mailto'
-  const name = 'cambridgejazzclub'
-  const domain = 'meeprophone'
-  const suffix = 'com'
-
-  window.location.href = `${instruction}:${name}@${domain}.${suffix}`
-})

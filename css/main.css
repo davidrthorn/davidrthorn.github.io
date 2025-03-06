@@ -183,6 +183,8 @@ a {
 
 .links {
   margin-bottom: 12px;
+  font-size: 140%;
+  text-align: center;
 }
 
 .donate-now {
@@ -201,8 +203,12 @@ a:hover {
 
 .social {
   display: flex;
-  width: 240px;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: center;
+}
+
+.social img {
+  padding: 0 0.3em;
 }
 
 .svg-social {
