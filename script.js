@@ -19,8 +19,9 @@ const events = [
   { d: new Date(2025, 5, 4), v: Venue.Tram },
   { d: new Date(2025, 5, 18), v: Venue.Newnham },
 
-  { d: new Date(2025, 6, 2), v: Venue.Tram,
-    msg: '<<&nbsp;There is no Newnham Speakeasy in July.&nbsp;>>' },
+  { d: new Date(2025, 6, 2), v: Venue.Tram },
+  { d: new Date(2025, 6, 16), v: Venue.Newnham },
+
   { d: new Date(2025, 8, 3), v: Venue.Tram,
     msg: '<<&nbsp;There are no Speakeasies during August.&nbsp;>>'  },
   { d: new Date(2025, 8, 17), v: Venue.Newnham },
