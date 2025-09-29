@@ -238,6 +238,35 @@ a:hover {
   }
 }
 
+h1 {
+  padding-top: 0.67em;
+  margin-top: 0;
+}
+
+h1:target {
+  animation: 2s pulse 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    color: var(--yellow);
+    text-shadow: 2px 2px 12px var(--yellow-light);
+  }
+
+  34% {
+    transform: scale(1.1);
+    color: #ffffff;
+  }
+
+  100% {
+    transform: scale(1);
+    color: var(--yellow-light);
+    text-shadow: none;
+  }
+}
+
 /* Animations */
 
 .top-slide {
