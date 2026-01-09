@@ -9,29 +9,11 @@ class Venue {
 
 const events = [
   // NB JS months 0-indexed
-  { d: new Date(2025, 2, 5), v: Venue.Tram},
-  { d: new Date(2025, 2, 19), v: Venue.Newnham },
-  { d: new Date(2025, 3, 2), v: Venue.Tram,
-    msg: '<<&nbsp;There is no Newnham Speakeasy in April.&nbsp;>>' },
-  { d: new Date(2025, 4, 7), v: Venue.Tram,
-    msg: '<<&nbsp;There is no Newnham Speakeasy in April.&nbsp;>>' },
-  { d: new Date(2025, 4, 21), v: Venue.Newnham },
-  { d: new Date(2025, 5, 4), v: Venue.Tram },
-  { d: new Date(2025, 5, 18), v: Venue.Newnham },
-
-  { d: new Date(2025, 6, 2), v: Venue.Tram },
-  { d: new Date(2025, 6, 16), v: Venue.Newnham },
-
-  { d: new Date(2025, 8, 3), v: Venue.Tram,
-    msg: '<<&nbsp;There are no Speakeasies during August.&nbsp;>>'  },
-  { d: new Date(2025, 8, 17), v: Venue.Newnham },
-  { d: new Date(2025, 9, 1), v: Venue.Tram },
-  { d: new Date(2025, 9, 15), v: Venue.Newnham },
-  { d: new Date(2025, 10, 5), v: Venue.Tram },
-  { d: new Date(2025, 10, 19), v: Venue.Newnham },
-    { d: new Date(2025, 11, 3), v: Venue.Tram },
-    { d: new Date(2025, 11, 17), v: Venue.Newnham },
+  { d: new Date(2026, 1, 4), v: Venue.Tram},
+  { d: new Date(2026, 2, 4), v: Venue.Tram},
+  { d: new Date(2026, 3, 1), v: Venue.Tram}
 ]
+
 
 function nextEv () {
   let now = new Date().setHours(0, 0, 0, 0)
