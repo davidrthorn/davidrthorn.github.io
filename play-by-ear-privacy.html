@@ -99,8 +99,21 @@
       <span>Play by Ear</span>
     </div>
 
-    <p><em>Support:</em>davidrowthorn@gmail.com</p>
+    <span id="email-link"></span>
 
+<script>
+  (function() {
+    const part1 = "davidrowthorn";
+    const part2 = "gmail.com";
+    const label = "Support:";
+    const container = document.getElementById('email-link');
+    
+    if (container) {
+      container.innerHTML = `<strong>${label}</strong>&nbsp;<a href="mailto:${part1}@${part2}">${part1}@${part2}</a>`;
+    }
+  })();
+</script>
+  
     <h1>Privacy Policy</h1>
     <p class="effective-date">Effective date: 8 February 2026</p>
 
@@ -139,4 +152,5 @@
   </div>
 </body>
 </html>
+
 
