@@ -1,0 +1,440 @@
+/* ===================================================
+   Shared styles — davidrowthorn.tech
+   Premium dark theme
+   =================================================== */
+
+/* --- Reset & Base --- */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  /* Backgrounds */
+  --bg-primary:    #0c0c14;
+  --bg-surface:    #13131f;
+  --bg-card:       #1a1a2a;
+  --bg-card-hover: #1f1f32;
+  --bg-border:     rgba(255, 255, 255, .06);
+
+  /* Accent */
+  --accent-blue:   #3b82f6;
+  --accent-amber:  #f59e0b;
+  --accent-orange: #f97316;
+  --accent-green:  #10b981;
+  --accent-purple: #8b5cf6;
+
+  /* Glow */
+  --glow-blue:   rgba(59, 130, 246, .15);
+  --glow-amber:  rgba(245, 158, 11, .12);
+
+  /* Text */
+  --text-primary:   #f0f0f5;
+  --text-secondary: #c8c8d8;
+  --text-tertiary:  #a0a0b8;
+  --text-muted:     #6e6e8a;
+  --text-disabled:  #4a4a60;
+
+  /* Links */
+  --link:       #60a5fa;
+  --link-hover: #93bbfd;
+
+  /* Section headings */
+  --heading-accent: #e5c07b;
+
+  /* Misc */
+  --border-color:  rgba(255, 255, 255, .06);
+  --radius-sm:  10px;
+  --radius-md:  16px;
+  --radius-lg:  28px;
+  --max-width:  760px;
+
+  /* Font */
+  --font-stack: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                Helvetica, Arial, sans-serif;
+
+  /* Spacing scale */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-stack);
+  background: var(--bg-primary);
+  color: var(--text-tertiary);
+  line-height: 1.7;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle radial glow behind main content */
+body::before {
+  content: '';
+  position: fixed;
+  top: -40%;
+  left: 50%;
+  translate: -50% 0;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(59, 130, 246, .06) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4 { color: var(--text-primary); font-weight: 700; letter-spacing: -.02em; }
+h1 { font-size: 2rem;   margin-bottom: .5rem; }
+h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--heading-accent);
+  margin-top: 2.5rem;
+  margin-bottom: .75rem;
+}
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--heading-accent);
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+}
+p  { margin-bottom: 1rem; }
+strong { color: var(--text-secondary); }
+code {
+  background: var(--bg-card);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: .88em;
+  border: 1px solid var(--border-color);
+}
+
+a       { color: var(--link); text-decoration: none; transition: color .2s; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+ul, ol { margin-bottom: 1rem; padding-left: 1.5rem; }
+li     { margin-bottom: .5rem; }
+
+/* --- Layout --- */
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-lg);
+}
+
+/* --- Hero section (homepage) --- */
+.hero {
+  padding: var(--space-2xl) 0 var(--space-xl);
+  text-align: center;
+}
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -.04em;
+  line-height: 1.1;
+  margin-bottom: .75rem;
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 50%, var(--accent-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero .subtitle {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  margin: 0 auto var(--space-lg);
+  max-width: 480px;
+  line-height: 1.6;
+}
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* --- Section headings on homepage --- */
+.section-label {
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+/* --- App cards (homepage) --- */
+.app-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-md);
+}
+.app-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform .25s cubic-bezier(.22, 1, .36, 1),
+              border-color .25s,
+              box-shadow .25s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.app-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, .1);
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, .3),
+    0 0 0 1px rgba(255, 255, 255, .05);
+  text-decoration: none;
+  color: inherit;
+}
+.app-card-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border-color);
+}
+.app-card-img img {
+  max-width: 72%;
+  max-height: 72%;
+  object-fit: contain;
+}
+.app-card-body {
+  padding: var(--space-lg);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.app-card-body h3 {
+  color: var(--text-primary);
+  margin: 0 0 var(--space-sm);
+  font-size: 1.15rem;
+  letter-spacing: -.01em;
+}
+.app-card-body p {
+  color: var(--text-muted);
+  font-size: .9rem;
+  margin: 0;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* --- Badges / Pills --- */
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin-top: var(--space-md);
+}
+.badge-blue   { background: rgba(59,130,246,.12); color: var(--accent-blue); }
+.badge-amber  { background: rgba(245,158,11,.12); color: var(--accent-amber); }
+.badge-green  { background: rgba(16,185,129,.12); color: var(--accent-green); }
+.badge-orange { background: rgba(249,115,22,.12); color: var(--accent-orange); }
+
+/* --- Header (shared app header for sub-pages) --- */
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+.app-header img {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .3);
+}
+.app-header .app-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -.02em;
+}
+.app-header .app-tagline {
+  font-size: .88rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* --- Tabs --- */
+.tabs {
+  display: flex;
+  gap: 2px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: var(--space-xl);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.tab-btn {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-muted);
+  font-family: var(--font-stack);
+  font-size: .9rem;
+  font-weight: 500;
+  padding: 12px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color .2s, border-color .2s;
+  margin-bottom: -1px;
+}
+.tab-btn:hover {
+  color: var(--text-secondary);
+}
+.tab-btn.active {
+  color: var(--accent-amber);
+  border-bottom-color: var(--accent-amber);
+}
+.tab-panel {
+  display: none;
+  animation: fadeIn .3s ease;
+}
+.tab-panel.active {
+  display: block;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 28px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-stack);
+  font-size: .9rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background .2s, transform .1s, box-shadow .2s;
+  text-decoration: none;
+}
+.btn:hover { text-decoration: none; }
+.btn:active { transform: scale(.97); }
+
+.btn-primary {
+  background: var(--accent-blue);
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(59, 130, 246, .25);
+}
+.btn-primary:hover {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(59, 130, 246, .35);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, .1);
+}
+.btn-outline:hover {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, .15);
+}
+
+/* --- Footer --- */
+.site-footer {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--border-color);
+  font-size: .8rem;
+  color: var(--text-disabled);
+  text-align: center;
+}
+
+/* --- Effective date label --- */
+.effective-date {
+  font-size: .85rem;
+  color: var(--text-disabled);
+  margin-bottom: 2rem;
+}
+
+/* --- Support line (obfuscated email) --- */
+.support-line {
+  font-size: .9rem;
+  color: var(--text-muted);
+  margin-top: var(--space-xl);
+  margin-bottom: 1.5rem;
+}
+.support-line a { color: var(--link); }
+
+/* --- Back link --- */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .85rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-lg);
+  transition: color .2s, gap .2s;
+}
+.back-link:hover {
+  color: var(--link);
+  text-decoration: none;
+  gap: 10px;
+}
+
+/* --- Licence note --- */
+.licence-note {
+  font-size: .88rem;
+  color: var(--text-muted);
+  margin-top: var(--space-md);
+}
+
+/* --- Store badges --- */
+.store-badges {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: var(--space-md);
+}
+.store-badge {
+  display: inline-block;
+  height: 44px;
+  transition: opacity .2s, transform .15s;
+}
+.store-badge:hover { opacity: .85; transform: translateY(-1px); }
+.store-badge:active { transform: scale(.97); }
+.store-badge img {
+  height: 44px;
+  width: auto;
+}
+
+/* --- Divider --- */
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: var(--space-xl) 0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .container { padding: var(--space-xl) var(--space-md); }
+  h1 { font-size: 1.6rem; }
+  .hero { padding: var(--space-xl) 0 var(--space-lg); }
+  .hero h1 { font-size: 2rem; }
+  .app-cards { grid-template-columns: 1fr; }
+  .tab-btn { padding: 10px 14px; font-size: .85rem; }
+}

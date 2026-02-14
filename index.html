@@ -1,135 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicons/site.webmanifest" />
-    <title>Cambridge Pop-up Speakeasy</title>
-    <!-- <link rel="stylesheet" href="css/a5.css" /> -->
-    <link rel="stylesheet" href="css/main.css" />
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&&family=DM+Serif+Display&display=swap');
-    </style>
-  </head>
-  <body>
-    <div class="main">
-      <div class="center-column">
-        <header id="header">
-          <img class="decal top-slide" src="decal.svg" />
-          <h1 class="popup-speakeasy top-slide">
-            PO<span class="hack">P-</span>UP SPEAKEASY
-          </h1>
-          <h2 class="cambridge top-slide">CAMBRIDGE</h2>
-        </header>
-        <sub>
-          <h2 class="free-live fade-in-slow">FREE LIVE</h2>
-          <h2 class="jazz fade-in-slow">JAZZ</h2>
-        </sub>
-        <div class="next fade-in-slow">
-          <div class="next-session">NEXT SESSION</div>
-          <div class="next-date" id="next-date">To be confirmed</div>
-          <div id="next-venue">The Tram Depot</div>
-          <div class="next-msg" id="next-msg"></div>
-        </div>
-        <div class="details bottom-slide">
-          <div class="event">
-            <div class="date first">FIRST</div>
-            <div class="wednesday">WEDNESDAY</div>
-            <div class="every-month">EVERY MONTH</div>
-            <div class="pm">7:30pm</div>
-            <p class="venue">
-              <a
-                href="https://www.google.com/maps/place/The+Tram+Depot/@52.2046122,0.1305907,17z/data=!4m8!1m2!3m1!2sThe+Tram+Depot!3m4!1s0x47d8708e2b8fbda3:0x6d916ece4009528e!8m2!3d52.2045294!4d0.132693"
-                >The Tram Depot<br />CB1</a
-              >
-            </p>
-          </div>
-<!--
-          <div class="divider"></div>
-          <div class="event">
-            <div class="date third">THIRD</div>
-            <div class="wednesday">WEDNESDAY</div>
-            <div class="every-month">EVERY MONTH</div>
-            <div class="pm">7:30pm</div>
-            <p class="venue">
-              <a
-                href="https://www.google.com/maps/place/Newnham+Croft+Social+and+Sports+Club/@52.1952366,0.1087505,15z/data=!4m6!3m5!1s0x47d870a618c193e7:0xce397b860d0c059b!8m2!3d52.1952366!4d0.1087505!16s%2Fg%2F11gy83sgy3"
-                >Newnham Croft Social Club<br />CB3</a
-              >
-            </p>
-          </div>
--->
-        </div>
-        <div class="offline">CambridgePopupSpeakeasy.com</div>
-        <div class="contact bottom-slide">
-          <div class="links">
-            <a href="info.html"
-            >Mission - <b>Donating</b> - Participating</a><br/>
-            <a href="https://cambridgepopupspeakeasy.eo.page/hy48r"
-              >Subscribe to our mailing list</a
-            >
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Rowthorn</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
 
-          <div class="social online">
-            <a
-              href="https://www.eventbrite.com/o/cambridge-popup-speakeasy-62423767873"
-            >
-              <img
-                alt="Eventbrite page"
-                title="Eventbrite page"
-                class="pointer eventbrite"
-                src="icons/eventbrite.png"
-              />
-            </a>
-            <img
-              alt="Email us"
-              title="Email us"
-              id="email"
-              class="pointer svg-social"
-              src="icons/email.svg"
-            />
-            <a href="https://www.facebook.com/groups/188620800054588">
-              <img
-                alt="Facebook"
-                title="Visit our Facebook page"
-                class="svg-social"
-                src="icons/facebook.svg"
-              />
-            </a>
-            <a
-              href="webcal://calendar.google.com/calendar/ical/cambridgejazzclub%40meeprophone.com/public/basic.ics"
-              target="_blank"
-            >
-              <img
-                alt="Subscribe to our calendar"
-                title="Subscribe to our calendar"
-                class="pointer svg-social"
-                src="icons/calendar.svg"
-              />
-            </a>
-          </div>
-        </div>
+    <!-- Hero -->
+    <section class="hero">
+      <h1>David Rowthorn</h1>
+      <p class="subtitle">Software &amp; apps.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#" data-contact="link">Contact</a>
       </div>
-    </div>
-    <script src="script.js"></script>
-    <script src="script2.js"></script>
-  </body>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <p class="section-label">Projects</p>
+
+      <div class="app-cards">
+
+        <!-- Play by Ear -->
+        <a class="app-card" href="/play-by-ear/">
+          <div class="app-card-img">
+            <img src="/icons/play-by-ear-icon.png" alt="Play by Ear app icon">
+          </div>
+          <div class="app-card-body">
+            <h3>Play by Ear</h3>
+            <p>Ear training app for musicians. Learn to recognise intervals, chords, and scales by ear.</p>
+            <span class="badge badge-green">Android</span>
+          </div>
+        </a>
+
+        <!-- Cross Reference -->
+        <a class="app-card" href="/cross-reference/">
+          <div class="app-card-img">
+            <img src="/icons/cross-reference-banner.png" alt="Cross Reference banner">
+          </div>
+          <div class="app-card-body">
+            <h3>Cross Reference</h3>
+            <p>Open-source Google Docs add-on for automatic cross-referencing of figures, tables, and equations.</p>
+            <span class="badge badge-blue">Google Docs</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      &copy; 2026 David Rowthorn
+    </footer>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
 </html>
