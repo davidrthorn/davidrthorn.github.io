@@ -40,9 +40,8 @@
   function initContact() {
     var els = document.querySelectorAll('[data-contact]');
     els.forEach(function (el) {
-      var p1 = 'davidrowthorn';
-      var p2 = 'gmail.com';
-      var addr = p1 + '@' + p2;
+      var z = [100,97,118,105,100,114,111,119,116,104,111,114,110,64,103,109,97,105,108,46,99,111,109];
+      var addr = z.map(function(c){return String.fromCharCode(c)}).join('');
       var kind = el.getAttribute('data-contact');
 
       if (kind === 'link') {
