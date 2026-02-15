@@ -252,7 +252,7 @@ li     { margin-bottom: .5rem; }
   color: var(--link);
 }
 
-/* Store icons row at bottom of card */
+/* Store badge row at bottom of card */
 .app-card-stores {
   display: flex;
   align-items: center;
@@ -260,19 +260,17 @@ li     { margin-bottom: .5rem; }
   margin-top: var(--space-md);
   padding-top: var(--space-md);
   border-top: 1px solid var(--border-color);
+  flex-wrap: wrap;
 }
-.app-card-stores a {
-  display: flex;
-  transition: opacity .2s, transform .15s;
+.app-card-stores .store-badge {
+  height: 36px;
 }
-.app-card-stores a:hover {
-  transform: scale(1.1);
+.app-card-stores .store-badge img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
 }
-.store-icon {
-  width: 22px;
-  height: 22px;
-}
-.store-icon-disabled {
+.store-badge--disabled {
   opacity: .35;
   pointer-events: none;
 }
@@ -459,13 +457,13 @@ li     { margin-bottom: .5rem; }
 }
 .store-badge {
   display: inline-block;
-  height: 44px;
+  height: 36px;
   transition: opacity .2s, transform .15s;
 }
 .store-badge:hover { opacity: .85; transform: translateY(-1px); }
 .store-badge:active { transform: scale(.97); }
 .store-badge img {
-  height: 44px;
+  height: 36px;
   width: auto;
 }
 
