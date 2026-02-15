@@ -198,16 +198,18 @@ li     { margin-bottom: .5rem; }
 }
 .app-card-img {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 180px;          /* fixed height keeps every card identical */
   background: var(--bg-card);
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid var(--border-color);
+  overflow: hidden;
 }
 .app-card-img img {
-  max-width: 72%;
-  max-height: 72%;
+  width: 60%;
+  height: auto;
+  max-height: 65%;
   object-fit: contain;
 }
 .app-card-body {

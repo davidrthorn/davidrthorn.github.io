@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 160" width="320" height="160">
+  <!-- Google Docs icon -->
+  <g transform="translate(127, 24)">
+    <defs>
+      <linearGradient id="gd1" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#4285F4" stop-opacity=".15"/>
+        <stop offset="100%" stop-color="#4285F4" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <!-- Doc shape -->
+    <path d="M10 0h34l22 22v82c0 5.5-4.5 10-10 10H10C4.5 114 0 109.5 0 104V10C0 4.5 4.5 0 10 0z" fill="#4285F4"/>
+    <!-- Fold -->
+    <path d="M44 0l22 22H54c-5.5 0-10-4.5-10-10V0z" fill="#A1C2FA"/>
+    <!-- Lines -->
+    <rect x="16" y="46" width="34" height="4" rx="2" fill="rgba(255,255,255,.7)"/>
+    <rect x="16" y="58" width="34" height="4" rx="2" fill="rgba(255,255,255,.7)"/>
+    <rect x="16" y="70" width="24" height="4" rx="2" fill="rgba(255,255,255,.7)"/>
+    <rect x="16" y="82" width="30" height="4" rx="2" fill="rgba(255,255,255,.7)"/>
+  </g>
+</svg>
