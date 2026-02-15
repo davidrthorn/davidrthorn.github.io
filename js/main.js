@@ -40,8 +40,8 @@
   function initContact() {
     var els = document.querySelectorAll('[data-contact]');
     els.forEach(function (el) {
-      var p1 = 'david.rowthorn';
-      var p2 = 'orbital.tech';
+      var p1 = 'davidrowthorn';
+      var p2 = 'gmail.com';
       var addr = p1 + '@' + p2;
       var kind = el.getAttribute('data-contact');
 
