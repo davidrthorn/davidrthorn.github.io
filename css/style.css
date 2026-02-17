@@ -323,6 +323,7 @@ li     { margin-bottom: .5rem; }
   border-bottom: 1px solid var(--border-color);
   margin-bottom: var(--space-xl);
   overflow-x: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
 .tab-btn {
