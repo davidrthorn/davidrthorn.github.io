@@ -474,9 +474,13 @@ li     { margin-bottom: .5rem; }
   padding: var(--space-lg) 0;
   justify-content: center;
 }
-.screenshot-row img {
+
+/* Phone screenshots on sub-pages */
+.screenshot-row--phones img {
   height: 320px;
+  max-width: 70vw;
   width: auto;
+  object-fit: contain;
   border-radius: var(--radius-md);
   box-shadow: 0 4px 20px rgba(0, 0, 0, .4);
   flex-shrink: 0;
@@ -486,22 +490,26 @@ li     { margin-bottom: .5rem; }
 .screenshot-row--wide img {
   height: auto;
   max-height: 280px;
+  max-width: 70vw;
   flex-shrink: 1;
   min-width: 0;
   width: auto;
-  max-width: 100%;
   border-radius: var(--radius-sm);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .4);
 }
 
 /* --- Hide screenshots by breakpoint --- */
 
-/* Sub-page phone screenshots: always hide 4th+, hide 3rd below 500px */
+/* Sub-page phone screenshots: show max 3, then 2, then 1 */
 .screenshot-row--phones img:nth-child(n+4) { display: none; }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .screenshot-row--phones img:nth-child(n+3) { display: none; }
 }
+@media (max-width: 480px) {
+  .screenshot-row--phones img:nth-child(n+2) { display: none; }
+}
 
-/* Homepage card phone screenshots: hide 3rd below 420px */
+/* Homepage card phone screenshots */
 @media (max-width: 420px) {
   .app-card-img--phones img:nth-child(n+3) { display: none; }
 }
