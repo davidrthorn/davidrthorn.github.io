@@ -327,8 +327,6 @@ li     { margin-bottom: .5rem; }
   -webkit-overflow-scrolling: touch;
 }
 .tab-btn {
-  background: none;
-  border: none;
   border-bottom: 2px solid transparent;
   color: var(--text-muted);
   font-family: var(--font-stack);
@@ -337,26 +335,17 @@ li     { margin-bottom: .5rem; }
   padding: 12px 20px;
   cursor: pointer;
   white-space: nowrap;
+  text-decoration: none;
   transition: color .2s, border-color .2s;
   margin-bottom: -1px;
 }
 .tab-btn:hover {
   color: var(--text-secondary);
+  text-decoration: none;
 }
 .tab-btn.active {
   color: var(--accent-amber);
   border-bottom-color: var(--accent-amber);
-}
-.tab-panel {
-  display: none;
-  animation: fadeIn .3s ease;
-}
-.tab-panel.active {
-  display: block;
-}
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(6px); }
-  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* --- Buttons --- */

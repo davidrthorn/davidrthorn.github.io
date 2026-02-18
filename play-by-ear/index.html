@@ -12,7 +12,6 @@
 
     <a class="back-link" href="/">&larr; Back</a>
 
-    <!-- App header -->
     <div class="app-header">
       <img src="/assets/icons/play-by-ear.png" alt="Play by Ear icon">
       <div>
@@ -21,103 +20,42 @@
       </div>
     </div>
 
-    <!-- Tabs -->
-    <div class="tabs">
-      <button class="tab-btn active" data-tab="about">About</button>
-      <button class="tab-btn" data-tab="privacy">Privacy Policy</button>
+    <nav class="tabs">
+      <a class="tab-btn active" href="/play-by-ear/">About</a>
+      <a class="tab-btn" href="/play-by-ear/privacy/">Privacy Policy</a>
+    </nav>
+
+    <p>Play by Ear is an ear training app that helps musicians learn to recognise intervals, chords, and scales by ear. It runs entirely on your device with no account required.</p>
+
+    <div class="screenshot-row screenshot-row--phones">
+      <img src="/assets/screenshots/play-by-ear-1.png" alt="Listen screen">
+      <img src="/assets/screenshots/play-by-ear-2.png" alt="Play screen">
+      <img src="/assets/screenshots/play-by-ear-3.png" alt="Practice mode">
+      <img src="/assets/screenshots/play-by-ear-4.png" alt="Settings">
     </div>
 
-    <!-- About panel -->
-    <div id="about" class="tab-panel active">
-      <p>Play by Ear is an ear training app that helps musicians learn to recognise intervals, chords, and scales by ear. It runs entirely on your device with no account required.</p>
+    <h2>Features</h2>
+    <ul>
+      <li>Interval recognition exercises</li>
+      <li>Chord identification training</li>
+      <li>Scale recognition practice</li>
+      <li>Customisable difficulty and presets</li>
+      <li>Works offline &mdash; optional cloud sync to back up your progress</li>
+    </ul>
 
-      <div class="screenshot-row screenshot-row--phones">
-        <img src="/assets/screenshots/play-by-ear-1.png" alt="Listen screen">
-        <img src="/assets/screenshots/play-by-ear-2.png" alt="Play screen">
-        <img src="/assets/screenshots/play-by-ear-3.png" alt="Practice mode">
-        <img src="/assets/screenshots/play-by-ear-4.png" alt="Settings">
-      </div>
-
-      <h2>Features</h2>
-      <ul>
-        <li>Interval recognition exercises</li>
-        <li>Chord identification training</li>
-        <li>Scale recognition practice</li>
-        <li>Customisable difficulty and presets</li>
-        <li>Works offline &mdash; optional cloud sync to back up your progress</li>
-      </ul>
-
-      <h2>Get the app</h2>
-      <div class="store-badges">
-        <a class="store-badge store-badge--disabled" href="#">
-          <img src="/assets/badges/google-play.svg" alt="Coming soon on Google Play">
-        </a>
-        <a class="store-badge store-badge--disabled" href="#">
-          <img src="/assets/badges/app-store.svg" alt="Coming soon on the App Store">
-        </a>
-      </div>
-
-      <p class="support-line">
-        <strong>Support:</strong> <span data-contact="inline"></span>
-      </p>
+    <h2>Get the app</h2>
+    <div class="store-badges">
+      <a class="store-badge store-badge--disabled" href="#">
+        <img src="/assets/badges/google-play.svg" alt="Coming soon on Google Play">
+      </a>
+      <a class="store-badge store-badge--disabled" href="#">
+        <img src="/assets/badges/app-store.svg" alt="Coming soon on the App Store">
+      </a>
     </div>
 
-    <!-- Privacy panel -->
-    <div id="privacy" class="tab-panel">
-      <h1>Privacy Policy</h1>
-      <p class="effective-date">Effective date: 17 February 2026</p>
-
-      <p>Play by Ear is an ear training app for musicians. Your privacy is important to us. The app works fully offline by default, and an optional cloud sync feature is available if you choose to sign in.</p>
-
-      <h2>Data we collect</h2>
-      <p>Play by Ear does <strong>not</strong> collect any personal information. Specifically:</p>
-      <ul>
-        <li>No account or login is required to use the app.</li>
-        <li>No analytics, crash reporting, or tracking services are used.</li>
-        <li>No advertising services are used.</li>
-      </ul>
-
-      <h2>Local storage</h2>
-      <p>Your settings, bookmarks, and saved presets are stored locally on your device using standard app storage. Without cloud sync enabled, this data never leaves your device and is deleted when you uninstall the app.</p>
-
-      <h2>Cloud sync (optional)</h2>
-      <p>You may optionally sign in with a Google account or Apple account to enable cloud sync. This backs up your settings, bookmarks, and presets so they can be restored if you reinstall the app or switch devices.</p>
-      <p>When you sign in:</p>
-      <ul>
-        <li>We store only your <strong>anonymous user identifier</strong> provided by Google or Apple. We do <strong>not</strong> store your name, email address, phone number, or any other personal information.</li>
-        <li>Your app data (settings, bookmarks, and presets) is stored in Google Cloud Storage, keyed to your anonymous identifier.</li>
-        <li>No personal information from your Google or Apple account is sent to or retained by our servers.</li>
-      </ul>
-
-      <h2>Account deletion</h2>
-      <p>If you have signed in and wish to delete your account, you can do so at any time from within the app. Deleting your account will:</p>
-      <ul>
-        <li>Permanently delete all of your data from our cloud storage.</li>
-        <li>Revoke the authentication tokens associated with your Google or Apple account.</li>
-        <li>Sign you out of the app.</li>
-      </ul>
-      <p>Data stored locally on your device is not affected by account deletion and can be cleared by uninstalling the app.</p>
-
-      <h2>In-app purchases</h2>
-      <p>Play by Ear offers an optional one-time purchase to unlock additional features. This transaction is processed entirely by Google Play or the Apple App Store. We do not receive or store any payment information. These transactions are governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a> respectively.</p>
-
-      <h2>Third-party services</h2>
-      <p>The app does not integrate any third-party analytics, advertising, or tracking services. The third-party services involved are:</p>
-      <ul>
-        <li><strong>Google Play / Apple App Store</strong> &mdash; for in-app purchases.</li>
-        <li><strong>Google Sign-In / Sign in with Apple</strong> &mdash; for optional account authentication (cloud sync). Only the anonymous user identifier is used; no personal profile information is accessed or stored.</li>
-        <li><strong>Google Cloud Storage</strong> &mdash; for storing cloud sync data.</li>
-      </ul>
-
-      <h2>Children's privacy</h2>
-      <p>Play by Ear is not directed at children under 13. We do not knowingly collect any information from anyone, including children.</p>
-
-      <h2>Changes to this policy</h2>
-      <p>If we update this privacy policy, the revised version will be posted on this page with an updated effective date.</p>
-
-      <h2>Contact</h2>
-      <p>If you have questions about this privacy policy, you can reach us via the developer contact email listed on the <a href="https://play.google.com/store/apps/details?id=com.playbyear.app">Google Play store listing</a>.</p>
-    </div>
+    <p class="support-line">
+      <strong>Support:</strong> <span data-contact="inline"></span>
+    </p>
 
     <footer class="site-footer">
       &copy; 2026 Play by Ear
